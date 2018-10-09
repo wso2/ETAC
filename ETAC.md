@@ -119,7 +119,7 @@ The **_Future_** section captures two key aspects of technology development.
 
 **_Timeline:_**  What are the key possible milestones in the technology development? For example, how long will it take for the core technology to be ready? How fast will the adoption be? For example, blockchains may need further breakthroughs before they are adopted widely and it might take at least 5-10 years to reach those milestones.
 
-**_Risks:_**  What are risks that might limit the technology deployment? This includes non-technical risks as well. We can think of these as the inverse of drivers. Just like with drivers, we can use the PESTLE framework [10] in reverse to find drivers. An example of a risk is that regulators may restrict blockchains based on taxes or money laundering legislation, even when those blockchains are designed to resolve other aspects than digital cash. Among other risks to be considered are the need for standards, privacy concerns, business models, current law and policy frameworks, lack of skills, privacy concerns, complexity, security risks, monopoly and vendor lock-in. 
+**_Risks:_**  What are risks that might limit the technology deployment? This includes non-technical risks as well. We can think of these as the inverse of drivers. Just like with drivers, we can use the PESTLE framework [10] in reverse to find drivers. An example of a risk is that regulators may restrict blockchains based on taxes or money laundering legislation, even when those blockchains are designed to resolve other aspects than digital cash. Among other risks to be considered are the need for standards, privacy concerns, business models, current law and policy frameworks, lack of skills, complexity, security risks, monopoly and vendor lock-in. 
 
 **_Summary:_** The summary section discusses possible technology development and deployment scenarios while weighing other parts of the ETAC. In the _opportunity_ section, we discussed drivers. In the _impact_ and _feasibility_ sections we explore the potential of the technology and technical reality. The _future_ section discusses risks and potential key milestones. The _summary_ section explores the tension between the potential of the technology and environment in which it has to operate to understand potential scenarios and associated likelihoods.
 
@@ -143,9 +143,9 @@ The AI market includes Amazon, Google, Microsoft, Facebook, and IBM as key playe
 
 Automation enables us to make decisions faster and cheaper by removing humans in the loop. The need for automation and the availability of computing and data are key drivers of AI. 
 
-**_Impact_:** At the macro level, AI has a symbiotic relationship with Big Data, Internet of Things (IoT), and observability. It has been suggested that wide applications of AI could bring forth an age of abundance where basic human needs such as food, water, warmth, together with many resources and professional services such health, education, legal support, will become abundant. It is certainly widely acknowledged that AI will displace many existing jobs.
+**_Impact_:** At the macro level, AI has a symbiotic relationship with Big Data, Internet of Things (IoT), and observability. It has been suggested that wide applications of AI could bring forth an age of abundance where basic human needs such as food, water, warmth, together with many resources and professional services such as health, education, legal support, will become abundant. It is certainly widely acknowledged that AI will displace many existing jobs.
 
-At the micro level, considering the organizational level impact, AI provides a competitive advantage via automation and agility. It provides financial benefits via automation, via optimisations, and creating new revenue streams. Furthermore, AI affects supply chain via data sharing and insight sharing partnerships between participants. 
+At the micro level, considering the organizational level impact, AI provides a competitive advantage via automation and agility. It provides financial benefits via automation, via optimisations, and via creating new revenue streams. Furthermore, AI affects supply chain via data sharing and insight sharing partnerships between participants. 
 
 **_Feasibility_:** In terms of technical merits, AI has achieved several breakthroughs such as deep learning, which has helped surpassing human accuracy levels in many problems. Among technical challenges are algorithmic attacks, the need for expert knowledge while tuning and applying AI, and significant time required for data cleansing.  A recently identified problem with AI is the fact that many AIs continue to promote existing inequalities (and prejudices) since they are trained on data that includes these prejudices. This is harming the reputation of AIs but may also meet legal or policy roadblocks.
 
@@ -153,12 +153,12 @@ AI has a wide community and a rich set of open source tools. There are many prac
 
 On the other hand, AI faces friction due to lack of training data and lack of ability to explain why AI made a certain decision. Furthermore, many are skeptical of AI decisions and sometimes hostile due to its potential to replace humans. 
 
-**_Risks_:** Foremost are the replacement of humans from many current job functions, which can lead to large-scale unemployment, and superintelligence where AI surpasses human intelligence in leaps and bounds. Privacy concerns pose a risk to AI because AI depends on large amounts of data and because AI can be used to infer sensitive information from seemingly unrelated data. Another risk is lack of our understanding of AI in competitive environments. For example, in use cases like stock markets, the application of AI can degrade the situation because the use case becomes a battle between two algorithms creating scenarios such as flash crashes and increasing the costs. 
+**_Risks_:** Foremost are the replacement of humans from many current job functions, which can lead to large-scale unemployment, and superintelligence where AI surpasses human intelligence in leaps and bounds. Privacy concerns pose a risk to AI because AI depends on large amounts of data and because AI can be used to infer sensitive information from seemingly unrelated data. Another risk is lack of our understanding of AI in competitive environments. For example, in use cases like stock markets, the application of AI can degrade the situation because the use case becomes a battle between two algorithms creating scenarios such as flash crashes and increased the costs. 
 
 **_Summary_:** After nearly 60 years of development, AI already has a wide range of applications. Considering the future timeline, AI will likely handle complex problems such as disease diagnosis thus replacing or significantly reducing human involvement in many current job functions in the next 10-20 years. This could create significant wealth but at the same time could create unemployment. Consequences are still unclear. On the other hand, general AI is likely 50-100 years away. 
 
 # Example 2: Serverless
-In order to demonstrate the use of the ETAC, we have applied this tool to the serverless domain. This description is a summarised version of a full analysis of the serverless domain that we have undertaken. We plan to publish this full analysis separately. 
+In order to demonstrate the use of the ETAC, we have applied this tool to the serverless domain. This description is a summarised version of a full analysis of the serverless domain that we have undertaken.  
 
 _Serverless_ is defined as Functions as _a Service (FaaS), resources (compute and storage) as well as a complete cloud execution environment including platform services providing “Resource Pooling,” “Rapid Elasticity,” “Measured Service” in an opaque manner_. The three terms are defined in NIST cloud computing definition. 
 
@@ -180,7 +180,7 @@ The friction that serverless has is mainly around the requirement to rewrite and
 **_Future_:** Serverless faces risks due to a lack of standards and potential vendor lock-in. Considering the future timeline, assuming tools can catch up, we believe most new projects will use serverless within next five years. 
 
 # Methodology
-So far we discussed what the ETAC will look like in the finished form. . We also discussed a number of tools that could be used at each stage. This section  organises those concepts, together with a wider approach, into an outline methodology for building an ETAC for a specific domain. Inherently this is not a prescriptive approach, because the holistic nature of the visual canvas encourages multiple paths. The aim of any methodology is to guarantee the validity of research. Since the aim of the ETAC is to predict the future and to generate opinions, this is inherently impossible! The best we can do is to identify where the facts transition into predictions, judgement and opinions. We encourage further exploration of this area.
+So far we discussed what the ETAC will look like in the finished form. We also discussed a number of tools that could be used at each stage. This section  organises those concepts, together with a wider approach, into an outline methodology for building an ETAC for a specific domain. Inherently this is not a prescriptive approach, because the holistic nature of the visual canvas encourages multiple paths. The aim of any methodology is to guarantee the validity of research. Since the aim of the ETAC is to predict the future and to generate opinions, this is inherently impossible! The best we can do is to identify where the facts transition into predictions, judgement and opinions. We encourage further exploration of this area.
 
 Our overall proposed approach to using the canvas has three major components, which are typically created in three phases:
 
@@ -192,7 +192,7 @@ Each ETAC section includes some useful questions that can be asked as part of th
 
 1. Creating or ascertaining a working definition of the technology to make it clear what is included and not included.
 2. Conducting a literature survey to understand the opinions and evidence expressed with respect to the technology. This step belongs to the first and second phases (finding and observations). This literature review can be focused by using it to answer the questions asked by the ETAC. This generates the findings. When we use the ETAC, we specifically reference the findings and use these to defend the observations in the _Opportunity, Impact, and Feasibility_ sections. These references to related sources and/or primary evidence can be captured in a supporting document if needed.
-3. In the _Future_ and _Summary_ sections, we draw conclusions from findings and observations. Hence this step belongs to conclusions phase.  We consider _Opportunity, Impact, and Feasibility_ Sections in ETAC holistically and apply critical thinking, expert observations and create conclusions. The conclusions can be justified in more detail in the supporting document.
+3. In the _Future_ and _Summary_ sections, we draw conclusions from findings and observations. Hence this step belongs to conclusions phase.  We consider _Opportunity, Impact, and Feasibility_ Sections in ETAC holistically and apply critical thinking, include expert observations and create conclusions. The conclusions can be justified in more detail in the supporting document.
 
 In the rest of the methodology, we will discuss some tools that are useful in the third step (the conclusion phase). The last step is the most challenging part of the ETAC as it moves from observations and clearly justified conclusions into predictions and opinions. 
 
@@ -203,9 +203,9 @@ Another useful set of tools  to be used in the third step are frameworks such as
 A related tool to  evaluate the technology is Rogers’ Five Factors which analyse adoption rates: _Relative Advantage, Compatibility, Simplicity, Trialability, Observability_ [15]. In addition, Roger’s _diffusion of innovation curve_ [15] allows the analysis of the status quo.
 
 The final tool that we highlight here is to use the following factors to evaluate the timeline:
-* Critical mass required to cross the chasm [6] and timelines
+* Critical mass required to cross the chasm [6] and timelines.
 * The impact from megatrends (trends such as digitization, urbanization, globalization, climate change, aging population).
-* The impact of specific technology trends (for example the rise of cloud computing)
+* The impact of specific technology trends (for example the rise of cloud computing).
 * The capital requirement, production costs, and delivery models.
 * Dependencies of the technology on other building blocks (perhaps from other domains). For example, electric cars require a network of charging stations, as well as increased electricity production.
 
@@ -250,7 +250,6 @@ We are also doing further research to see if using the ETAC across multiple new 
 18. The fourth industrial revolution: a primer on Artificial Intelligence (AI), https://medium.com/mmc-writes/the-fourth-industrial-revolution-a-primer-on-artificial-intelligence-ai-ff5e7fffcae1, Accessed October 2018
 19. Chris Berg et al, The Blockchain Economy: A beginner’s guide to institutional cryptoeconomics, Accessed October 2018 
 20. Simon Wardley, An introduction to Wardley (Value Chain) Mapping, https://blog.gardeviance.org/2015/02/an-introduction-to-wardley-value-chain.html, Accessed October 2018
-21. Wikipedia: Emerging technologies, https://en.wikipedia.org/wiki/Emerging_technologies, Accessed October 2018 
 
 # Acknowledgments
 Many thanks to Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback. 
