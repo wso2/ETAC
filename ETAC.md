@@ -4,9 +4,11 @@
 # Emerging Technology Analysis Canvas (ETAC)</center>
 
 <p align="center">
+<i>
 Version 0.8<br/>
 Srinath Perera, Paul Fremantle, Frank Leymann, Joanne Jenkins<br/>
 srinath@wso2.com, paul@wso2.com, frank@wso2.com, joanne.jenkins@port.ac.uk</i> <br/>
+</i>
 </p>
 
 # Abstract
@@ -67,7 +69,7 @@ As shown in the next figure, the canvas is built around the above four elements.
 The graphical representation of the ETAC (Figure 1) is designed to be concise and compact. One can see a spectrum of aspects of a technology at a glance – on a single page. This significantly encourages a holistic comprehension so that evaluators can look deeper and ask more informed questions specific to certain focus areas. 
 
 ![Figure 1 - the Emerging Technology Analysis Canvas (ETAC)](https://github.com/wso2/ETAC/blob/master/images/etac-template-v5.png)
-<center>Figure 1:The Emerging Technology Analysis Canvas</center>
+<p align="center">Figure 1:The Emerging Technology Analysis Canvas</p>
 
 Let’s explore the canvas in detail. 
 
@@ -129,7 +131,7 @@ To demonstrate the use of ETAC, we have applied this tool to Artificial Intellig
 _Artificial Intelligence (AI)_ refers to computer systems that from the outside seem to think and act like humans and think and act rationally. Or in other words, any system that can replace human decisions can be considered as AI. 
 
 ![Figure 2: Artificial Intelligence ETAC)](https://github.com/wso2/ETAC/blob/master/images/etac-ai-outlook-v2.png)
-<center>Figure 2: Artificial Intelligence ETAC</center>
+<p align="center">Figure 2: Artificial Intelligence ETAC</p>
 
 **_Opportunity_:** AI has fascinated humans for many years. Researchers have tried to automate human analysis for many years. Because it is considered an example of intelligent analysis, the game of chess was, for many years, considered a proxy for human analysis automation to be solved by AI. When IBM’s _Deep Blue_ initiative beat Kasparov in 1997 this was seen as a watershed in AI. More recently Google DeepMind’s _AlphaZero_ AI taught itself to play chess in 4 hours and instantly became one of the strongest chess playing programs.
 
@@ -157,7 +159,7 @@ In order to demonstrate the use of the ETAC, we have applied this tool to the se
 _Serverless_ is defined as Functions as _a Service (FaaS), resources (compute and storage) as well as a complete cloud execution environment including platform services providing “Resource Pooling,” “Rapid Elasticity,” “Measured Service” in an opaque manner_. The three terms are defined in NIST cloud computing definition. 
 
 ![Figure 3: Serverless ETAC](https://github.com/wso2/ETAC/blob/master/images/etac-serverless-outlook-v4.png)
-<center>Figure 3: Serverless ETAC</center>
+<p align="center">Figure 3: Serverless ETAC</p>
 
 **_Opportunity_:** Before serverless, to run a function in the cloud, users had to create a virtual machine or a container, configure it, and manage it. Serverless removes this requirement by allowing a developer to simply upload a program that is run in response to an incoming message or request. The market includes Amazon, Google, Microsoft, and IBM as key players and many smaller players. Among drivers, the success of cloud technology is a key driver of serverless. 
 
