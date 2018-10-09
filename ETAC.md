@@ -3,9 +3,11 @@
 
 # Emerging Technology Analysis Canvas (ETAC)</center>
 
-<center>Version 0.8</center>
-<center>Srinath Perera, Paul Fremantle, Frank Leymann, Joanne Jenkins</center>
-<center><i>srinath@wso2.com, paul@wso2.com, frank@wso2.com, joanne.jenkins@port.ac.uk</i> </center>
+<p align="center">
+Version 0.8<br/>
+Srinath Perera, Paul Fremantle, Frank Leymann, Joanne Jenkins<br/>
+srinath@wso2.com, paul@wso2.com, frank@wso2.com, joanne.jenkins@port.ac.uk</i> <br/>
+</p>
 
 # Abstract
 This paper introduces the “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technology. Inspired by the Business Model Canvas, this approach includes a set of questions that probe the technology arranged around a logic narrative. it represents different aspects of technology visually on a single page. The visual representation is concise, compact, and comprehensible in a glance. We believe it provides a logical framework to understand the technology, provides a framework to look at different aspects of the technology, and can be used as a brainstorming tool when trying to understand emerging technologies. 
