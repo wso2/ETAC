@@ -12,7 +12,7 @@ srinath@wso2.com, paul@wso2.com, frank@wso2.com, joanne.jenkins@port.ac.uk</i> <
 </p>
 
 # Abstract
-This paper introduces the “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technology. Inspired by the Business Model Canvas, this approach includes a set of questions that probe the technology arranged around a logic narrative. it represents different aspects of technology visually on a single page. The visual representation is concise, compact, and comprehensible in a glance. We believe it provides a logical framework to understand the technology, provides a framework to look at different aspects of the technology, and can be used as a brainstorming tool when trying to understand emerging technologies. 
+_This paper introduces the “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technology. Inspired by the Business Model Canvas, this approach includes a set of questions that probe the technology arranged around a logical narrative. it represents different aspects of technology visually on a single page. The visual representation is concise, compact, and comprehensible in a glance. We believe it provides a logical framework to understand the technology, provides a framework to look at different aspects of the technology, and can be used as a brainstorming tool when trying to understand emerging technologies._
 
 # Introduction
 This paper introduces the _“Emerging Technology Analysis Canvas”_ (ETAC), a framework to assess an individual emerging technology. Many organisations have a desire to evaluate emerging technologies, either for their own research and development (R&D) teams’ benefit or for the benefit of their customers and partners. 
@@ -59,7 +59,7 @@ In this paper, we will use several example domains to demonstrate the use of the
 We propose a model we call the Emerging Technology Analysis Canvas (ETAC), which is built around similar concepts as the Business Model Canvas, but targeting emerging technology assessments. The ETAC provides a visual framework and a methodology for a structured analysis of emerging technologies. The process of filling out the ETAC encourages the researcher to answer a wide set of questions and creates a holistic approach to analysing emerging approaches. In addition, an ETAC may have a supporting document that details the references and analysis.
  
 Based on our experience in working in several areas of emerging technology, we see that the success of an emerging technology depends on four main factors:
-1. The identification of a problem and related innovation that addresses the problem, which we call a trigger. We consider that both the problem and innovation must come in conjunction because often the innovation changes our perception of the problem.
+1. The identification of a problem and related innovation that addresses the problem, which we call a trigger. (We consider that both the problem and innovation must come in conjunction because often the innovation changes our perception of the problem).
 2. The technology needs to have a significant potential impact. Often the impact may extend beyond the initial problem.
 3. The technology has to be feasible given the available resources.
 4. The technology has to navigate risks related to technology development and adoption. For example, the technology must develop and be adopted quickly enough to justify any investment.
