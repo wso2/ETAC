@@ -1,7 +1,8 @@
 ﻿
 
-
-# Emerging Technology Analysis Canvas (ETAC)</center>
+<p align="center">
+<h1>Emerging Technology Analysis Canvas (ETAC)</center></h1>
+</p>
 
 <p align="center">
 <i>
