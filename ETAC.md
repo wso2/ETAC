@@ -251,6 +251,6 @@ We are also doing further research to see if using the ETAC across multiple new 
 
 # Acknowledgments
 
-Many thanks to Joanne Jenkins from University of Portsmouth, Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback. 
+Many thanks to Joanne Jenkins from University of Portsmouth and Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback. 
  
 
