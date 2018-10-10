@@ -1,7 +1,5 @@
 # Emerging Technology Analysis Canvas
 
-A one-page Visual Canvas for Emerging Technology Evaluation, in the style of “the Business model Canvas
-
 This repository includes the meterials realated “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technology. 
 
 
