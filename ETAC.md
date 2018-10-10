@@ -249,8 +249,15 @@ We are also doing further research to see if using the ETAC across multiple new 
 19. Chris Berg et al, The Blockchain Economy: A beginner’s guide to institutional cryptoeconomics, Accessed October 2018 
 20. Simon Wardley, An introduction to Wardley (Value Chain) Mapping, https://blog.gardeviance.org/2015/02/an-introduction-to-wardley-value-chain.html, Accessed October 2018
 
+# Original Authors 
+
+Original authors are Srinath Perera (srinath@wso2.com), Paul Fremantle (paul@wso2.com), Frank Leymann (frank@wso2.com), Joanne Jenkins (joanne.jenkins@port.ac.uk). 
+
+We welcome and apprciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
+
+
 # Acknowledgments
 
-Many thanks to Joanne Jenkins from University of Portsmouth and Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback. 
+Many thanks to Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback. 
  
 
