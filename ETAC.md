@@ -10,7 +10,7 @@ Version 0.8<br/>
 </p>
 
 # Abstract
-_This paper introduces the “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technology. Inspired by the Business Model Canvas, this approach includes a set of questions that probe the technology arranged around a logical narrative. it represents different aspects of technology visually on a single page. The visual representation is concise, compact, and comprehensible in a glance. We believe it provides a logical framework to understand the technology, provides a framework to look at different aspects of the technology, and can be used as a brainstorming tool when trying to understand emerging technologies._
+_This paper introduces the “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technology. Inspired by the Business Model Canvas, this approach includes a set of questions that probe the technology arranged around a logical narrative. It represents different aspects of technology visually on a single page. The visual representation is concise, compact, and comprehensible in a glance. We believe it provides a logical framework to understand the technology, provides a framework to look at different aspects of the technology, and can be used as a brainstorming tool when trying to understand emerging technologies._
 
 # Introduction
 This paper introduces the _“Emerging Technology Analysis Canvas”_ (ETAC), a framework to assess an individual emerging technology. Many organisations have a desire to evaluate emerging technologies, either for their own research and development (R&D) teams’ benefit or for the benefit of their customers and partners. 
