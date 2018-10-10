@@ -77,12 +77,13 @@ We have observed that often technologies are triggered by exploring a solution t
 
 The ***opportunity*** captures the problem and the solution that acts as a trigger, drivers that are positively affecting the technology, and the current state of the market. 
 
-**_Trigger:_** A problem and a solution that captured broader imagination that later evolved to a broader technology promising to solve broader problems. 
-_Players_ - Organizations or individuals who are actively improving or using the technology to solve problems. For example, Amazon, Microsoft, and IBM are active players in serverless. We do not include the end users of the technology as players. Instead these are discussed under the value chain. 
+**_Trigger:_** A problem and a solution that captured broader imagination that later evolved to a broader technology promising to solve broader problems.
+
+***Players:*** Organizations or individuals who are actively improving or using the technology to solve problems. For example, Amazon, Microsoft, and IBM are active players in serverless. We do not include the end users of the technology as players. Instead these are discussed under the value chain. 
+ 
 
 **_Drivers:_** external forces that positively impact the technology such as legislation. For this analysis, one can use the PESTLE framework [10] which considers the political, economic, socio-cultural, technological, legal, and environmental impacts on a technology.  Among examples of drivers are cost saving, agility, productivity, automation, communication, trust, privacy, government policy, and law. Also, current industries and other emerging technologies can also act as drivers.  
 
-***Players:*** Organizations or individuals who are actively improving or using the technology to solve problems. For example, Amazon, Microsoft, and IBM are active players in serverless. We do not include the end users of the technology as players. Instead these are discussed under the value chain. 
 
 
 The **_impact_** section in ETAC includes potential political, economic, socio-cultural, technological, legal, and environmental changes enabled by technology. The ETAC considers two types of impacts: macro and micro. The macro impact captures the effects of technology on the world as a whole. The micro impact captures the impact seen by individual organizations as part of the supply chain. It is important to note that impact is analyzed with respect to potential future and not limited to the current state of the technology. 
