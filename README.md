@@ -4,7 +4,6 @@ This repository includes the meterials realated “Emerging Technology Analysis 
 
 ![Figure 2: Artificial Intelligence ETAC)](https://github.com/wso2/ETAC/blob/master/images/etac-ai-outlook-v2.png)
 
-
 It represents different aspects of technology visually on a single page inspired by the Business Model Canvas. This approach includes a set of questions that probe the technology arranged around a logical narrative. The visual representation is concise, compact, and comprehensible in a glance. 
 
 
