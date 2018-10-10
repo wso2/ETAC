@@ -6,8 +6,6 @@
 <p align="center">
 <i>
 Version 0.8<br/>
-Srinath Perera, Paul Fremantle, Frank Leymann, Joanne Jenkins<br/>
-srinath@wso2.com, paul@wso2.com, frank@wso2.com, joanne.jenkins@port.ac.uk</i> <br/>
 </i>
 </p>
 
@@ -252,6 +250,7 @@ We are also doing further research to see if using the ETAC across multiple new 
 20. Simon Wardley, An introduction to Wardley (Value Chain) Mapping, https://blog.gardeviance.org/2015/02/an-introduction-to-wardley-value-chain.html, Accessed October 2018
 
 # Acknowledgments
-Many thanks to Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback. 
+
+Many thanks to Joanne Jenkins from University of Portsmouth, Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback. 
  
 
