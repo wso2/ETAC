@@ -1,8 +1,5 @@
 # Emerging Technology Analysis Canvas
 
-This repository includes the meterials realated “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technology. 
-
-
 The rate of technology change is getting faster. To survive in this fast-changing world, both the organizations and practitioners must understand both the current technology landscape as well as its ebbs and flows. Every year, as a part of annual planning, most organizations make these decisions.
 
 Although it is a regular decision, which many organizations must make yearly, there is no widely accepted framework for evaluating emerging technologies.
@@ -20,4 +17,6 @@ It provides
 * as a brainstorming tool when trying to understand emerging technologies.
 
 You can find more details from [ETAC specification](https://github.com/wso2/ETAC/blob/master/ETAC.md). 
+
+We welcome and apprciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
 
