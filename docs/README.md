@@ -4,12 +4,12 @@ The rate of technology change is getting faster. To survive in this fast-changin
 
 Although it is a regular decision, which many organizations must make yearly, there is no widely accepted framework for evaluating emerging technologies.
 
-We present “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technology. 
+We present “Emerging Technology Analysis Canvas” (ETAC), a framework to assess an individual emerging technologies. 
 
 ![Figure 2: Artificial Intelligence ETAC)](https://raw.githubusercontent.com/wso2/ETAC/master/images/etac-ai-outlook-v2.png)
 
 
- Inspired by the Business Model Canvas, It represents different aspects of technology visually on a single page. This approach includes a set of questions that probe the technology arranged around a logical narrative. The visual representation is concise, compact, and comprehensible in a glance. 
+ Inspired by the Business Model Canvas, It represents different aspects of technology visually on a single page. This approach includes a set of questions that probe the technology arranged around a logical narrative. The visual representation is concise, compact, and comprehensible at a glance. 
 
 It provides 
 * a logical framework to assess the emerging technologies
