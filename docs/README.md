@@ -1,4 +1,4 @@
-# Emerging Technology Analysis Canvas
+<h1 align="center">Emerging Technology Analysis Canvas (ETAC)</center></h1>
 
 The rate of technology change is getting faster. To survive in this fast-changing world, both the organizations and practitioners must understand both the current technology landscape as well as its ebbs and flows. Every year, as a part of annual planning, most organizations make these decisions.
 
@@ -18,5 +18,5 @@ It provides
 
 You can find more details from [ETAC specification](https://github.com/wso2/ETAC/blob/master/ETAC.md). 
 
-We welcome and apprciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
+We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
 
