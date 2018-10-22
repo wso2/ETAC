@@ -1,4 +1,4 @@
-<h1 align="center">Emerging Technology Analysis Canvas (ETAC)</center></h1>
+<h1 align="center">Emerging Technology Analysis Canvas (ETAC)</h1>
 
 The rate of technology change is getting faster. To survive in this fast-changing world, both the organizations and practitioners must understand both the current technology landscape as well as its ebbs and flows. Every year, as a part of annual planning, most organizations make these decisions.
 
