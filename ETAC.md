@@ -254,11 +254,17 @@ We are also doing further research to see if using the ETAC across multiple new 
 
 Original authors are Srinath Perera (srinath@wso2.com), Paul Fremantle (paul@wso2.com), Frank Leymann (frank@wso2.com), Joanne Jenkins (joanne.jenkins@port.ac.uk). 
 
-We welcome and apprciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
-
-
 # Acknowledgments
 
 Many thanks to Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback. 
+
+
+# Help us improve ETAC
+
+We welcome and apprciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
+
+Serverless Outlook, an ETAC methodology based analysis of Serverless technology will be released soon. To receive updates to ETAC and ETAC based emerging technology analysis, please subscribe to our [Global Technology Outlook Updates Newsletter](https://wso2.com/subscribe/global-technology-outlook-update).  
+
+
  
 
