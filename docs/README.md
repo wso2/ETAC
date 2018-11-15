@@ -20,7 +20,7 @@ You can find more details from [ETAC specification](https://github.com/wso2/ETAC
 
 Following are some meterial about ETAC. 
 * Short introduction article: [How to judge New Techs like Blockchain, AI, and Serverless? a Methodology](https://hackernoon.com/etac-a-visual-canvas-for-assessing-technologies-e73b7f5c3990)
-* WSO2con talk: A Visual Canvas for Judging New Technologies [Slides](https://www.slideshare.net/hemapani/a-visual-canvas-for-judging-new-technologies),[Video](https://www.youtube.com/watch?v=4RtbHgBqUJc)
+* WSO2con talk: A Visual Canvas for Judging New Technologies [Slides](https://www.slideshare.net/hemapani/a-visual-canvas-for-judging-new-technologies), [Video](https://www.youtube.com/watch?v=4RtbHgBqUJc)
 
 We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
 
