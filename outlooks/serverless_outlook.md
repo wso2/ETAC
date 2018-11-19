@@ -194,7 +194,6 @@ First, although there are limitations such as tail latencies and cold starts, th
 Second, the significant gap is the need for tooling and IDE support, best practices, and architecture blueprints. This gap must be filled before a wider adoption can take place. With proper tooling, it is possible to train existing enterprise developers to program with serverless. So there are no significant concerns of finding developers. If proper tools are forthcoming, we believe serverless can cross the chasm in 2-5 years.
 
 # References
-
 1. Subbu Allamaraju, “Are We Ready for Serverless?”, https://www.slideshare.net/sallamar/are-we-ready-for-serverless?trk=v-feed
 2. Jonas et al., “Occupy the cloud: distributed computing for the 99%”, SoCC’17, https://blog.acolyer.org/2017/10/30/occupy-the-cloud-distributed-computing-for-the-99/ 
 3. Dmitri Zimine, “Serverless is cheaper, not simpler”, https://medium.freecodecamp.org/serverless-is-cheaper-not-simpler-a10c4fc30e49 
