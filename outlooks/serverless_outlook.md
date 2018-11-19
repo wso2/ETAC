@@ -22,10 +22,7 @@ WSO2 is creating a Global Technology Outlook (GTO), an effort to identify emergi
 
 This document presents our assessment of Serverless technology.  It uses the [Emerging Technology Analysis Canvas (ETAC)](https://github.com/wso2/ETAC/blob/master/ETAC.md) [18], which is a framework which was developed to critically analyze emerging technologies. ETAC includes questions that bring out different aspects of a emerging technology, a narrative that connects those questions to a coherent whole, and a visual representation of both. You can find more information about ETAC from [https://github.com/wso2/ETAC/](https://github.com/wso2/ETAC/) and also help us improve it. 
 
-
-
 ##Definition of Serverless
-
 To understand what is serverless, let us consider some definitions from various organisations.
 
 The Cloud Native Computing Foundation (CNCF) defines serverless as:
