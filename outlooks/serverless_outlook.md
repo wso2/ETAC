@@ -18,12 +18,12 @@ _In our assessment, we observe that serverless can significantly impact software
 
 # Introduction
 
-
 WSO2 is creating a Global Technology Outlook (GTO), an effort to identify emerging technology trends, to classify them based on their potential, and to assess a relevant subset of technologies in detail. WSO2 has been in the middleware market for 13 years, helps many Fortune 500 companies build their systems, and is currently the 7th largest open source company. The GTO is designed to share our thoughts about our industry, to get feedback from customers and community, and to enable a wider discussion on emerging technologies. As part of the GTO effort, we evaluate a number of emerging technologies.
 
 This document presents our assessment of Serverless technology.  It uses the [Emerging Technology Analysis Canvas (ETAC)](https://github.com/wso2/ETAC/blob/master/ETAC.md) [18], which is a framework which was developed to critically analyze emerging technologies. ETAC includes questions that bring out different aspects of a emerging technology, a narrative that connects those questions to a coherent whole, and a visual representation of both. You can find more information about ETAC from [https://github.com/wso2/ETAC/](https://github.com/wso2/ETAC/) and also help us improve it. 
 
 ##Definition of Serverless
+
 To understand what is serverless, let us consider some definitions from various organisations.
 
 The Cloud Native Computing Foundation (CNCF) defines serverless as:
@@ -56,9 +56,8 @@ Any serverless environment that does not offer access to such backend services i
 
 Based on the above definitions, we take the position that serverless includes FaaS, resources (compute and storage) as well as complete execution environment including platform services providing resource pooling, rapid elasticity, and measured service (as defined in the NIST cloud computing definition) in an opaque manner to the user. Furthermore, we state it as essential that these approaches must enable consumption-based business and operating models. 
 
-
-
 ##Potential Impact of Serverless
+
 With a serverless platform, a programmer can write code and directly run it in the cloud without worrying about hardware, operating systems, or servers. She can write the business logic as code, and then run the code without needing to be aware of the deployment complexities. The benefit is that non-functional characteristics such as high availability (HA), scalability, and security (such as authentication and access control) are provided out-of-the-box.  She can run her applications entirely in the cloud with minimal understanding of the underlying infrastructure. 
 
 This developer-friendly approach to developing cloud applications is a significant productivity enabler, and as such is also seen to enable agility. As a result this can be seen as one of the biggest advantages of serverless.
