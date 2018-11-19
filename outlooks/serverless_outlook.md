@@ -10,9 +10,10 @@ Version 0.8<br/>
 </p>
 
 # Abstract
-_This paper presents an assessment of Serverless technology. The assessment uses an approach called the Emerging Technology Analysis Canvas (ETAC) to evaluate the serverless movement and explore the potential success of serverless. The ETAC is a framework to critically analyze emerging technologies.
+
+_This paper presents an assessment of Serverless technology. The assessment uses an approach called the Emerging Technology Analysis Canvas (ETAC) to evaluate the serverless movement and explore the potential success of serverless. The ETAC is a framework to critically analyze emerging technologies._
  
- In our assessment, we observe that serverless can significantly impact software development workflows and cloud runtimes.  We observe that despite challenges, there are significant use cases for serverless. Also, we identify gaps in developer tooling, best practices, and available architectural patterns. Assuming those gaps can be addressed, we foresee significantly increased adoption of serverless in the next 2-5 years._ 
+_In our assessment, we observe that serverless can significantly impact software development workflows and cloud runtimes.  We observe that despite challenges, there are significant use cases for serverless. Also, we identify gaps in developer tooling, best practices, and available architectural patterns. Assuming those gaps can be addressed, we foresee significantly increased adoption of serverless in the next 2-5 years._ 
 
 
 # Introduction
