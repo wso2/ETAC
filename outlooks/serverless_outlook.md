@@ -201,32 +201,32 @@ Second, the significant gap is the need for tooling and IDE support, best practi
 4. Adzic et al., “Serverless computing: economic and architectural impact”, https://blog.acolyer.org/2017/10/19/serverless-computing-economic-and-architectural-impact/
 5. Doug Vanderweide, “Serverless Platform will make us all developers”, https://www.nextplatform.com/2017/09/25/serverless-revolution-will-make-us-developers/ 
 6. Peter Sbarski, “Serverless: the Future of Software Architecture”, https://www.youtube.com/watch?v=LAWjdZYrUgI
-“Amazon introduces Lambda, Containers at AWS re:Invent”, https://sdtimes.com/amazon/amazon-introduces-lambda-containers/ 
-“Apache OpenWhisk”, https://openwhisk.apache.org/
-7. Matt Murphy, Steve SloaneMay, “The rise of APIs”, https://techcrunch.com/2016/05/21/the-rise-of-apis/ 
-8. Niklas Heidloff, “Developing Polyglot Serverless Applications”, http://heidloff.net/article/polyglot-serverless-applications 
-9. Mike Roberts, “Serverless Architectures”, https://martinfowler.com/articles/serverless.html
-10. “Google: Taming The Long Latency Tail - When More Machines Equals Worse Results”, http://highscalability.com/blog/2012/3/12/google-taming-the-long-latency-tail-when-more-machines-equal.html 
-11. Jeffrey Dean and Luiz André Barroso, “The Tail at Scale”, https://ai.google/research/pubs/pub40801 
-12. “A curated list of awesome services, solutions, and resources for serverless”, https://github.com/anaibol/awesome-serverless 
-13. “Serverless Computing: Architectural Considerations & Principles”, https://www2.deloitte.com/content/dam/Deloitte/tr/Documents/technology-media-telecommunications/Serverless%20Computing.pdf 
-14. “Google Kantive”, https://github.com/knative/ 
-15. Baldini and others, “Serverless Computing: Current Trends and Open Problems”, https://arxiv.org/pdf/1706.03178.pdf 
-16. Emerging Technology Analysis Canvas (ETAC), https://github.com/wso2/ETAC/blob/master/ETAC.md
-17. “CNCF WG Serverless Landscape”, https://docs.google.com/spreadsheets/d/10rSQ8rMhYDgf_ib3n6kfzwEuoE88qr0amUPRxKbwVCk/edit#gid=0
-18. “CNCF Serverless Whitepaper v1.0”, https://github.com/cncf/wg-serverless/tree/master/whitepaper 
-19. “An I&O Leader's Guide to Serverless Computing”, https://www.gartner.com/document/3872956
-20. “The NIST Definition of Cloud Computing”, https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf
-21. “Lessons Learned — A Year Of Going “Fully Serverless” In Production”, https://hackernoon.com/lessons-learned-a-year-of-going-fully-serverless-in-production-3d7e0d72213f
-22. “Companies using serverless in production”, https://dashbird.io/blog/companies-using-serverless-in-production/
-23. “An introduction to Azure Functions”, https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview
-24. David A. Patterson, “Latency Lags Bandwith”, https://cacm.acm.org/magazines/2004/10/6401-latency-lags-bandwith/fulltext
-25. Liang Wang, “Peeking Behind the Curtains of Serverless Platforms”, https://www.usenix.org/conference/atc18/presentation/wang-liang
-26. Everett M. Rogers, “Diffusion of Innovations”, https://www.amazon.com/Diffusion-Innovations-5th-Everett-Rogers/dp/0743222091 
-27. “EU Technology Readiness Level”, https://en.wikipedia.org/wiki/Technology_readiness_level 
-28. The strength of a monopoly can be guessed at by calling customer support, http://blogs.harvard.edu/bugeja/2018/09/16/the-strength-of-a-monopoly-can-be-guessed-at-by-the-quality-of-its-customer-support/ 
-29. “Tragedy of the Commons Clause”, https://redmonk.com/sogrady/2018/09/10/tragedy-of-the-commons-clause/
-30. Microsoft Azure, Durable Functions overview, https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-overview 
+7. “Amazon introduces Lambda, Containers at AWS re:Invent”, https://sdtimes.com/amazon/amazon-introduces-lambda-containers/ 
+8. “Apache OpenWhisk”, https://openwhisk.apache.org/
+9. Matt Murphy, Steve SloaneMay, “The rise of APIs”, https://techcrunch.com/2016/05/21/the-rise-of-apis/ 
+10. Niklas Heidloff, “Developing Polyglot Serverless Applications”, http://heidloff.net/article/polyglot-serverless-applications 
+11. Mike Roberts, “Serverless Architectures”, https://martinfowler.com/articles/serverless.html
+12. “Google: Taming The Long Latency Tail - When More Machines Equals Worse Results”, http://highscalability.com/blog/2012/3/12/google-taming-the-long-latency-tail-when-more-machines-equal.html 
+13. Jeffrey Dean and Luiz André Barroso, “The Tail at Scale”, https://ai.google/research/pubs/pub40801 
+14. “A curated list of awesome services, solutions, and resources for serverless”, https://github.com/anaibol/awesome-serverless 
+15. “Serverless Computing: Architectural Considerations & Principles”, https://www2.deloitte.com/content/dam/Deloitte/tr/Documents/technology-media-telecommunications/Serverless%20Computing.pdf 
+16. “Google Kantive”, https://github.com/knative/ 
+17. Baldini and others, “Serverless Computing: Current Trends and Open Problems”, https://arxiv.org/pdf/1706.03178.pdf 
+18. "Emerging Technology Analysis Canvas (ETAC)", https://github.com/wso2/ETAC/blob/master/ETAC.md
+19. “CNCF WG Serverless Landscape”, https://docs.google.com/spreadsheets/d/10rSQ8rMhYDgf_ib3n6kfzwEuoE88qr0amUPRxKbwVCk/edit#gid=0
+20. “CNCF Serverless Whitepaper v1.0”, https://github.com/cncf/wg-serverless/tree/master/whitepaper 
+21. “An I&O Leader's Guide to Serverless Computing”, https://www.gartner.com/document/3872956
+22. “The NIST Definition of Cloud Computing”, https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf
+23. “Lessons Learned — A Year Of Going 'Fully Serverless' In Production”, https://hackernoon.com/lessons-learned-a-year-of-going-fully-serverless-in-production-3d7e0d72213f
+24. “Companies using serverless in production”, https://dashbird.io/blog/companies-using-serverless-in-production/
+25. “An introduction to Azure Functions”, https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview
+26. David A. Patterson, “Latency Lags Bandwith”, https://cacm.acm.org/magazines/2004/10/6401-latency-lags-bandwith/fulltext
+27. Liang Wang, “Peeking Behind the Curtains of Serverless Platforms”, https://www.usenix.org/conference/atc18/presentation/wang-liang
+28. Everett M. Rogers, “Diffusion of Innovations”, https://www.amazon.com/Diffusion-Innovations-5th-Everett-Rogers/dp/0743222091 
+29. “EU Technology Readiness Level”, https://en.wikipedia.org/wiki/Technology_readiness_level 
+30. The strength of a monopoly can be guessed at by calling customer support, http://blogs.harvard.edu/bugeja/2018/09/16/the-strength-of-a-monopoly-can-be-guessed-at-by-the-quality-of-its-customer-support/ 
+31. “Tragedy of the Commons Clause”, https://redmonk.com/sogrady/2018/09/10/tragedy-of-the-commons-clause/
+32. Microsoft Azure, Durable Functions overview, https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-overview 
 
 # Footnotes
 <a name="fpaas">1. </a>Function Platform-as-a-Service (fPaaS) - this is Gartner’s term for FaaS
