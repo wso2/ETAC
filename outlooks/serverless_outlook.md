@@ -22,7 +22,7 @@ WSO2 is creating a Global Technology Outlook (GTO), an effort to identify emergi
 
 This document presents our assessment of Serverless technology.  It uses the [Emerging Technology Analysis Canvas (ETAC)](https://github.com/wso2/ETAC/blob/master/ETAC.md) [18], which is a framework which was developed to critically analyze emerging technologies. ETAC includes questions that bring out different aspects of a emerging technology, a narrative that connects those questions to a coherent whole, and a visual representation of both. You can find more information about ETAC from [https://github.com/wso2/ETAC/](https://github.com/wso2/ETAC/) and also help us improve it. 
 
-##Definition of Serverless
+## Definition of Serverless
 
 To understand what is serverless, let us consider some definitions from various organisations.
 
@@ -56,7 +56,7 @@ Any serverless environment that does not offer access to such backend services i
 
 Based on the above definitions, we take the position that serverless includes FaaS, resources (compute and storage) as well as complete execution environment including platform services providing resource pooling, rapid elasticity, and measured service (as defined in the NIST cloud computing definition) in an opaque manner to the user. Furthermore, we state it as essential that these approaches must enable consumption-based business and operating models. 
 
-##Potential Impact of Serverless
+## Potential Impact of Serverless
 
 With a serverless platform, a programmer can write code and directly run it in the cloud without worrying about hardware, operating systems, or servers. She can write the business logic as code, and then run the code without needing to be aware of the deployment complexities. The benefit is that non-functional characteristics such as high availability (HA), scalability, and security (such as authentication and access control) are provided out-of-the-box.  She can run her applications entirely in the cloud with minimal understanding of the underlying infrastructure. 
 
@@ -75,14 +75,14 @@ Figure 1 presents our ETAC for serverless. The rest of the document follows the 
 ![Figure 1 - the Emerging Technology Analysis Canvas (ETAC)](https://github.com/wso2/ETAC/blob/master/images/etac-serverless-outlook-v4.png)
 
 
-#Opportunity 
+# Opportunity 
 The trigger for serverless was Amazon Lambda [7], launched in 2014. Lambda is a FaaS environment. Lambda addresses a need to improve the developer experience and reduce the management overhead of creating applications running in the cloud. It also improves the granularity of billing. It was soon followed by competitive offerings from Google and Microsoft. In the intervening years, many more serverless services and frameworks have been launched including iron.io, Stackery, and Joyent's Lunchbadger.
 
 Amazon, Google, and Microsoft clouds use FaaS to extend their cloud platforms. Before FaaS, to write code that connects different parts of an application, a developer has to provision computers, run servers, write non-application-specific code, deploy, and manage these components. The addition of FaaS capabilities has created serverless platforms where developers can write applications without worrying about running, scaling or managing infrastructure.
 
 Serverless, propelled by the success of cloud computing, can move more and more applications into the cloud. In addition, there are several _privately-deployable serverless (PDS)_ platforms such as OpenWhisk [8] and Knative[16] that organizations can run on-premise. Further serverless offerings are listed in the serverless resources page [14] and CNCF list of serverless offerings[19]. 
 
-#Impact
+# Impact
 At the macro level, serverless can have a twofold impact on the software and cloud industry.
 
 Firstly, the Deloitte 2018 serverless outlook [15] argues that serverless platforms can complement the API economy. Together with APIs, serverless is a key driver of disaggregation of functionality across organizations. With serverless platforms, one can easily expose functionality as APIs, which can also be easily reused using serverless. Hence serverless can accelerate the API economy and function disaggregation [9]. This creates a virtuous circle: serverless creates more APIs, more APIs make serverless more effective.
@@ -119,7 +119,7 @@ Serverless reduces development costs, as discussed by Zimine [3] and Adzic[4], b
  
 Cost insights: as noted by Roberts [11], serverless is metered with very fine granularity, which provides greater insights into managing costs. 
 
-#Technical Feasibility
+# Technical Feasibility
 The core technologies required to build serverless platforms are already in place and a number of use cases are already in production (e.g. [23, 24]).
 
 Serverless has several technical advantages:
@@ -143,8 +143,8 @@ Serverless faces two kinds of latency challenges (see [3, 4, 10]): cold-starts a
 
 In summary, serverless has many technical advantages. Although there are challenges, there are significant use cases that are not hindered by those challenges. Hence we believe serverless is feasible. 
 
-#Future
-##Risks
+# Future
+## Risks
 As Adzic [4] and Sbarski [6] points out, lack of standards and concerns about vendor lock-in pose a significant risk to serverless adoption. The real concern is not serverless functions, but the platform services required by those functions. It is hard to abstract away those services effectively. 
 
 The vendor lock-in also can make it hard to switch from one serverless platform to another. This platform specific approach reduces the size of the developer pool available for hire, as few developers will know all the available systems.
@@ -153,7 +153,7 @@ The impact of vendor lock-in and how it is different from current conditions is 
 
 The concerns on vendor lock-in are definitely higher with serverless. The reason for this is that serverless functions rely significantly more upon platform services than traditional cloud applications. For example, a cloud application might rely on Amazon SNS, but equally may deploy its own messaging backbone. In serverless, all applications rely on the platform services. The platform services offered by each cloud are not the same - either in terms of which services, but also the detailed capabilities of each service. Hence the challenge of moving from one cloud to another is increased.
 
-##Timeline 
+## Timeline 
 Up to this point, our aim has been to present observations that are supported by either citations or arguments. This last section weighs those observations and provides our opinions on evolution and future of serverless, based on those observations as well as our experiences in the field. 
 
 Considering Roger’s five factors on technology adoption [28], serverless has a strong score on four of those: 
@@ -186,14 +186,14 @@ Opinion 4: Current serverless platform market leaders are resisting standardizat
 
 Finally, adoption of serverless would need significant parts of existing systems to be replaced. Hence, we believe possible adoption will initially be limited to new projects (“greenfield”), and non-serverless deployments will continue to be around for a long time in the same way COBOL and mainframes are still around. The usual cycle is that eventually existing systems come up for replacement, and that can take years.
 
-#Conclusions 
+# Conclusions 
 We see serverless having a significant impact and believe it is feasible.  In conclusion, we make two observations.
  
 First, although there are limitations such as tail latencies and cold starts, they are not deal breakers for adoption. As discussed in the introduction, There are significant use cases that can work with existing serverless technologies. 
 
 Second, the significant gap is the need for tooling and IDE support, best practices, and architecture blueprints. This gap must be filled before a wider adoption can take place. With proper tooling, it is possible to train existing enterprise developers to program with serverless. So there are no significant concerns of finding developers. If proper tools are forthcoming, we believe serverless can cross the chasm in 2-5 years.
 
-#References
+# References
 
 1. Subbu Allamaraju, “Are We Ready for Serverless?” https://www.slideshare.net/sallamar/are-we-ready-for-serverless?trk=v-feed
 2. Jonas et al., “Occupy the cloud: distributed computing for the 99%”, SoCC’17, https://blog.acolyer.org/2017/10/30/occupy-the-cloud-distributed-computing-for-the-99/ 
@@ -228,8 +228,17 @@ Second, the significant gap is the need for tooling and IDE support, best practi
 29. “Tragedy of the Commons Clause”, https://redmonk.com/sogrady/2018/09/10/tragedy-of-the-commons-clause/
 30. Microsoft Azure, Durable Functions overview, https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-overview 
 
+# Footnotes
+<a name="fpaas">1. </a>Function Platform-as-a-Service (fPaaS) - this is Gartner’s term for FaaS
 
-#Original Authors
+<a name="tail_latencies">2. </a>Tail latencies are the high percentiles - e.g. 99th percentile. A system with high tail latencies can serve the majority of requests with normal latency, but a small proportion of requests have much higher latency.
+
+<a name="myfootnote1">3. </a>https://en.wikipedia.org/wiki/Central_limit_theorem 
+
+
+
+
+# Original Authors
 Original authors are Srinath Perera (srinath@wso2.com), Paul Fremantle (paul@wso2.com), Frank Leymann (frank@wso2.com), Nuwan Bandara (nuwan@wso2.com). 
 Acknowledgments
 Many thanks to Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have provided significant and useful feedback.
