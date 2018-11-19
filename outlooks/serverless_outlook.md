@@ -236,8 +236,6 @@ Second, the significant gap is the need for tooling and IDE support, best practi
 <a name="myfootnote1">3. </a>https://en.wikipedia.org/wiki/Central_limit_theorem 
 
 
-
-
 # Original Authors
 Original authors are Srinath Perera (srinath@wso2.com), Paul Fremantle (paul@wso2.com), Frank Leymann (frank@wso2.com), Nuwan Bandara (nuwan@wso2.com). 
 Acknowledgments
