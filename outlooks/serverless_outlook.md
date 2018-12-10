@@ -190,7 +190,7 @@ Finally, adoption of serverless would need significant parts of existing systems
 # Conclusions 
 We see serverless having a significant impact and believe it is feasible.  In conclusion, we make two observations. 
 * First, although there are limitations such as tail latencies and cold starts, they are not deal breakers for adoption. As discussed in the introduction, there are significant use cases that can work with existing serverless technologies. 
-* Second, the significant gap is the need for tooling and IDE support, best practices, and architecture blueprints. This gap must be filled before a wider adoption can take place. With proper tooling, it is possible to train existing enterprise developers to program with serverless. So there are no significant concerns of finding developers. If proper tools are forthcoming, we believe serverless can cross the chasm in 2-5 years.
+* Second, the significant gap is the need for tooling and IDE support, best practices, and architecture blueprints. This gap must be filled before a wider adoption can take place. With proper tooling, it is possible to train existing enterprise developers to program with serverless. So there are no significant concerns of finding developers. If proper tools are forthcoming, we believe serverless can cross the chasm in 3-5 years.
 
 
 # References
