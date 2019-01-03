@@ -359,6 +359,21 @@ Following table summarizes use cases, challenges, and risks they face, and our c
 |----|----|---|---|
 |Ledgers |**Challenges**: Scalability, Latency, Privacy, Storage, consensus concerns| Feasible|Both public & private<br/>  EU-TRL 4-6 <br/>Feasible for small deployments (e.g. throughput about 2-3 TPS).| 
 |Digital Currency & Lightweight financial systems|**Challenges**: Scalability, Latency, Privacy, Storage, consensus concerns<br/> **Risks**: Irrevocability, Unpredictability, Lack of a regulator,  Unknown side effect|N/A| Mainly public<br/>EU-TRL 5-8<br/> Feasible for small deployments and current load. <br/> Breakthroughs needed for future performance and handling risks.<br/>|  
+|Smart contracts|N/A|Risks: Irrevocability, Unpredictability|Mainly private<br/> EU-TRL 2-4<br/>Breakthroughs needed on handling risks| 
+|New internet|**Challenges**: Scalability, Latency, Privacy, Storage, consensus concerns <br/> Risks: Irrevocability, Unpredictability,Lack of a regulator,  Unknown side effect|N/A | Mainly public. <br/> EU-TRL 1-2 <br/> Breakthroughs needed for performance and handling risks.| 
+|Autonomous ecosystems| **Challenges**: Scalability, Latency, Privacy, Storage, consensus concerns <br/> Risks: Irrevocability, Unpredictability,Lack of a regulator,  Unknown side effect|N/A| Mainly public. <br/> EU-TRL 1-2 <br/>Breakthroughs needed for performance and handling risks.| 
+|Disintermediation| N/A |Feasible |Mainly private. <br/> EU-TRL 5-7 <br/>Feasible for small deployments (e.g. need throughput about 2-3 transactions per second)| 
+|Provenance|Feasible|Feasible|Both public and private <br/>EU-TRL 5-7 <br/>Feasible for small deployments (e.g. throughput about 2-3 TPS)|
+|Initial Coin Offerings (ICO)|Feasible|N/A|Mainly public. <br/>EU-TRL 5-7<br/>Feasible for small deployments (e.g. throughput about 2-3 TPS). <br/>However, as ICO also comes under regulatory control, the advantage over other fundraising mechanisms is being reduced|
+|Voting|**Challenges**: Privacy|N/A|Mainly public <br/>EU-TRL 3-5 <br/>Privacy is a challenge. Otherwise, feasible for small  deployments|
+|Healthcare| **Challenges**: Scalability, Latency    Privacy, Storage, consensus concerns |**Challenges**: Scalability, Latency
+Privacy, Storage, consensus concerns| Both public and private.<br/> EU-TRL 2-3 <br/>Breakthroughs needed for performance.| 
+
+**Table 4: Use case Feasibility**
+
+
+
+
 
 # Conclusions 
 
