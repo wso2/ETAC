@@ -328,8 +328,8 @@ The following table explores the effect of the aforementioned risks on blockchai
 |Digital currency & lightweight financial systems|Irrevocability, Unpredictability, Economical, social, and political side effects, Regulatory response| N/A|
 |Smart contracts without a central authority| N/A |Irrevocability, Unpredictability| 
 |New internet|Irrevocability, Unpredictability, Lack of a regulator Economical, social, and political side effects|N/A|
-|Autonomous ecosystems/ marketplace|Irrevocability, Unpredictability 
-Lack of a regulator, Economical, social, and political side effects|N/A|
+|Autonomous ecosystems or marketplace|Irrevocability, Unpredictability 
+Lack of a regulator, Economical social, and political side effects|N/A|
 |Disintermediation| N/A ||
 |Provenance|||
 |Initial Coin Offerings (ICO)||N/A|
@@ -343,54 +343,31 @@ Voting| Regulatory response| N/A |
 
 
 
-As Adzic [[4](https://blog.acolyer.org/2017/10/19/serverless-computing-economic-and-architectural-impact/)] and Sbarski [[6](https://www.youtube.com/watch?v=LAWjdZYrUgI)] points out, lack of standards and concerns about vendor lock-in pose a significant risk to serverless adoption. The real concern is not serverless functions, but the platform services required by those functions. It is hard to abstract away those services effectively. 
-
-The vendor lock-in also can make it hard to switch from one serverless platform to another. This platform specific approach reduces the size of the developer pool available for hire, as few developers will know all the available systems.
-
-The impact of vendor lock-in and how it is different from current conditions is not clear. For example, it is interesting to explore how vendor lock-in due to serverless is different from current on-premise and cloud development. For example, if users stick to simply using virtual machine images, there is some clear portability between cloud providers. However, most developers end up using cloud services such as databases, messaging, API gateways and storage solutions that are platform-specific. As a result, they may already be locked in. Another approach that aims to improve portability is Kubernetes, with many cloud providers offering managed Kubernetes deployments (such as GKE, EKS, and AKS). However, there are differences between these  (e.g. some require containers that do not run as root, which can cause a complete rewrite), and hence the real-world portability is uncertain. As a result, many teams have decided to balance the concerns of vendor lock-in with the agility provided by serverless.
-
-The concerns on vendor lock-in are definitely higher with serverless. The reason for this is that serverless functions rely significantly more on platform services than traditional cloud applications. For example, a cloud application might rely on Amazon SNS, but equally may deploy its own messaging backbone. In serverless, all applications rely on the platform services. The platform services offered by each cloud are not the same - either in terms of which services, but also the detailed capabilities of each service. Hence the challenge of moving from one cloud to another is increased.
 
 ## Timeline 
-Up to this point, our aim has been to present observations that are supported by either citations or arguments. This last section weighs those observations and provides our opinions on evolution and future of serverless, based on those observations as well as our experiences in the field. 
 
-Following discussion uses the term _mega-clouds_ to identify public clouds owned by companies such as Google, Amazon, and Microsoft.  
+Up to this point, the blockchain outlook presented facts that are supported by either citations or arguments, not opinions. This last section weighs those facts and provides our expert observations and opinions on evolution and future of blockchain. 
 
-Considering Roger’s five factors on technology adoption [[28](https://www.amazon.com/Diffusion-Innovations-5th-Everett-Rogers/dp/0743222091)], serverless has a strong score on four of those: 
-* Relative advantage (delta to existing technology),
-* Complexity or Simplicity (ease of understanding and use)
-* Trialability (ease of demonstration)
-* Compatibility (ease of assimilation)
+Concerning impact, Blockchain easily falls into the disruptive (transformative) category. If successful, it will transform financial systems, the way people and organizations establish trust (e.g., when doing business, when working towards a common goal), and underline information platforms like internet, marketplaces, voting systems.  
 
-The only missing factor is observability (the ability for end-users to see serverless in use). However, even though serverless is not a visible technology to the end user, there is significant awareness which is compensating for this aspect.
+Let us consider Roger’s five factors [28] that evaluate technology adoption. Blockchain has two factors that help technology in their adoption: technology delta (relative advantage to existing technology) and observability (ability for other users to see blockchain in use). However, blockchain in its current state fails in simplicity (easy to understand and use), and trialability (easy to show it working). Ease of technology to integrate with day to lives of users, Compatibility is weak for blockchain as it assumes understanding about advanced computing techniques (e.g. cryptographic keys). Future systems might hide some of these complexities. Overall, Roger’s five factors suggest weak adoption. However, wide awareness and hype associated with blockchain may counterbalance above. 
 
-Serverless falls under level 8 out of 9 levels in _EU technology readiness level_ [[29](https://en.wikipedia.org/wiki/Technology_readiness_level)]. 
-
-Given these aspects and the analysis above, we see no unassailable blocks to serverless reaching significant adoption in the next 3-5 years. In summary, we make the following assessments.  
-
-**Opinion 1:** Holistically, we do not see technical challenges blocking serverless platform adoption. Although the disadvantages and risks we discussed might reduce the adoption, we believe there are significant use cases that are not affected by those limitations. 
-
-**Opinion 2:** As discussed in the section “Technical Feasibility”, the significant gap we see is the need for tooling and IDE support, best practices, and architecture blueprints. This gap must be filled before a wider adoption can take place. On the other hand, with proper tooling, it is possible to train existing enterprise developers to program for a serverless platform as the required skills are fundamentally similar to a subset of current enterprise development skills. Therefore, we do not anticipate challenges in finding developers to build serverless applications. 
-
-**Opinion 3:** Privately-deployable serverless (PDS) platforms like Apache OpenWhisk are a significant development. Proponents of PDS platforms argue that by running a PDS platform without depending on mega-clouds, an organization can get most of the advantages of serverless, without lock-in. This is a strategic answer by middleware companies to combat the serverless threat faced by middleware. However, this is only effective if organizations can run a large enough serverless platform that can provide the economies of scale. It is hard for PDS platforms to compete by running on top of mega-clouds’ IaaS offerings because mega-clouds can do strategic pricing better and because mega-clouds serverless offering can better integrate with their own IaaS. However, even if the PDS platform can provide savings, they might still lack the underlying platform services such as identity, databases, different storage types, and message-oriented middleware (MOM), which significantly reduce their appeal. At the same time, when data, systems, applications, and APIs are predominantly deployed on-premise, PDS platforms become appealing. The choice to use PDS in such scenarios will be a trade-off between latency requirements and incurred operational costs.  
-
-One other interesting possibility to explore is that multiple small organizations might be able to pool their resources into one serverless platform securely. 
-
-As Microsoft has done with Azure Functions [[25](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)], mega-clouds can counter the rise of PDS’ by open-sourcing their serverless platform enabling it to run on-premise, which reduces the vendor lock-in risks and provides flexibility. Effectively this strategy is to offer customers a choice of PDS or serverless cloud with the same semantic model.
-
-Another intriguing player amongst PDS’ is Knative[[16](https://github.com/knative/)], which provides a layer on top of Kubernetes to support serverless. Since all mega-clouds support Kubernetes, Knative aspires to be a platform to build apps that are portable across all mega-clouds. However, it is not clear how that support can extend to platform services such as storage, queues, and identity. If those aspirations materialize, we believe Knative will be attractive as a way to avoid vendor lock-in, especially if it can be used to hide differences between mega-clouds support for Kubernetes.
-
-In summary, we only see limited use cases for PDS platforms. Even those use cases are likely to choose solutions like Knative so that they can switch to cloud providers if needed. 
+Following table summarizes use cases, challenges, and risks they face, and our conclusions. In the conclusion column, EU-TRL shows EU technology readiness level [29]. 
 
 
-**Opinion 4:** Current serverless platform market leaders are resisting standardization. It is not clear what the mega-clouds should worry about more: other mega-clouds or antipathy to vendor lock-in by users. For example, if mega-clouds co-operate to make applications portable, it could expand the market to the extent so that everyone is better off. It will take time for those scenarios to play out. Another possibility is if standardization is enforced by governments or significant buyers or consortia. We believe, standardization, in any form, is net positive and will significantly hasten the adoption of serverless.
+|Use case|Public|Private|Conclusion|
+|----|----|---|
+|Ledgers |**Challenges**: Scalability, Latency, Privacy, Storage, consensus concerns| Feasible|Both public & private,  EU-TRL 4-6, 
+Feasible for small deployments (e.g. throughput about 2-3 TPS).| 
+|Digital Currency & Lightweight financial systems|**Challenges**: Scalability, Latency, Privacy, Storage, consensus concerns, **Risks**: Irrevocability, Unpredictability, Lack of a regulator,  Unknown side effect|N/A| Mainly public. 
 
-Finally, adoption of serverless would need significant parts of existing systems to be replaced. Hence, we believe possible adoption will initially be limited to new projects (“greenfield”), and non-serverless deployments will continue to be around for a long time in the same way COBOL and mainframes are still around. The usual cycle is that eventually existing systems come up for replacement, and that can take years.
+EU-TRL 5-8
+
+Feasible for small deployments and current load. 
+
+Breakthroughs needed for future performance and handling risks.  
 
 # Conclusions 
-We see serverless having a significant impact and believe it is feasible.  In conclusion, we make two observations. 
-* First, although there are limitations such as tail latencies and cold starts, they are not deal breakers for adoption. As discussed in the introduction, there are significant use cases that can work with existing serverless technologies. 
-* Second, the significant gap is the need for tooling and IDE support, best practices, and architecture blueprints. This gap must be filled before a wider adoption can take place. With proper tooling, it is possible to train existing enterprise developers to program with serverless. So there are no significant concerns of finding developers. If proper tools are forthcoming, we believe serverless can cross the chasm in 3-5 years.
 
 
 # References
