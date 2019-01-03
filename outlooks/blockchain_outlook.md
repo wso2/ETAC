@@ -193,6 +193,98 @@ The following table explores each of the use cases in terms of their applicabili
 |Voting |Yes| Rare|
 |Healthcare| Yes| Yes|
 
+Table 1: Applicability of use cases in public and private settings
+
+The next section will look at the above use cases in terms of the ETAC. 
+
+Let us start with the impact. 
+
+## Macro Impact 
+We use the term “network effects”  to describe a phenomenon where the value of a system to its users increases as size of the system increases [45]. Most of the above use cases benefit from network effects as more and more users join those systems, they become more and more effective. However, as discussed by Griffin [45], the success of those use cases depends on the ability to create a critical mass. 
+
+Blockchain affects security and integration middleware segments. The blockchain is tightly bound with security middleware and the success of blockchain likely makes systems much more secure and extends their applications. At the same time, blockchain may disrupt or change some prevailing security solutions. The fraud subsegment of security will be significantly affected. Blockchain will reduce or remove some of the common fraud scenarios. It will also make available a wide array of data about transactions, which will enable us to detect much more complicated fraud. 
+
+Blockchain based systems may replace systems built by current internet companies. Some examples are social networks like Facebook, and Twitter,  and marketplaces like Amazon, and eBay. They may also disrupt large public clouds replacing them with decentralized crowdsourced computation platforms. Furthermore, blockchains can significantly change many financial systems, trade, and government operations. 
+
+## Micro Impact
+Blockchain can affect an individual company in several ways. By integrating with blockchains, organizations that have requirements for ad-hoc transactions with untrusted parties can use blockchain to achieve a competitive advantage due to agility enabled by reduced friction for transactions and ad-hoc trust. Furthermore, organizations can reduce cost due to reduced fraud, better security, and reduced friction. Also, blockchains enable new business models hence enabling new products and services. 
+
+Furthermore, blockchain can increase the efficiency of the supply chain due to reduced fraud, better security, and faster transaction term negotiations. It is likely that organizations will have to support demand from the rest of the supply chain for integration with blockchain. 
+
+In summary, common themes of blockchain impact include better security, decentralization, reduced cost, and agility. The impact is both substantial and transformative. This yields our first assertion of the document.  
+
+## Technical Feasibility
+
+#Technical Merit 
+The double spending problem, which is the need to stop the owner of digital cash from reusing the money he has used to pay a transaction, is a long-standing challenge while building digital cash. Blockchain provided a new decentralized solution to the problem,  created incentives to keep it going, and made it work in the real world. These are significant contributions to the state of art. 
+
+However, blockchain has many limitations. 
+
+Let us explore some of the technical challenges. 
+1. Limited scalability and latency - As pointed out by Kasireddy [24] and Yli-Huumo [29], blockchain systems have limited scalability and high latency. At the time of writing, a bitcoin transaction takes about 8 minutes and can support only about 2-3 transactions per second (Chepurnoy [26]). Furthermore, Croman [54] argues that independently of consensus algorithms, this limit is about 50 seconds and 27 transactions per second. Most use cases that we discussed under impact are infeasible under these limits. For example, to handle global scale systems such as a decentralized internet, blockchain needs to handle tens of thousands of transactions per second. However, it is worth noting that it is decided by the choice of consensus algorithm. Private blockchain implementations have proposed faster algorithms although they provide lesser guarantees. 
+2. Limited privacy - as pointed out by Kasireddy [24] and Yli-Huumo [29], although blockchain provides pseudo anonymizations, by analyzing the transaction graph and other related information, it is often possible to link users to transactions. Once one transaction is linked to a user, all his transactions become known. Since blockchain transaction data are public or shared across a larger group (in the case of permissioned-blockchain), this means blockchain is riskier than using a credit card in terms of privacy. Furthermore, since blockchain transactions are public information, user identification via analysis is not prohibited under privacy laws. 
+3. Storage constraints - As pointed out by Kasireddy [24] and Yli-Huumo [29], with current algorithms, each node must store the full history of the blockchain. This leads to high transaction latencies. The need to store full history also forestalls lightweight nodes, such as IoT devices, from joining a blockchain network. As time passes, the history becomes larger aggravating the problem. 
+4. Unsustainable consensus - As pointed out by Kasireddy [24], Yli-Huumo [29], Bitcoin website [27], and Ethereum website [28], the current consensus method is cumbersome and consumes a significant amount of energy. For example, as pointed out by [30], Bitcoin energy consumption, if considered as a country, would be 39th in the world and higher than Australia. 
+
+Among other challenges are inadequate tooling pointed out by Kasireddy [24], and Sybil attack (where an attacker attempts to fill the network with clients that they control).  Furthermore, the Ethereum problems page [28] and the Bitcoin list of problems page [27] list other issues. 
+
+These challenges affect the blockchain ecosystem. For example, in 2018, when the startup Coinprism [55] stopped operations, the founder quoted some of the aforementioned challenges. 
+
+It is worth noting that most of the above challenges mainly affect public permissionless blockchains due to their deployment size, although even private large deployments may be affected. The following table depicts how blockchain use cases are affected by four main technical challenges.
+
+
+
+
+|   |Public|Private|
+|Ledgers of identity, ownership, status, and authority|* Limited scalability and latency * Limited privacy * Storage constraints * Unsustainable consensus |OK for most use cases| 
+
+
+|Digital currency & lightweight financial system |Limited scalability and latency |Limited privacy
+Storage constraints
+Unsustainable consensus 
+
+
+
+Smart contracts without a central authority
+N/A
+OK for most use cases 
+New internet
+Limited scalability and latency
+Limited privacy
+Storage constraints
+Unsustainable consensus 
+
+N/A
+Autonomous ecosystems/ marketplace
+Limited scalability and latency
+Limited privacy
+Storage constraints
+Unsustainable consensus 
+
+N/A
+Disintermediation
+N/A
+OK for most use cases 
+Provenance
+OK for most use cases 
+Initial Coin Offerings (ICO)
+OK for most use cases 
+N/A
+Voting
+OK for most use cases 
+N/A
+Healthcare
+Limited scalability and latency
+Limited privacy
+Storage constraints
+Unsustainable consensus 
+
+Limited privacy
+Storage constraints
+Unsustainable consensus 
+ 
+
+
 
 
 
