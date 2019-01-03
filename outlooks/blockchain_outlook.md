@@ -180,41 +180,18 @@ This use case provides reduced cost and agility.
 The following table explores each of the use cases in terms of their applicability in public and private settings. 
 
 
-
-
-
-
 |  None     | Public| Private |
 | ------ |------ | --------- |
 |Ledgers   |Yes    |   Yes|
 |Digital currency & lightweight financial system|Yes|Rare|
-
-
-
-Smart contracts 
-Rare
-Yes 
-New internet
-Yes
-Rare
-Autonomous ecosystems
-Yes
-Rare
-Disintermediation
-No
-Yes
-Provenance
-Yes
-Yes
-Initial Coin Offerings (ICO)
-Yes
-No
-Voting
-Yes
-Rare
-Healthcare
-Yes
-Yes
+|Smart contracts |Rare|Yes| 
+|New internet|Yes|Rare|
+|Autonomous ecosystems|Yes|Rare|
+|Disintermediation| No| Yes|
+|Provenance| Yes| Yes|
+|Initial Coin Offerings (ICO)| Yes| No|
+|Voting |Yes| Rare|
+|Healthcare| Yes| Yes|
 
 
 
