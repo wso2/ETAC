@@ -237,52 +237,18 @@ It is worth noting that most of the above challenges mainly affect public permis
 
 |   |Public|Private|
 |---|----|---|
-|Ledgers of identity, ownership, status, and authority|* Limited scalability and latency * Limited privacy * Storage constraints * Unsustainable consensus |OK for most use cases| 
+|Ledgers of identity, ownership, status, and authority|Limited scalability and latency, Limited privacy, Storage constraints * Unsustainable consensus |OK for most use cases| 
 
 
-|Digital currency & lightweight financial system |Limited scalability and latency |Limited privacy
-Storage constraints
-Unsustainable consensus 
-
-
-
-Smart contracts without a central authority
-N/A
-OK for most use cases 
-New internet
-Limited scalability and latency
-Limited privacy
-Storage constraints
-Unsustainable consensus 
-
-N/A
-Autonomous ecosystems/ marketplace
-Limited scalability and latency
-Limited privacy
-Storage constraints
-Unsustainable consensus 
-
-N/A
-Disintermediation
-N/A
-OK for most use cases 
-Provenance
-OK for most use cases 
-Initial Coin Offerings (ICO)
-OK for most use cases 
-N/A
-Voting
-OK for most use cases 
-N/A
-Healthcare
-Limited scalability and latency
-Limited privacy
-Storage constraints
-Unsustainable consensus 
-
-Limited privacy
-Storage constraints
-Unsustainable consensus 
+|Digital currency & lightweight financial system |Limited scalability and latency, Limited privacy, Storage constraints, Unsustainable consensus ||
+|Smart contracts without a central authority| N/A | OK for most use cases |
+| New internet| Limited scalability and latency, Limited privacy, Storage constraints, Unsustainable consensus |N/A|
+|Autonomous ecosystems/ marketplace|Limited scalability and latency,Limited privacy, Storage constraints, Unsustainable consensus| N/A|
+|Disintermediation| N/A| OK for most use cases| 
+|Provenance| OK for most use cases|| 
+|Initial Coin Offerings (ICO)| OK for most use cases | N/A |
+|Voting| OK for most use cases | N/A
+|Healthcare | Limited scalability and latency, Limited privacy, Storage constraints, Unsustainable consensus | Limited privacy, Storage constraints, Unsustainable consensus| 
  
 
 
