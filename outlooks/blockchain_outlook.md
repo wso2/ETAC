@@ -257,6 +257,7 @@ It is worth noting that most of the above challenges mainly affect public permis
 
 
 
+
 # Technical Feasibility
 The core technologies required to build serverless platforms are already in place and a number of use cases are already in production (e.g. [[23](https://hackernoon.com/lessons-learned-a-year-of-going-fully-serverless-in-production-3d7e0d72213f)), [24](https://dashbird.io/blog/companies-using-serverless-in-production/)].
 
