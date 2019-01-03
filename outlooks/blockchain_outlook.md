@@ -193,7 +193,7 @@ The following table explores each of the use cases in terms of their applicabili
 |Voting |Yes| Rare|
 |Healthcare| Yes| Yes|
 
-Table 1: Applicability of use cases in public and private settings
+**Table 1: Applicability of use cases in public and private settings**
 
 The next section will look at the above use cases in terms of the ETAC. 
 
@@ -248,40 +248,101 @@ It is worth noting that most of the above challenges mainly affect public permis
 |Voting| OK for most use cases | N/A
 |Healthcare | Limited scalability and latency, Limited privacy, Storage constraints, Unsustainable consensus | Limited privacy, Storage constraints, Unsustainable consensus| 
  
+ **Table 2: Technical challenges by use case**
+
+Notwithstanding significant challenges, there is hope. Best minds are working on these problems. Progress is being made. For example, Zamani [53] presented a RapidChain algorithm that can perform 7500 transactions/ second. Furthermore, Kasireddy [25] discuss some of the approaches used to handle these problems and the curated blockchain papers list [31] records many relevant publications addressing some of the problems.
+
+Tools, Ecosystem, and Skills: Developers with Blockchain skills are scarce. However, fueled by high demand, many developers are acquiring blockchain skills. We have observed students master key ideas within a few weeks. Many education materials are already available. Therefore, we believe skills will not be a significant obstacle. 
+
+Tooling support for blockchain is limited. Most use cases are currently geared for highly technical users (Kasireddy [24]). However, this can be fixed only after core technology has stabilize. 
+
+Friction: Following are some of the technical challenges that lead to friction. 
+* Lack of methods to verify and limit risks - As pointed out by Kasireddy [25], lack of such tools is a major inhibitor to the blockchain. Among approaches that have been considered are formal contract verification, testing and simulation environments, and means to undo operations or limit the associated risks (e.g. by specifying upper limits). Although most software development happens without formal verification, irrevocability and the automated nature of blockchain transactions (e.g. smart contracts) increase associated risks to a new level. Therefore, we believe this is significant friction. 
+
+* Lack of governance and standards - As pointed out by Tapscott [4], there are no clear regulatory processes for public blockchains. Among open challenges are how to evolve the blockchain, when to fork, what is the process to accept a fork, and how to handle human errors. They pose significant security risks. Solutions themselves must be decentralized not to undermine the goals. Finding a technical solution or finding a process to solve the problem is a pressing need.
+
+* Blockchain-based applications are often complex (e.g. smart contracts). Current blockchain ecosystems do not provide tools that help users to debug those applications. 
+
+Hence, in its current state, technical limitations and friction can significantly reduce blockchain adoption. Progress mandates new and significant technological breakthroughs. 
 
 
 
 
-
-
-
-
-# Technical Feasibility
-The core technologies required to build serverless platforms are already in place and a number of use cases are already in production (e.g. [[23](https://hackernoon.com/lessons-learned-a-year-of-going-fully-serverless-in-production-3d7e0d72213f)), [24](https://dashbird.io/blog/companies-using-serverless-in-production/)].
-
-Serverless has several technical advantages:
-* As discussed by Sbarski [[6](https://www.youtube.com/watch?v=LAWjdZYrUgI)], applications get high availability and auto-scalability without additional effort from the developer. This can significantly reduce development time and consequently costs.
-* As discussed by Vanderweide [[5](https://www.nextplatform.com/2017/09/25/serverless-revolution-will-make-us-developers/)], serverless platforms make citizen programming possible (low code) by removing the need for server management, scaling, HA, configurations, builds, and other details. Hence, serverless platforms significantly reduce the barrier to entry for programming complex backend systems.
-* Polyglot architectures - As discussed by Heidloff [[10](http://heidloff.net/article/polyglot-serverless-applications)], serverless platforms enable polyglot architectures where multiple programming languages are used together.
-
-Zimine, Jonas, Roberts, and others have also pointed out several disadvantages of serverless.
-
-As pointed out by Zimine [[3](https://medium.freecodecamp.org/serverless-is-cheaper-not-simpler-a10c4fc30e49)], when the number of functions in the application grows, serverless adds friction. Firstly, different functions are often developed separately. Secondly, they can be hard to debug. Thirdly, integration logic may be pushed into DevOps scripts, which can obscure the overall architecture. 
-
-Furthermore, serverless applications are often modeled as a collection of functions that are wired by an event-driven architecture (EDA). While designing serverless based solutions that go beyond simple use cases, architects have to think differently. EDA-based programming is not intuitive to traditional developers and is generally harder to debug. The resulting architecture is more complex and logical flow is harder to reason. Jonas[[2](https://blog.acolyer.org/2017/10/30/occupy-the-cloud-distributed-computing-for-the-99/)] also argues that such friction has a significant impact. This also applies to microservices architectures that often use EDA as well.
-
-Consequently, Zimine argues that serverless need tools and Integrated Development Environments (IDEs) to simplify the experience for complex serverless applications. Such an IDE should enable users to create functions in one view, compose them, test the fully composed application in the IDE itself, debug, make sure everything works, and then a push a button to deploy it to a serverless platform. These IDEs don’t yet exist. In addition, the IDE should have a debugging experience that helps pinpoint problems. This requires local testing within developer machines. There is progress towards this: for example, Azure Functions already supports local debugging triggered by cloud events. We believe that IDEs that support the aforementioned capabilities will hasten the serverless adoption. 
-
-Serverless, by design, is an opinionated solution. It is agile as long as the programmer is willing to conform to its model but becomes clumsy if the programmer resists the model. This is a disadvantage. It is true that the same can be said about programming languages as well, but training in programming language takes significant time and it is rare that people switch programming languages. Roberts[[11](https://martinfowler.com/articles/serverless.html)] also pointed out that this limits the server, OS, and hardware level configurations and tuning available to the end user application [[10](http://heidloff.net/article/polyglot-serverless-applications)]. This lack of flexibility may limit serverless adoption in some use cases.  
-
-A concern with serverless is how to handle state using stateless functions. As discussed by Allamaraju[[1](https://www.slideshare.net/sallamar/are-we-ready-for-serverless?trk=v-feed)] and Mike[[11](https://martinfowler.com/articles/serverless.html)], the current architecture best practices are to store the state in platform services such as databases, shared file systems or messaging systems. This, however, increases vendor lock-in. Another related challenge is how to handle ephemeral states such as connection pools. Although they do not affect accuracy, they do affect performance. Serverless platforms need to support ephemeral states efficiently. This is likely to be supported by serverless platforms in the future. As of  October 2018, the Azure cloud has added support for stateful functions, including checkpoints and automatic recovery[[30](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-overview)], which frees the developers having to write code to save and recover state. It is not yet clear if this approach will be adopted by other serverless platforms or if they will provide alternative approaches.
-
-Serverless faces two kinds of latency challenges (see [[3]( https://medium.freecodecamp.org/serverless-is-cheaper-not-simpler-a10c4fc30e49), [4]( https://blog.acolyer.org/2017/10/19/serverless-computing-economic-and-architectural-impact/), [10](http://heidloff.net/article/polyglot-serverless-applications)]): cold-starts and high tail latencies. First, when the first user request arrives, the serverless platform needs to load the function, which is one of the causes of high tail-latencies (this can be in the order of seconds [[27](https://www.usenix.org/conference/atc18/presentation/wang-liang)]). Cold-starts are avoided by keeping one copy running, by forecasting when the first call happens, or by improving the startup time of the code. These approaches may incur additional costs - causing tension between the latency and the cost model. Sbarski[[6](https://www.youtube.com/watch?v=LAWjdZYrUgI)] points out that the cold-start model is already at the odd with the SaaS pricing model, where users can get a better bill by keeping the instance live via periodic bogus requests. Second, given an application will be composed of many functions, the latency for calling each function adds up, which also includes the network and serialization latencies due to network hops. As pointed out by Barroso[[12](http://highscalability.com/blog/2012/3/12/google-taming-the-long-latency-tail-when-more-machines-equal.html)] and Dean[[13](https://ai.google/research/pubs/pub40801)] as more functions are added, the tail latencies get worse. The above-mentioned two papers discuss methods that could be used to handle the tail latency challenges. However, currently serverless is mainly suitable only for use cases that can tolerate high tail latencies. This still leaves a large potential market. 
-
-In summary, serverless has many technical advantages. Although there are challenges, there are significant use cases that are not hindered by those challenges. Hence we believe serverless is feasible. 
 
 # Future
 ## Risks
+
+There are significant risks associated with blockchains. Blockchain’s high impact potential in replacing many critical systems such as financial systems, cash, land registries, voting, further exacerbates those risks. 
+
+### Irrevocability 
+As Stinchcombe [20] points out, the irrevocability of transactions is a significant risk. 
+
+For use cases such as Bitcoin and land registry, a resource is passed from an owner to an owner and only the current owner has the capability to assign it to a new owner. Irrevocability can have devastating consequences. However, for most other use cases, this can be addressed via a recovery transaction that undoes the transaction. 
+
+Following are example cases where irrevocability is problematic. 
+
+* If a credit card is lost or bank account is hacked, money can often be traced, found, and returned. However, as pointed out in the Bitcoin projects problems page [27], no recourse is possible with blockchain. There is no possibility of appeal. A person or an organization can lose all the money because their account is hacked or because their hard disk has crashed. For example, Roberts [44] cites an incident where a user threw away a hard drive with keys to 7500 bitcoins. The same article approximates that about 25% of all Bitcoins are already lost.
+
+* Most ecosystems and markets built with blockchains are complex systems. They have emergent behaviors. For example, consider a hypothetical ChainBook, a Facebook alternative built on top of the blockchain. ChainBook’s underlying algorithm will be designed to distribute traffic equitably, to manage accounts, and propagate updates to all users based on some criteria. Since ChainBook is a complex system, we do not have techniques to analyze or understand those algorithms fully. Instead, they are designed using heuristics and empirical experiments, just like current Facebook algorithms. It is possible for such algorithms to have loopholes, which enables an attacker to hijack some accounts or hijack traffic. Unlike with Facebook, which has central control and can undo the change, it is not clear how this can be handled in ChainBook.
+
+* Vulnerabilities are already challenging. Coupled with irrevocability they are dangerous. Unlike with Facebook, we can’t fix the problem even when we know the problem as changes are irrevocable. The emergent behaviors are often hard to foresee fully. Ultimately, the outcome could be systems that no one understands. Anyone who would figure out a weakness in the decentralized algorithms would wield a vast amount of power. Risks are very high. We can lose control of our creation.
+
+* Let’s now also consider smart contracts. Smart contracts bring in automation. Automation and irrevocability are a poisoned combination. A simple mistake in a smart contract can lead to disasters, and outcomes can’t be revoked. Mistakes and unexpected scenarios are bound to happen, and blockchain technology needs to handle how to detect, contain, and recover from those scenarios. 
+
+Any hijacked accounts or a resource is irrevocable unless more than 50% of participants are willing to accept a fork to the code. For example, as described by Castillo [38], Ethereum returned funds lost due to an attack using a hard fork [33]. However, it is not clear what is the criteria to accept such a hard fork. Also, it is possible that the next attack can be hidden inside the hard fork. Also, as the blockchain adoption and hence transaction rates increases, it is as time passes, it becomes harder and harder to enforce a hard fork without affecting correct transactions.
+
+Before broad adoption, blockchain needs algorithmic changes to handle problems or needs a way to contain the impact via some form of upper limits, sandboxes, or insurance. As an alternative, many private blockchains provide the organization or consortium the ability to do admin operations such as change rules, undo transactions, and modify balances. 
+
+### Regulator Absence 
+Another risk is regulator absence. A regulator plays a key role in some use cases. For example, in the case of a stock market or share offering, oversight makes sure that all parties are protected. Without a regulator, it might not be easy to detect and avoid schemes like pyramid schemes. Although not popular, regulators play a crucial role in many systems. 
+
+Regulator role is also important to ecosystems. For example, decentralized social networks might do a bad job of controlling hate speech, bias, and targeted attacks than a centralized system. For example, if a fake news scenario developed with a decentralized social network, there is no one to hold accountable. Further, this may be a perfect medium for an attacker to introduce bias and other unexpected behaviors to the system via updates while hiding his tracks. 
+
+Blockchain-based systems, in their current form, do not support a regulator.  Also given irrevocability, it can either be impossible or expensive to fill the missing regulator's role. 
+
+At the same time, one could argue that the web does not have a regulator. For example, no one curates what goes on the web. Regardless, the web is one of the most successful systems humans have built. At the same time, with scenarios such as fake news and hate speech, we are seeing the limitations of the web.
+
+Where a regulator is needed and where it is not needed is a debate that will continue. However, blockchain based decentralized systems make it hard to introduce a regulator if needed. 
+
+### Misunderstood Side-effects 
+Thirdly, the impact of blockchain extends beyond computer science. We need to understand the economics, social, and political side effects of the blockchain. For example, blockchain may enable chap voting, enabling us to even replace representative democracy with direct democracy but we do not know whether that will be a good thing or a bad thing. Another risk is macroeconomic impacts. For example, lack of inflation is often lauded as a significant feature in the blockchain. However, inflation is often used as a monetary instrument by countries: for example, to absorb the shock of a downturn [22]. Some theorists believe that inflation is necessary for growth [21]. Removing such instruments would be risky without understanding its repercussions. Economics, Marketplaces and Trust sections in Blockchain papers [31] lists some of the current work in this area. 
+
+### Fluctuations in Bitcoin Prices
+Another risk is fluctuations in bitcoin prices. However, many believe that this is because it is new and its intrinsic value is hard to judge and it will stabilize over time [23]. With high bitcoin values, transactions charges are also high, which would turn off many use cases such as micropayments. It seems that the deflationary nature of Bitcoin and broad transformative use cases are in conflict due to transaction costs. This problem will aggravate with time. This only affects Bitcoin and financial use cases but does not affect other use cases. 
+
+### Quantum Cryptography
+As pointed out by Kasireddy [24], one of the looming threats to cryptocurrency and cryptography is the issue of quantum computers. However, quantum resistant hash functions are known and in some case implemented and it is likely we can just switch hashing algorithms. Therefore, the effect on the blockchain by quantum computing is not different from the effect on other aspects of computing [50]. Aggarwal [46] discusses some techniques for protecting against quantum attacks. 
+
+At the same time, such a shift to quantum blockchain will take time. Even at its initial stages, where only governments and large organizations have access to quantum computers, quantum computing undermine all benefits of decentralization, in which case, the problem is worse as governments or organizations can act algorithmically without detection as opposed to current centralized systems that are regulated through transparent processes.  
+
+### Regulatory Response
+Finally, as we discussed under impact, blockchain changes many things that are currently governed by regulation and law. Therefore, likely, there will be future regulations and the law governing blockchains and its use. The response of those institutions are not clear, and the associated uncertainty creates risks. However, blockchain carries significant first-mover advantages to countries if they can adapt it in a significant manner. Therefore, governments will be ready to give it a fair chance. 
+
+Some of these challenges, such as irrevocability, regulation and lack of census mechanisms are not present in private blockchains. On the other hand, private blockchains provide less decentralization. Consequently, there is a tradeoff between those challenges and amount of decentralization. At the same time, private blockchains are intended to be used in closed environments and can’t be widely applied to public blockchain use cases. 
+
+The following table explores the effect of the aforementioned risks on blockchain use cases. 
+
+||Public|Private|
+|---|---|---|
+|Ledgers of identity, ownership, status, and authority||
+|Digital currency & lightweight financial systems|Irrevocability, Unpredictability, Economical, social, and political side effects, Regulatory response| N/A|
+|Smart contracts without a central authority| N/A |Irrevocability, Unpredictability| 
+|New internet|Irrevocability, Unpredictability, Lack of a regulator Economical, social, and political side effects|N/A|
+|Autonomous ecosystems/ marketplace|Irrevocability, Unpredictability 
+Lack of a regulator, Economical, social, and political side effects|N/A|
+|Disintermediation| N/A ||
+|Provenance|||
+|Initial Coin Offerings (ICO)||N/A|
+Voting| Regulatory response| N/A |
+|Healthcare|Regulatory response||
+
+**Table 3: Risks by use cases**
+
+
+
+
+
+
 As Adzic [[4](https://blog.acolyer.org/2017/10/19/serverless-computing-economic-and-architectural-impact/)] and Sbarski [[6](https://www.youtube.com/watch?v=LAWjdZYrUgI)] points out, lack of standards and concerns about vendor lock-in pose a significant risk to serverless adoption. The real concern is not serverless functions, but the platform services required by those functions. It is hard to abstract away those services effectively. 
 
 The vendor lock-in also can make it hard to switch from one serverless platform to another. This platform specific approach reduces the size of the developer pool available for hire, as few developers will know all the available systems.
