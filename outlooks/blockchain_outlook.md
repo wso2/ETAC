@@ -50,7 +50,7 @@ Since blockchain is applicable across a wide range of use cases, to ground the d
 ![Figure 1 - ETAC for Blockchain](https://github.com/wso2/ETAC/blob/master/images/etac-blockchain-v2.png)
 
 # Opportunity
-The rise of the most successful digital currency—Bitcoin—kick-started blockchain. Economic incentives resulting from the appreciating bitcoin price attracted many and created awareness. Ensuing news following the booms and bust of the Bitcoin price kept blockchain on top of the minds of many. The US government identified Bitcoin as property in 2011 and as a currency in 2013 [8]. Other governments soon followed suit (Hobbes [8]). One by one Internet companies started accepting Bitcoin (e.g. Zinga, Expedia, Dell, Microsoft).
+The rise of the most successful digital currency—Bitcoin—kick-started blockchain. Economic incentives resulting from the appreciating bitcoin price attracted many and created awareness. Ensuing news following the booms and bust of the Bitcoin price kept blockchain on top of the minds of many. The US government identified Bitcoin as property in 2011 and as a currency in 2013 [8]. Other governments soon followed suit (Hobbes [8]). One by one Internet companies started accepting Bitcoin (e.g. Zynga, Expedia, Dell, Microsoft).
 
 By 2015-16, it was observed that the impact of Bitcoin extends beyond cryptocurrency. The real value of blockchain is its shared, distributed, and immutable ledger, which enables decentralization and other use cases. The Bitcoin is followed by new blockchain implementations such as Ethereum in 2015 and Hyperledger in 2016. 
 
@@ -350,7 +350,7 @@ Up to this point, the blockchain outlook presented facts that are supported by e
 
 Concerning impact, Blockchain easily falls into the disruptive (transformative) category. If successful, it will transform financial systems, the way people and organizations establish trust (e.g., when doing business, when working towards a common goal), and underline information platforms like internet, marketplaces, voting systems.  
 
-Let us consider Roger’s five factors [28] that evaluate technology adoption. Blockchain has two factors that help technology in their adoption: technology delta (relative advantage to existing technology) and observability (ability for other users to see blockchain in use). However, blockchain in its current state fails in simplicity (easy to understand and use), and trialability (easy to show it working). Ease of technology to integrate with day to lives of users, Compatibility is weak for blockchain as it assumes understanding about advanced computing techniques (e.g. cryptographic keys). Future systems might hide some of these complexities. Overall, Roger’s five factors suggest weak adoption. However, wide awareness and hype associated with blockchain may counterbalance above. 
+Let us consider Roger’s five factors [28] that evaluate technology adoption. Blockchain has two factors that help technology in their adoption: technology delta (relative advantage to existing technology) and observability (ability for other users to see blockchain in use). However, blockchain in its current state fails in simplicity (easy to understand and use), and trialability (easy to show it working). Also, compatibility(Ease of technology to integrate with day to day lives of users) is weak for blockchain as it assumes understanding about advanced computing techniques (e.g. cryptographic keys). Future systems might hide some of these complexities. Overall, Roger’s five factors suggest weak adoption. However, wide awareness and hype associated with blockchain may counterbalance above. 
 
 Following table summarizes use cases, challenges, and risks they face, and our conclusions. In the conclusion column, EU-TRL shows EU technology readiness level [29]. 
 
@@ -370,58 +370,123 @@ Following table summarizes use cases, challenges, and risks they face, and our c
 
 **Table 4: Use case Feasibility**
 
+In summary, this yields the second assertion of the document that the following use cases are feasible within the next three years. 
+* Bitcoin becomes an asset and black market currency, but it will not become a fiat currency as a replacement for existing fiat currency 
+* Lightweight financial systems
+* Both public and private Ledgers (e.g. significant public records, notary and KYC services) 
+* Provenance (e.g. supply chains and other B2B scenarios) and Disintermediation. 
 
+Although we believe ICOs are feasible, classification of coins as securities by US SEC remove most of its attractions as an investment medium.   
 
+Except for the aforementioned use case, technology is not yet ready to deliver the vision. Even then, they are feasible only for deployments where the load is limited. We see significant gaps in both core technology as well as its applications. Among the challenges are limited scalability and latency, limited privacy, heavy storage and energy requirements, unsustainable consensus mechanisms, lack of methods and tools to verify blockchain-based applications and smart contracts, and lack of governance and standards. 
+
+However, some of the best minds are trying to solve these problems. There is significant academic participation, and a large amount of VC money has also been deployed. We believe most of these challenges can be addressed. However, we believe we are looking at the 5-10 year time frame before it happens. For example, Iansit [38] argues, based on their technology adoption model, that transformative use cases for Blockchain are decades away while more simple, specific use cases that have limited novelty may be realized faster. 
+
+While we do believe that blockchain’s fundamental challenges could be addressed, there is a chance that current technology is the limit of the blockchain. If that is the case, the impact of blockchain would be very limited.  
+
+This yields the third assertion of the document that blockchain faces significant challenges in many use cases and it will likely take at least 5-10 years to find answers to those problems. 
+
+It is not clear whether blockchain can sustain the current level of effort for an extended period of five or more years. Academic research and funding are often long-term. However, startups work against the time; they run out of funding; further funding is often not possible without demonstrating revenues. If a few startups fail, that will likely limit further investments in the area, starting a domino effect. For example, we saw Coinprism [55] shutting down in March 2018. We believe the fate of startups will be paramount to the fate of blockchains. Given the technical challenges, startups should choose use cases that can be addressed within current limitations. Furthermore, the economy does not need too many blockchain unicorns before technology challenges are addressed because if there are too many too early, their potential failures can trigger an economy-wide correction like the dotcom bubble. This is the fourth assertion of the document.  
+
+Even after technology challenges have been addressed, adoption has to be carefully planned and executed. Blockchain will replace critical systems on a notch above what we used to, and any misstep can have devastating consequences. Blockchain proponents have to find multiple use cases that start with simple problems and progressively tackle harder problems while hashing out problems. We believe the use cases we have identified and assessments provide a good starting point for this process. 
+
+Governments and policymakers face an interesting challenge. Due to the transformative power of blockchain, it can’t be ignored. If blockchain is banned and later successful, nations might find they live in the last age. At the same time, reckless adoption creates many other problems and carries risks. 
+
+Finally, it is not obvious we understand clearly what we want from blockchain. Charlon, the Coinprism founder, argued [55] that unless decentralization and censorship resistance is required, blockchain is a suboptimal choice for most use cases due to scalability and latency limitations. Given the challenges faced by blockchain and a potentially long wait to address those challenges, it is worth questioning the need for decentralization. 
+
+What is the need for decentralization? It is true that people, when asked, are concerned about the arbitrary power of governments as well as large organizations. Do they understand tradeoffs? Asked in isolation, we need everything. People are concerned about privacy, but most of us share data with GAFA. However, if Facebook comes up with a paid account where they do not touch your private data, how many would buy it?  
+
+As [43] argues, in most cases, given a problem, the centralized or semi-centralized solutions are faster, have more throughput, and are cheaper than the decentralized solution when considered holistically. Are we willing to pay for delays and duplication? How much? 
+
+For years we have handled concerns about centralization using policy, law, and auditing through institutions. Can our concerns be solved by strengthening those institutions? We are effectively trying to replace those institutions with algorithms. What makes us think that we can figure out those algorithms if we can’t make those institutions work with much human involvement?  By handing control to algorithms, aren’t we handing over the control to whoever that has right to fork and change algorithms? Unlike institutions, those algorithms changes are tough to audit. This challenge is shared by both blockchain and AI. 
+
+Presumably, we could support semi-decentralized solutions much faster than full decentralization. Already, a significant amount of money has been already deployed to the blockchain. Blockchain could run out of time while trying to solve full decentralization. The clock is ticking. If the quest for a full decentralized solution did take too long, that risks future of blockchain. One could argue that we should first make blockchain work with a semi-decentralized version to avoid the risk and strive for a full decentralization solution as the second stage. of its demise while striving for a fully decentralized solution. 
+
+It is not clear whether people care enough about decentralization to accept limitations that come up with it. If decentralization is not necessary, most use cases can be addressed much easier with centralized systems (likely private blockchain technologies), accepting guarantees weaker than blockchain but stronger than earlier centralized systems. Furthermore, some use cases might have less risky alternatives for blockchain use cases. For example, a micropayment platform can collect and make monthly payments of micropayments without a blockchain. 
+
+Confusion about the right level of determination is the fifth assertion of the document. 
+
+It will take time for us to find the answer to these questions. 
 
 
 # Conclusions 
+In conclusion, we made six assertions. 
+1. Blockchain potential impact is real. If successful, Blockchain technologies can transform the way we live our day to day lives.
+2. We believe technology is ready for limited applications in Digital Currency, Lightweight financial systems, Ledgers (of identity, ownership, status, and authority), Provenance (e.g. supply chains and other B2B scenarios) and Disintermediation, which we believe will happen in next three years. 
+3. However, blockchain faces significant challenges such as performance, irrevocability, need for regulation and lack of census mechanisms. These are hard problems and likely it will take at least 5-10 years to find answers to those problems. 
+4. It is not clear whether blockchain can sustain the current level of effort for extended period of 5+ years. There are many startups and they run the risk of running out of money before markets are ready. Failure of startups can inhibit further funding and investments.  
+5. Value and need of decentralization compared to centralized and semi-centralized alternatives is not clear.  
+6. Given the risk involved as well as the significant potential returns, we recommend a cautiously optimistic approach for blockchain with the focus on concrete use cases.  Investments must consider sustainability for 5-10 year horizon before significant returns. 
+
+
+
+
+
 
 
 # References
-1. Subbu Allamaraju, “Are We Ready for Serverless?”, https://www.slideshare.net/sallamar/are-we-ready-for-serverless?trk=v-feed
-2. Jonas et al., “Occupy the cloud: distributed computing for the 99%”, SoCC’17, https://blog.acolyer.org/2017/10/30/occupy-the-cloud-distributed-computing-for-the-99/ 
-3. Dmitri Zimine, “Serverless is cheaper, not simpler”, https://medium.freecodecamp.org/serverless-is-cheaper-not-simpler-a10c4fc30e49 
-4. Adzic et al., “Serverless computing: economic and architectural impact”, https://blog.acolyer.org/2017/10/19/serverless-computing-economic-and-architectural-impact/
-5. Doug Vanderweide, “Serverless Platform will make us all developers”, https://www.nextplatform.com/2017/09/25/serverless-revolution-will-make-us-developers/ 
-6. Peter Sbarski, “Serverless: the Future of Software Architecture”, https://www.youtube.com/watch?v=LAWjdZYrUgI
-7. “Amazon introduces Lambda, Containers at AWS re:Invent”, https://sdtimes.com/amazon/amazon-introduces-lambda-containers/ 
-8. “Apache OpenWhisk”, https://openwhisk.apache.org/
-9. Matt Murphy, Steve SloaneMay, “The rise of APIs”, https://techcrunch.com/2016/05/21/the-rise-of-apis/ 
-10. Niklas Heidloff, “Developing Polyglot Serverless Applications”, http://heidloff.net/article/polyglot-serverless-applications 
-11. Mike Roberts, “Serverless Architectures”, https://martinfowler.com/articles/serverless.html
-12. “Google: Taming The Long Latency Tail - When More Machines Equals Worse Results”, http://highscalability.com/blog/2012/3/12/google-taming-the-long-latency-tail-when-more-machines-equal.html 
-13. Jeffrey Dean and Luiz André Barroso, “The Tail at Scale”, https://ai.google/research/pubs/pub40801 
-14. “A curated list of awesome services, solutions, and resources for serverless”, https://github.com/anaibol/awesome-serverless 
-15. “Serverless Computing: Architectural Considerations & Principles”, https://www2.deloitte.com/content/dam/Deloitte/tr/Documents/technology-media-telecommunications/Serverless%20Computing.pdf 
-16. “Google Kantive”, https://github.com/knative/ 
-17. Baldini and others, “Serverless Computing: Current Trends and Open Problems”, https://arxiv.org/pdf/1706.03178.pdf 
-18. "Emerging Technology Analysis Canvas (ETAC)", https://github.com/wso2/ETAC/blob/master/ETAC.md
-19. “CNCF WG Serverless Landscape”, https://docs.google.com/spreadsheets/d/10rSQ8rMhYDgf_ib3n6kfzwEuoE88qr0amUPRxKbwVCk/edit#gid=0
-20. “CNCF Serverless Whitepaper v1.0”, https://github.com/cncf/wg-serverless/tree/master/whitepaper 
-21. Arun Chandrasekaran, Craig Lowery, Gartner: An I&O Leader's Guide to Serverless Computing”, https://www.gartner.com/document/3872956, 26 April 2018
-22. “The NIST Definition of Cloud Computing”, https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf
-23. “Lessons Learned — A Year Of Going 'Fully Serverless' In Production”, https://hackernoon.com/lessons-learned-a-year-of-going-fully-serverless-in-production-3d7e0d72213f
-24. “Companies using serverless in production”, https://dashbird.io/blog/companies-using-serverless-in-production/
-25. “An introduction to Azure Functions”, https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview
-26. David A. Patterson, “Latency Lags Bandwith”, https://cacm.acm.org/magazines/2004/10/6401-latency-lags-bandwith/fulltext
-27. Liang Wang, “Peeking Behind the Curtains of Serverless Platforms”, https://www.usenix.org/conference/atc18/presentation/wang-liang
-28. Everett M. Rogers, “Diffusion of Innovations”, https://www.amazon.com/Diffusion-Innovations-5th-Everett-Rogers/dp/0743222091 
-29. “EU Technology Readiness Level”, https://en.wikipedia.org/wiki/Technology_readiness_level 
-30. Microsoft Azure, Durable Functions overview, https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-overview 
 
-# Footnotes
-<a name="fpaas">1. </a>Function Platform-as-a-Service (fPaaS) - this is Gartner’s term for FaaS [21]
-
-<a name="tail_latencies">2. </a>Tail latencies are the high percentiles - e.g. 99th percentile. A system with high tail latencies can serve the majority of requests with normal latency, but a small proportion of requests have much higher latency.
-
-<a name="central_limit_theorem">3. </a>https://en.wikipedia.org/wiki/Central_limit_theorem 
-
+1. Chris Berg et al, The Blockchain Economy: A beginner’s guide to institutional crypto economics, https://medium.com/cryptoeconomics-australia/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics-64bf2f2beec4
+2. Gideon Greenspan, Four Genuine Blockchain Use Cases, https://www.coindesk.com/four-genuine-blockchain-use-cases/
+3. Andrew Meola, The growing list of applications and use cases of blockchain technology in business & life, https://www.businessinsider.com/blockchain-technology-applications-use-cases-2017-9
+4. Alex Tapscott, Don Tapscott, How Blockchain Is Changing Finance, https://hbr.org/2017/03/how-blockchain-is-changing-finance
+5. Chris Dixon,  Why Decentralization Matters, https://medium.com/@cdixon/why-decentralization-matters-5e3f79f7638e
+6. Dominic Frisby, Blockchain technology will revolutionize far more than money, https://aeon.co/essays/how-blockchain-will-revolutionise-far-more-than-money
+7. Frank Gens et al. IDC FutureScape: Worldwide IT Industry 2018 Predictions, https://www.idc.com/getdoc.jsp?containerId=US43171317
+8. Robert H'obbes' Zakon, Hobbes' Blockchain Timeline 0.1, https://www.zakon.org/robert/blockchain/timeline/
+9. Blockchain Papers, https://github.com/decrypto-org/blockchain-papers
+10. Blockchain Venture Capital, https://www.coindesk.com/bitcoin-venture-capital/
+11. Nathan Reiff, Top Blockchain Startups to Watch in 2018, https://www.investopedia.com/news/top-blockchain-startups-watch-2018/
+12. Harold Stark, Keep An Eye On These Blockchain Startups Throughout 2018, https://www.forbes.com/sites/haroldstark/2017/12/12/keep-an-eye-on-these-blockchain-startups-throughout-2018/#6e3efd0413e6
+13. Olga Kharif and Mark Bergen, Google Is Working on Its Own Blockchain-Related Technology, https://www.bloomberg.com/news/articles/2018-03-21/google-is-said-to-work-on-its-own-blockchain-related-technology
+14. Introducing a16z crypto, https://a16zcrypto.com/
+15. Taylor Hatmaker, Senate cryptocurrency hearing strikes a cautiously optimistic tone, https://techcrunch.com/2018/02/06/virtual-currencies-oversight-hearing-sec-cftc-bitcoin/
+16. Kathleen Chaykowski, Facebook's Latest Algorithm Change: Here Are The News Sites That Stand To Lose The Most, https://www.forbes.com/sites/kathleenchaykowski/2018/03/06/facebooks-latest-algorithm-change-here-are-the-news-sites-that-stand-to-lose-the-most/#7c4aca7134ec  
+17. Congress Approves Six-Year Extension of Surveillance Law, https://www.nytimes.com/2018/01/18/us/politics/surveillance-congress-snowden-privacy.html
+18. Beyond bitcoin Bubble, https://www.nytimes.com/2018/01/16/magazine/beyond-the-bitcoin-bubble.html
+19. Emerging Technology Analysis Canvas (ETAC), https://github.com/wso2/ETAC/blob/master/ETAC.md
+20. Kai Stinchcombe, Ten years in, nobody has come up with a use for blockchain, https://hackernoon.com/ten-years-in-nobody-has-come-up-with-a-use-case-for-blockchain-ee98c180100 
+21. Girijasankar Mallik and Anis Chowdhury, Inflation and Economic growth: evidence from four South Asian Countries, http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.516.9478&rep=rep1&type=pdf 
+22. Sean Ross, How Can Inflation Be Good for the Economy? https://www.investopedia.com/ask/answers/111414/how-can-inflation-be-good-economy.asp 
+23. Jonathan Todd Barker, Read more: Why Is Bitcoin's Value So Volatile? | Investopedia https://www.investopedia.com/articles/investing/052014/why-bitcoins-value-so-volatile.asp#ixzz5VV75q2jW 
+24. Kasireddy, Fundamental challenges with public blockchains, https://medium.com/@preethikasireddy/fundamental-challenges-with-public-blockchains-253c800e9428 
+25. Kasireddy, Blockchains don’t scale. Not today, at least. But there’s hope, https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb43946551a
+26. Alex Chepurnoy, Some Open Problems in Blockchains, https://www.slideshare.net/AlexChepurnoy/some-open-problems-in-blockchains
+27. Bitcoin list of problems, https://en.bitcoin.it/wiki/Weaknesses
+28. Ethereum/wiki: Problems, https://github.com/ethereum/wiki/wiki/Problems 
+29. Jesse Yli-Huumo and others, Where Is Current Research on Blockchain Technology?—A Systematic Review,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5047482/ 
+30. Bitcoin Energy Consumption Index, https://digiconomist.net/bitcoin-energy-consumption
+31. Blockchain Papers, https://github.com/decrypto-org/blockchain-papers
+32. Christine Masters, Ethereum Hard Fork Explained, https://cryptovest.com/education/ethereum-hard-fork-explained/
+33. Nuances Between Permissionless and Permissioned Blockchains, https://medium.com/@akadiyala/nuances-between-permissionless-and-permissioned-blockchains-f5b566f5d483 
+34. The case for permissioned blockchains, https://blocksplain.com/2018/02/07/permissioned-blockchains
+35. Initial Coin Offering (ICO), https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp 
+36. Helen Partz, SEC Launches Mock ICO to Show Investors Warning Signs of Fraud, https://cointelegraph.com/news/sec-launches-mock-ico-to-show-investors-warning-signs-of-fraud
+37. Jeffrey Stern, The Blockchain Effect on The Network Effect, https://medium.com/@jeffreyStern/the-blockchain-effect-on-network-effect-8b2644af22eb
+38. Marco Iansiti, Karim R. Lakhani, The Truth About Blockchain, https://hbr.org/2017/01/the-truth-about-blockchain
+39. Denis Nazarov, Jesse Walden, and Devon Zuegel, Crypto and the Evolution of Open Source, https://a16z.com/2018/08/20/crypto-evolution-open-source-libraries-services/
+40. Kevin C. Desouza and Kiran Kabtta Somvanshi, How blockchain could improve election transparency, https://www.brookings.edu/blog/techtank/2018/05/30/how-blockchain-could-improve-election-transparency/
+41. David Mayer, Blockchain Voting Notches Another Success—This Time in Switzerland, http://fortune.com/2018/07/03/blockchain-voting-trial-zug/
+42. Jesse Dunietz, Are Blockchains the Answer for Secure Elections? Probably Not, https://www.scientificamerican.com/article/are-blockchains-the-answer-for-secure-elections-probably-not/ 
+43. What Do You Believe Now That You Didn't Five Years Ago? Centralized Wins. Decentralized Loses, http://highscalability.com/blog/2018/8/22/what-do-you-believe-now-that-you-didnt-five-years-ago-centra.html
+44. Jeff John Roberts and Nicolas Rapp, Nearly 4 Million Bitcoins Lost Forever, http://fortune.com/2017/11/25/lost-bitcoins/ 
+45. Tren Griffin, “Two Powerful Mental Models: Network Effects and Critical Mass”, https://a16z.com/2016/03/07/network-effects_critical-mass/, Accessed November 2018
+46. Divesh Aggarwal, Gavin K. Brennen, Troy Lee, Miklos Santha, and Marco Tomamichel: Quantum attacks on Bitcoin, and how to protect against them. https://arxiv.org/pdf/1710.10377.pdf 
+47. Melanie Swan, Blockchain: Blueprint for a New Economy, https://www.amazon.com/Blockchain-Blueprint-Economy-Melanie-Swan/dp/1491920491   
+48. Blockchain State Legislation, http://www.ncsl.org/research/financial-services-and-commerce/the-fundamentals-of-risk-management-and-insurance-viewed-through-the-lens-of-emerging-technology-webinar.aspx  
+49. How SEC’s Paragon Ruling Could Send Many Crypto ICOs to Bankruptcy, https://www.ccn.com/how-secs-paragon-ruling-could-send-many-crypto-icos-to-bankruptcy/
+50. Quantum computing and Bitcoin, https://en.bitcoin.it/wiki/Quantum_computing_and_Bitcoin   
+51. Vitalik Buterin, On Public and Private Blockchains, https://blog.ethereum.org/2015/08/07/on-public-and-private-blockchains/
+52. Reviews for Blockchain Platforms, https://www.gartner.com/reviews/market/blockchain-platforms  
+53. Zamani et al, RapidChain: scaling blockchain via full sharding, https://blog.acolyer.org/2018/12/07/rapidchain-scaling-blockchain-via-full-sharding/ 
+54. Kyle Croman, On Scaling Decentralized Blockchains, https://fc16.ifca.ai/bitcoin/papers/CDE+16.pdf 
+55. Nikhilesh De, ‘Colored Coins’ Startup Coinprism Is Shutting Down, https://www.coindesk.com/blockchain-startup-coinprism-to-shut-down-in-2-days
 
 # Original Authors
-Original authors are Srinath Perera (srinath@wso2.com), Paul Fremantle (paul@wso2.com), Frank Leymann (frank@wso2.com), and Nuwan Bandara (nuwan@wso2.com). 
+Original authors are Srinath Perera (srinath@wso2.com), Paul Fremantle (paul@wso2.com), Frank Leymann (frank@wso2.com). 
 
 # Acknowledgments
-Many thanks to Selvaratnam Uthaiyashankar from WSO2 who have provided significant and useful feedback.
+Many thanks to Prabath Siriwardena and Guy Harrison who have provided significant and useful feedback.
 
 # Help us improve ETAC
 We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com.
