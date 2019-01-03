@@ -357,7 +357,7 @@ Following table summarizes use cases, challenges, and risks they face, and our c
 
 |Use case|Public|Private|Conclusion|
 |----|----|---|---|
-|Ledgers |**Challenges**: Scalability, Latency, Privacy, Storage, consensus concerns| Feasible|<ul><li>Both public & private</li>  <li>EU-TRL 4-6</li>, <li>Feasible for small deployments (e.g. throughput about 2-3 TPS)</li><ul>| 
+|Ledgers |**Challenges**: <ul><li>Scalability</li><li>Latency</li><li> Privacy</li><li> Storage</li><li>consensus concerns</li></ul>| Feasible|<ul><li>Both public & private</li>  <li>EU-TRL 4-6</li>, <li>Feasible for small deployments (e.g. throughput about 2-3 TPS)</li><ul>| 
 |Digital Currency & Lightweight financial systems|**Challenges**: Scalability, Latency, Privacy, Storage, consensus concerns, **Risks**: Irrevocability, Unpredictability, Lack of a regulator,  Unknown side effect|N/A| <ol><li>Mainly public</li> <li>EU-TRL 5-8</li><li>Feasible for small deployments and current load.</li><ol>| 
 
 Breakthroughs needed for future performance and handling risks.  
