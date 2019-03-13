@@ -228,6 +228,13 @@ This is an early report on this approach and we see a need for further research.
 
 We are also doing further research to see if using the ETAC across multiple new technologies allows a fairer comparison of the merits and potential of different technologies, to enable better resourcing and investment decisions. 
 
+# Update
+
+Released Future outlooks based on ETAC. 
+* [Blockchain Future Outlook](https://peerj.com/preprints/27529/)
+* [Serverless Future Outlook](https://github.com/wso2/ETAC/blob/master/outlooks/serverless_outlook.md)
+
+
 # References
 1. Buster Benson, “Cognitive Bias Cheat Sheet”, https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18, Accessed October 2018
 2. Frank Sesno, “Ask More: The Power of Questions to Open Doors, Uncover Solutions, and Spark Change”, https://www.amazon.com/Ask-More-Questions-Uncover-Solutions-ebook/dp/B01HUER128/, Accessed October 2018
@@ -263,7 +270,7 @@ Many thanks to Selvaratnam Uthaiyashankar and Nuwan Bandara from WSO2 who have p
 
 We welcome and apprciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
 
-Serverless Outlook, an ETAC methodology based analysis of Serverless technology will be released soon. To receive updates to ETAC and ETAC based emerging technology analysis, please subscribe to our [Global Technology Outlook Updates Newsletter](https://wso2.com/subscribe/global-technology-outlook-update).  
+To receive updates to ETAC and ETAC based emerging technology analysis, please subscribe to our [Global Technology Outlook Updates Newsletter](https://wso2.com/subscribe/global-technology-outlook-update).  
 
 
  
