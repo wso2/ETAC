@@ -159,16 +159,10 @@ Following describes patterns according to template described by Aleksandra Teša
 
 **Solution:** Proposed pattern candidate uses World Wide Web Consortium (W3C) DID specification[14] and W3C Verifiable Claims [15] specification in the following manner. 
 
-![Figure 1: Blockchain-based IAM Architecture Pattern](https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png)
-
-
 <p align="center">
-<img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png" alt="drawing" width="600" align="center"/></br>
+<img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png" alt="drawing" width="450" align="center"/></br>
 <p align="center">Figure 1: Blockchain-based IAM Architecture Pattern</p>
 </p>
-
-
-
 
 
 Let’s assume Alice needs an identity (DID, which is a unique identifier). As shown by the figure for creating a new DID, Alice creates an entry in the blockchain, which includes a randomly generated identifier, a link to the repository with her profile data, and a hash of the profile data. The user profile contains a public key and a set of verifiable claims. The generated random identifier now becomes Alice’s DID. 
@@ -192,7 +186,12 @@ We can layer most IAM use cases on top of this architecture pattern. For example
 **Solution:** The proposed system records activities and creates entries in the blockchain for those records. The entry contains the hash of activity records, and therefore, the records can’t be disputed later. 
 
 
-Figure 2: Blockchain based Auditable History or Workspace Architecture Pattern
+<p align="center">
+<img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/blockchain4Integration/Auditable-Workspace-RefArch.png" alt="drawing" width="450" align="center"/></br>
+<p align="center">Figure 2: Blockchain based Auditable History or Workspace Architecture Pattern</p>
+</p>
+
+
 
 
 For example, let’s assume Alice wants to pay a tax. Tax Servers accepts the payment application, creates a digital receipt, records its hash in the blockchain, and sends the receipt to Alice. Alice can verify the receipt by calculating the hash and checking against the value stored in the blockchain. After this, Bob can’t deny the receipt because the receipt hash and time are recorded in the blockchain. 
