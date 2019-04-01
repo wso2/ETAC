@@ -159,7 +159,7 @@ Following describes patterns according to template described by Aleksandra Teša
 
 **Solution:** Proposed pattern candidate uses World Wide Web Consortium (W3C) DID specification[14] and W3C Verifiable Claims [15] specification in the following manner. 
 
-![Figure 1: Blockchain-based IAM Architecture Pattern](https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png =250x)
+![Figure 1: Blockchain-based IAM Architecture Pattern](https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png)
 
 <img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png" alt="drawing" width="600"/>
 
