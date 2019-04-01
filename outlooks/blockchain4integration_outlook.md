@@ -161,6 +161,9 @@ Following describes patterns according to template described by Aleksandra Teša
 
 ![Figure 1: Blockchain-based IAM Architecture Pattern](https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png =250x)
 
+<img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png" alt="drawing" width="600"/>
+
+
 
 Let’s assume Alice needs an identity (DID, which is a unique identifier). As shown by the figure for creating a new DID, Alice creates an entry in the blockchain, which includes a randomly generated identifier, a link to the repository with her profile data, and a hash of the profile data. The user profile contains a public key and a set of verifiable claims. The generated random identifier now becomes Alice’s DID. 
 
