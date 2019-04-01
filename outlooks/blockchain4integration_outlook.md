@@ -161,7 +161,13 @@ Following describes patterns according to template described by Aleksandra Teša
 
 ![Figure 1: Blockchain-based IAM Architecture Pattern](https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png)
 
-<img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png" alt="drawing" width="600"/>
+
+<p align="center">
+<img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png" alt="drawing" width="600" align="center"/></br>
+<p>Figure 1: Blockchain-based IAM Architecture Pattern</p>
+</p>
+
+
 
 
 
