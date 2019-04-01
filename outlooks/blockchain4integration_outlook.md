@@ -187,7 +187,7 @@ We can layer most IAM use cases on top of this architecture pattern. For example
 
 
 <p align="center">
-<img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/blockchain4Integration/Auditable-Workspace-RefArch.png" alt="drawing" width="450" align="center"/></br>
+<img src="https://github.com/wso2/ETAC/raw/master/images/blockchain4Integration/Auditable-Workspace-RefArch.png" alt="drawing" width="450" align="center"/></br>
 <p align="center">Figure 2: Blockchain based Auditable History or Workspace Architecture Pattern</p>
 </p>
 
