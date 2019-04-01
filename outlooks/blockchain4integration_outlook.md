@@ -159,7 +159,7 @@ Following describes patterns according to template described by Aleksandra Teša
 
 **Solution:** Proposed pattern candidate uses World Wide Web Consortium (W3C) DID specification[14] and W3C Verifiable Claims [15] specification in the following manner. 
 
-![Figure 1: Blockchain-based IAM Architecture Pattern](https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png)
+![Figure 1: Blockchain-based IAM Architecture Pattern](https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/IAM-RefArch.png =250x)
 
 
 Let’s assume Alice needs an identity (DID, which is a unique identifier). As shown by the figure for creating a new DID, Alice creates an entry in the blockchain, which includes a randomly generated identifier, a link to the repository with her profile data, and a hash of the profile data. The user profile contains a public key and a set of verifiable claims. The generated random identifier now becomes Alice’s DID. 
