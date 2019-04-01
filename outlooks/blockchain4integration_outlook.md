@@ -206,8 +206,11 @@ If the activities are numerous, there may be a need to workaround blockchain per
 
 **Solution:** The proposed pattern works as follows. . 
 
+<p align="center">
+<img src="https://github.com/wso2/ETAC/raw/master/images/blockchain4Integration/Registry-RefArch.png" alt="drawing" width="450" align="center"/></br>
+<p align="center">Figure 3: Blockchain based Registry Architecture Pattern</p>
+</p>
 
-Figure 3: Blockchain based Registry Architecture Pattern
 
 
 Let’s first consider a registry. With the proposed architecture, when a user issues a registry update (to add or modify an entry), the client records the change in the blockchain. If data in the update is large, the blockchain record may contain a link to the data and a hash value of the data. If data stored in the registry needs to be amended, the registry client adds a new record to the blockchain with amended information. 
@@ -238,7 +241,12 @@ Under this pattern we consider two cases. First consider smart contracts and the
 
 **Solution:** Following describes the implementation of the pattern using Car as the managed thing as an example. 
 
-Figure 4: Blockchain based Managed Things Architecture Pattern
+<p align="center">
+<img src="https://github.com/wso2/ETAC/raw/master/images/blockchain4Integration/ManagedThingsRefArch.png" alt="drawing" width="450" align="center"/></br>
+<p align="center">Figure 4: Blockchain based Managed Things Architecture Pattern</p>
+</p>
+
+
 
 
 We can implement a blockchain for a managed thing, in this case a car, in two steps. First, the manufacturer records the DID and public key of the owner of the car. When ownership changes, the owner adds a new record in the blockchain specifying the new owner. Second, when checking for ownership, the car first retrieves all records in the blockchain and verifies that each record is added by the owner at that time. This is done by checking the public key of the user who wrote the record against the public key included in the previous ownership record. The last owner in this valid chain is the current owner. 
@@ -344,7 +352,10 @@ Use of the Registry and Marketplace architecture pattern may face challenges rel
 # Blockchain for Integration ETAC
 The following picture summarizes our assessment of blockchain for integration using the ETAC format.
 
-TODO pic 
+<p align="center">
+<img src="https://github.com/wso2/ETAC/blob/master/images/blockchain4Integration/ETAC-Blockchain-For-Integration-V2.png" alt="drawing"  align="center"/></br>
+<p align="center">Figure 5: Blockchain for Integration ETAC</p>
+</p>
 
 
 
