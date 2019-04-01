@@ -264,12 +264,33 @@ TODO Appendix A shows the use cases categorized by the architecture patterns.
 # Technical Merit 
 
 As discussed by the blockchain outlook [19], blockchain-based systems face four challenges: 
-Limited scalability and latency
-Limited privacy
-Storage constraints
-Unsustainable consensus
+* Limited scalability and latency
+* Limited privacy
+* Storage constraints
+* Unsustainable consensus
 
 The following table explores the impact of the four challenges on the use cases described earlier. The columns represent the architecture pattern, challenges of public deployments, and challenges of private or consortium deployments.
+
+|Architecture Pattern Candidate| Challenges of public deployments |Challenges of Private or Consortium deployments |
+|--_|---|---|---|
+|IAM Use cases|Limited scalability, latency and unsustainable consensus (e.g. global ID use case). Otherwise, feasible for most cases. </br>
+Limited privacy - OK (data stored outside)</br> 
+Storage constraints - OK (data is small)</br> 
+| Feasible because these use cases usually needs limited scale and performance. |
+|Auditable History or Workspace|
+Limited scalability, latency, and unsustainable consensus. Otherwise, feasible for most use cases.  
+Limited privacy is not a concern. (data stored outside) 
+Storage constraints is not a concern. (data can be archived and retired time to time) 
+|Feasible because these use cases usually needs limited scale and performance.|
+|Registry, Market place|Limited scalability, latency, and unsustainable consensus. The global marketspace use case may be challenging. 
+Limited privacy is not a concern. Private data can be stored outside and replaced with a hash of the data. 
+Storage constraints is not a concern as data is small. 
+|Feasible because these use cases usually needs limited scale and performance.|
+|Smart contracts & Managed Things|N/A
+
+|Feasible because these use cases usually needs limited scale and performance.|
+
+Table 2: Technical Challenges by the use case
 
 Table 2: Technical Challenges by the use case
 
