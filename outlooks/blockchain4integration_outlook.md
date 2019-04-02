@@ -361,10 +361,9 @@ The following table summarizes observations and assesses the future of each arch
 
 |Architecture Pattern|Public|Private or Consortium|Conclusion|
 |---|---|---|---|
-|IAM|**Challenges:**<br/>**Risks:** Regulator response is possible due to privacy|Feasible<br/>**Risks:** Regulator response is possible due to privacy|Feasible for both public and private. Expected to take off within the next three years.<br/>EU-TRL 4-6|
+|IAM|**Risks:** Regulator response is possible due to privacy|Feasible<br/>**Risks:** Regulator response is possible due to privacy|Feasible for both public and private. Expected to take off within the next three years.<br/>EU-TRL 4-6|
 |Auditable History or Workspace|Feasible<br/>**Risks:** Regulator response (e.g. Regulation Information sharing across companies)|Feasible for most use cases.<br/>**Risks:** Regulator response (e.g. Regulation Information sharing across companies)|Feasible for both public and private. Expected to take off within the next three years.<br/> EU-TRL 5-7|
-|Registry or Markeplace|**Challenges:** Limited scalability and latency & Unsustainable consensus. <br/> **Risks* 
-Regulator response (e.g. health data kept in with a patient, Multi-organizations Projects)|Feasible<br/>**Risks:** Regulator response (e.g. health data kept in with a patient, Multi-organizations Projects)|Feasible for both public and private. <br/> EU-TRL 4-6<br/>Feasible for small deployments (e.g. throughput about 2-3 TPS).  Full support likely to take 5-10 years.| 
+|Registry or Markeplace|**Challenges:** Limited scalability and latency & Unsustainable consensus. <br/> **Risks:** Regulator response (e.g. health data kept in with a patient,Multi-organizations Projects)|Feasible<br/>**Risks:** Regulator response (e.g. health data kept in with a patient, Multi-organizations Projects)|Feasible for both public and private. <br/> EU-TRL 4-6<br/>Feasible for small deployments (e.g. throughput about 2-3 TPS).  Full support likely to take 5-10 years.| 
 |Smart contracts & Managed Things|N/A|**Risks:** Irrevocability, Unpredictability, Regulator response| Mainly private<br/>|EU-TRL 2-4<br/>Breakthroughs needed on handling risks, which likely to take 5-10 years.|
 
 <p align="center">Table 3: Future assesment of each Pattern</p>  
