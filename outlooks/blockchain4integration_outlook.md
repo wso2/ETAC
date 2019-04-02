@@ -272,12 +272,12 @@ As discussed by the blockchain outlook [19], blockchain-based systems face four 
 The following table explores the impact of the four challenges on the use cases described earlier. The columns represent the architecture pattern, challenges of public deployments, and challenges of private or consortium deployments.
 
 <table border="1">
-<tr><td>A</td><td>N</td></tr>
+<tr><td width="20%">A</td><td width="40%">N</td><td>N</td></tr>
 <table>
 
 |Architecture Pattern Candidate| Challenges of public deployments |Challenges of Private or Consortium deployments |
 |---|---|---|
-|IAM Use cases|Limited scalability, latency and unsustainable consensus (e.g. global ID use case). Otherwise, feasible for most cases. </br>Limited privacy - OK (data stored outside)</br> Storage constraints - OK (data is small)| Feasible because these use cases usually needs limited scale and performance.                                         .|
+|IAM Use cases|Limited scalability, latency and unsustainable consensus (e.g. global ID use case). Otherwise, feasible for most cases. </br>Limited privacy - OK (data stored outside)</br> Storage constraints - OK (data is small)| Feasible because these use cases usually needs limited scale and performance. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                        .|
 |Auditable History or Workspace|Limited scalability, latency, and unsustainable consensus. Otherwise, feasible for most use cases.  </br>Limited privacy is not a concern. (data stored outside) .</br>Storage constraints is not a concern. (data can be archived and retired time to time)|Feasible because these use cases usually needs limited scale and performance.|
 |Registry, Market place|Limited scalability, latency, and unsustainable consensus. The global marketspace use case may be challenging. Limited privacy is not a concern. Private data can be stored outside and replaced with a hash of the data. Storage constraints is not a concern as data is small. |Feasible because these use cases usually needs limited scale and performance.|
 |Smart contracts & Managed Things|N/A|Feasible because these use cases usually needs limited scale and performance.|
