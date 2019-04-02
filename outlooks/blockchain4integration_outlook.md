@@ -12,7 +12,7 @@ Version 0.8<br/>
 
 # Abstract
 
-_This paper critically evaluates blockchain-based integration use cases, their feasibility, and their timelines. The paper identifies 30-plus blockchain-based use cases for integration and four architecture patterns. Notably, each use case we identified can be implemented using one of the architecture patterns. Then the peper discusses how challenges posed by blockchains, such as performance limitations and risks around immutability, and unpredictability, would affect above architecture patterns._  
+_This paper critically evaluates blockchain-based integration use cases, their feasibility, and their timelines. The paper identifies 30-plus blockchain-based use cases for integration and four architecture patterns. Notably, each use case we identified can be implemented using one of the architecture patterns. Then the peper discusses how challenges posed by blockchains, such as performance limitations and risks such as immutability, and unpredictability, would affect above architecture patterns._  
  
 _Based on the analysis, the paper concludes that the use cases around "Auditable History or Workspace" and "IAM" patterns are feasible and use cases around the "Registry and Marketplace" pattern are feasible for moderate-size deployments. Further, the papers conclude that the "Smart Contracts and Managed Things" pattern will need several breakthroughs before becoming feasible._
 
@@ -40,9 +40,9 @@ On one hand, systems have grown complex over time, making it impossible for a ve
 
 As the definition of integration explains, integration connects different systems within and outside the organization, and it builds an integrated system. Therefore, integration has evolved to become a necessary and crucial factor in organizations’ design and often a strong predictor of user productivity. 
 
-Our main goal is to sort between the hype and the real potential of blockchain within the integration domain. With that in mind, we wanted to take a systematic approach to evaluate it. To do so, we have used the Emerging Technology Analysis Canvas (ETAC) [27] framework, which takes a broad view of emerging technology by probing impact, feasibility, risks and future timelines.
+Our main goal is to sort between the hype and the real potential of blockchain within the integration domain. With that in mind, we wanted to take a systematic approach to evaluate it. To do so, we have used the Emerging Technology Analysis Canvas (ETAC) [[27](https://github.com/wso2/ETAC/blob/master/ETAC.md)] framework, which takes a broad view of emerging technology by probing impact, feasibility, risks and future timelines.
 
-We make the following conclusions as a result of our analysis:
+We draw the following conclusions as a result of our analysis:
 * There are integration use cases in both public and private blockchain.
 * We identified four architecture pattern candidates that support those use cases: IAM, Auditable History or Workspace,  Registry or Marketplace, and Smart Contracts and Managed Things.
 * We find that the Auditable History or Workspace and IAM patterns are feasible.
