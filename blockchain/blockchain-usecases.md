@@ -6,7 +6,7 @@ We have identified following blockchain use cases based on the feedback from pra
 
 If you know other blockchain based Integration use cases, please send a git pull request.
 
-Usecases are grpoup by the motation to adopt them. 
+Usecases are grpoup by the motation to adopt them. For more details, please refer to the paper [The Role of Blockchain in Future Integrations](https://github.com/wso2/ETAC/blob/master/outlooks/blockchain4integration_outlook.md#proof).
 
 # Motivation: To Avoid Mistrust 
 

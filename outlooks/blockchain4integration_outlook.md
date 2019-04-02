@@ -12,8 +12,9 @@ Version 0.8<br/>
 
 # Abstract
 
-_TODO_
-
+_This paper critically evaluates blockchain-based integration use cases, their feasibility, and their timelines. The paper identifies 30-plus blockchain-based use cases for integration and four architecture patterns. Notably, each use case we identified can be implemented using one of the architecture patterns. Then we discussed how challenges posed by blockchains, such as performance limitations and risks around immutability, and unpredictability, would affect above architecture patterns._  
+ 
+_The paper concludes that the use cases around Auditable History or Workspace and IAM patterns are feasible and use cases around the Registry and Marketplace pattern are feasible for moderate-size deployments. Further, the papers conclude that the Smart Contracts and Managed Things pattern will need to see many breakthroughs before it becomes feasible._
 
 # Introduction 
 
@@ -39,9 +40,14 @@ On one hand, systems have grown complex over time, making it impossible for a ve
 
 As the definition of integration explains, integration connects different systems within and outside the organization, and it builds an integrated system. Therefore, integration has evolved to become a necessary and crucial factor in organizations’ design and often a strong predictor of user productivity. 
 
-[TODO repeat our conclusions of the paper here after they are finalized]
-
 Our main goal is to sort between the hype and the real potential of blockchain within the integration domain. With that in mind, we wanted to take a systematic approach to evaluate it. To do so, we have used the Emerging Technology Analysis Canvas (ETAC) [27] framework, which takes a broad view of emerging technology by probing impact, feasibility, risks and future timelines.
+
+We make the following conclusions as a result of our analysis:
+* There are integration use cases in both public and private blockchain.
+* We identified four architecture pattern candidates that support those use cases: IAM, Auditable History or Workspace,  Registry or Marketplace, and Smart Contracts and Managed Things.
+* We find that the Auditable History or Workspace and IAM patterns are feasible.
+* We believe that use cases around the Registry and Marketplace pattern are feasible for moderate-size deployments. 
+* We predict that the Smart Contracts and Managed Things pattern will need to see a number of breakthroughs before it is feasible for most use cases. 
 
 The remainder of this document is organized as follows. We have identified 30+ integration use cases that involves blockchain. After examining those integration use cases, the paper identifies four blockchain architecture pattern candidates. Most aforementioned use cases blockchain integration can be supported using one or combination of those pattern candidates. The paper then follows the narrative structure defined by the Emerging Technology Analysis Framework (ETAC) [27], which takes a broad view of emerging technology by probing impact, feasibility, risks and future timelines. 
 
@@ -74,7 +80,7 @@ In the case of integration, there are three key drivers of blockchain:
 The next section explores the impact of blockchain on integration.
 
 # Impact
-After brainstorming potential blockchain use cases, we identified 34 blockchain-based integration use cases, which are listed in Appendix A. This section examines the common trends seen across those use cases, as well as specific use cases when relevant. In the examples used in this paper, when we refer to the use cases, we will use the notation (U<usecase-number>). For example, (U20) means use case 20. 
+After brainstorming potential blockchain use cases, we identified 30-plus blockchain-based integration use cases, which are discussed in [Blockchain-based Intergation Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md). This section examines the common trends seen across those use cases, as well as specific use cases when relevant. In the examples used in this paper, when we refer to the use cases, we will use the notation (U<usecase-number>). For example, (U20) means use case 20. 
 
 ## Macro Impact
 At the macro level, it is important to understand the role of blockchain when used for integration, its network effects and interactions, and related disrupters. 
@@ -143,7 +149,7 @@ The main financial benefits are derived from the use of Blockchain to enhance th
 ## Supply Chain Efficiency 
 As discussed earlier, blockchain allows more effective collaboration with partners, suppliers, and other parties by supporting mechanisms, such as smart contracts and auditable workspaces.
 
-TODO - remove - The six impacts described earlier become motivations for people to deploy blockchains. Appendix A shows the use cases categorized by the micro impacts. 
+The six impacts described earlier become motivations for deploying blockchains. [Blockchain-based Intergation Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/block chain-usecases.md) describes the use cases under each motivation. 
 
 
 # Feasibility 
@@ -258,8 +264,6 @@ Such a system reduces the risks associated with remotely controlled artifacts.  
 However, it is hard to stop someone who has access to the “thing” from physically changing the logic running inside (e.g., by replacing firmware of the car). One solution to this problem is to build some form of autodestruct that triggers when tampering into the artifact is detected.
 
 For example, Alice buys the car from Bob using a smart contract that pays Bob and updates the ownership of the vehicle. After the transaction, Alice walks to the car, which reads Alice’s DID from the phone, retrieves her public key, authenticates her using a challenge-response-protocol by communicating with the phone that has Alice’s private key, verifies her ownership, and unlocks the car.  
-
-TODO Appendix A shows the use cases categorized by the architecture patterns. 
 
 # Technical Merit 
 
@@ -385,7 +389,7 @@ The following picture summarizes our assessment of blockchain for integration us
 
 
 # Conclusions
-This paper evaluates blockchain for integration use cases using the Emerging Technology Analysis Canvas (ETAC), a framework for critically analyzing emerging technologies. 
+This paper evaluates blockchain-based integration use cases using the Emerging Technology Analysis Canvas (ETAC), a framework for critically analyzing emerging technologies. 
 
 We first identified 30-plus blockchain-based use cases for integration by brainstorming with practitioners. By studying those use cases, we identified six motivations for an organization to deploy blockchain in the context of integration. Those motivations are better collaboration, ensuring trust, preventing coercion, providing new features for customers, improving efficiency, and optimizing supply chains. 
 
