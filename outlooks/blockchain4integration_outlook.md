@@ -271,10 +271,6 @@ As discussed by the blockchain outlook [19], blockchain-based systems face four 
 
 The following table explores the impact of the four challenges on the use cases described earlier. The columns represent the architecture pattern, challenges of public deployments, and challenges of private or consortium deployments.
 
-<table border="1">
-<tr><td width="20%">A</td><td width="40%">N</td><td>N</td></tr>
-<table>
-
 |Architecture Pattern Candidate| Challenges of public deployments |Challenges of Private or Consortium deployments |
 |---|---|---|
 |IAM Use cases|Limited scalability, latency and unsustainable consensus (e.g. global ID use case). Otherwise, feasible for most cases. </br>Limited privacy - OK (data stored outside)</br> Storage constraints - OK (data is small)| Feasible because these use cases usually needs limited scale and performance. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
@@ -282,7 +278,7 @@ The following table explores the impact of the four challenges on the use cases 
 |Registry, Market place|Limited scalability, latency, and unsustainable consensus. The global marketspace use case may be challenging. Limited privacy is not a concern. Private data can be stored outside and replaced with a hash of the data. Storage constraints is not a concern as data is small. |Feasible because these use cases usually needs limited scale and performance.|
 |Smart contracts & Managed Things|N/A|Feasible because these use cases usually needs limited scale and performance.|
 
-<p align="center">Table 2: Technical Challenges by the use case</p>
+<p align="center">Table 1: Technical Challenges by the Architecture Pattern</p>
 
 As the table depicts, most private or consortium use cases are not affected by the challenges. 
 
@@ -350,7 +346,7 @@ The following table explores the effects of the risks on blockchain use cases. T
 |IAM Use cases|Regulator response(due to privacy)|Regulator response (due to privacy)|
 |Registry, Market place|Regulator response (Use cases: support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|Regulator response (Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|
 
-<p align="center">Table 2: Future assesment of Architecture Patterns</p> 
+<p align="center">Table 2: Risks by Architecture Patterns</p> 
 
 
 Use cases other than Smart Contracts and Managed Things have well-defined behaviors and are not affected significantly by irrevocability. Any mistake may be corrected by adding a new entry to the blockchain. For example, any incorrect verifiable contract can be canceled by adding a new entry to the blockchain. 
@@ -362,7 +358,17 @@ It is worth noting that only use cases affected by irrevocability and unpredicta
 # Timeline 
 The following table summarizes observations and assesses the future of each architecture pattern and associated use cases. The columns list the architecture pattern, the challenges and risks for both public and private blockchain deployments, and the conclusion on where the patterns are best suited. In some instances, the conclusion will reference “EU-TRL,” which indicates the European Union Technology Readiness Level [29].
 
-TODO table 
+
+|Architecture Pattern|Public|Private or Consortium|Conclusion|
+|---|---|---|
+|IAM|**Challenges:**<br/>**Risks:** Regulator response is possible due to privacy|Feasible<br/>**Risks:** Regulator response is possible due to privacy|Feasible for both public and private. Expected to take off within the next three years.<br/>EU-TRL 4-6|
+|Auditable History or Workspace|Feasible<br/>**Risks:** Regulator response (e.g. Regulation Information sharing across companies)|Feasible for most use cases.<br/>**Risks:** Regulator response (e.g. Regulation Information sharing across companies)|Feasible for both public and private. Expected to take off within the next three years.<br/> EU-TRL 5-7|
+|Registry or Markeplace|**Challenges:** Limited scalability and latency & Unsustainable consensus. <br/> **Risks* 
+Regulator response (e.g. health data kept in with a patient, Multi-organizations Projects)|Feasible<br/>**Risks:** Regulator response (e.g. health data kept in with a patient, Multi-organizations Projects)|Feasible for both public and private. <br/> EU-TRL 4-6<br/>Feasible for small deployments (e.g. throughput about 2-3 TPS).  Full support likely to take 5-10 years.| 
+|Smart contracts & Managed Things|N/A|**Risks:** Irrevocability, Unpredictability, Regulator response| Mainly private<br/>|EU-TRL 2-4<br/>Breakthroughs needed on handling risks, which likely to take 5-10 years.|
+
+<p align="center">Table 3: Future assesment of each Pattern</p>  
+
 
 IAM and Auditable History or Workspace architecture patterns are feasible, and the only risk is regulator involvement. Among them, IAM shows the most promise due to the two W3C specifications handling DIDs and Verifiable Claims. We believe that we will start to see these applications within the next three years. 
 
