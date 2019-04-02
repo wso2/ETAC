@@ -69,7 +69,7 @@ Trust is the critical driver of the blockchain. Other drivers, such as decentral
 
 On one hand, individuals and organizations need to interact with others who are not known, and establishing trust with those parties is a crucial requirement. Currently, trust is built through rules, professionals (e.g., lawyers), and brokers. This process is both slow and expensive. Blockchain could potentially establish trust faster and cheaper. 
 
-On the other hand, centrally operated systems or services have gained deep mistrust. Examples of such systems include ecosystems, such as Facebook or a land registry operated by few. Blockchain enables us to decentralize those operations and limit the harm done by a few individuals or organizations. 
+On the other hand, centrally operated systems or services have gained deep mistrust. Examples of such systems include ecosystems, such as Facebook or a land registry operated by few. Blockchain enables us to decentralize those operations and limit the potential harm done by a few rouge individuals or organizations. 
 
 Furthermore, in some cases, blockchain enables us to keep immutable records of everything that happens, which can be audited and verified as needed. The knowledge about immutability both reassures participants and deters potential attackers. 
 
@@ -91,13 +91,14 @@ Integration enables different systems to work together. Since different systems 
 
 Blockchain improves efficiencies by supporting the seamless establishment of trust between participants (humans or systems) in an integration scenario and making participants accountable for their actions. 
 
-The following discussion assumes a scenario in which blockchain-based identifiers, known as  Distributed Identifiers (DIDs) [14]) and verifiable claims[15] defined by W3C specifications are widely adopted. The former enables everyone to have a DID to which their verifiable claims can be attached. Verifiable claims are proof of claims provided by authorities. For example, “Department of Motor Vehicles” (or DMV) may issue a verifiable claim confirming your name and address while the university you attended may issue a claim confirming your degree. 
+The following discussion assumes a scenario in which blockchain-based identifiers, known as  Distributed Identifiers (DIDs) [[14](https://w3c-ccg.github.io/did-spec/)]) and verifiable claims[[15](https://www.w3.org/TR/verifiable-claims-data-model/)] defined by W3C specifications are widely adopted. The former enables everyone to have a DID to which their verifiable claims can be attached. Verifiable claims are proof of claims provided by authorities. For example, “Department of Motor Vehicles” (or DMV) may issue a verifiable claim confirming your name and address while the university you attended may issue a claim confirming your degree. 
 
 For example, if blockchain is widely adopted, each actor will have an identifier (DID) and verifiable claims that will confirm this person’s attributes. When a party wants to interact with an unknown one, he can verify the unknown party securely and cheaply using verifiable claims. Before blockchain, this kind of transaction was handled by third parties or lawyers. Blockchain enables these transactions, instantly and without facilitators, bringing efficiency to trusted transactions. Furthermore, seamless trust establishment allows participants to assume less about each other, making them more loosely coupled while being even more integrated. 
 
 Additionally, an immutable ledger can capture the activities of participants, which can be audited and cannot be refuted. This activity record creates strong incentives for participants to behave responsibly. For instance, if an internet service requires a verifiable claim asserting that a user’s identity needs to be issued by the country he lives in, it stops him from creating a new account if he was banned due to misconduct. 
 
-Moreover, the wide adoption of blockchain establishes a higher bar of accountability. For example, many individuals or organizations would refuse to do business with entities that can't establish their trust via blockchain. Also, stakeholders will demand a higher level of visibility about activities from governments, organizations, and even individuals when they act in the public sphere. Donors want to track how their money is spent, and citizens will request details how their tax money is spent. More and more, those future transactions will be integrations require high levels of accountability. 
+Moreover, the wide adoption of blockchain establishes a higher bar of accountability. For example, many individuals or organizations would refuse to do business with entities that can't establish their trust via blockchain. Also, stakeholders will demand a higher level of visibility about activities from governments, organizations, and even individuals when they act in the public sphere. Donors want to track how their money is spent, and citizens will request details how their tax money is spent. More and more, those future transactions will be integrations and require high levels of accountability. 
+
 ## Network effects and Interactions
 Let’s now examine the network effects and interactions associated with blockchain.
 
@@ -418,8 +419,8 @@ We make the following conclusions as a result of our analysis:
 11. Nathan Reiff, Top Blockchain Startups to Watch in 2018, https://www.investopedia.com/news/top-blockchain-startups-watch-2018/
 12. Harold Stark, Keep An Eye On These Blockchain Startups Throughout 2018, https://www.forbes.com/sites/haroldstark/2017/12/12/keep-an-eye-on-these-blockchain-startups-throughout-2018/#6e3efd0413e6
 13. Blockchain Papers, https://github.com/decrypto-org/blockchain-papers
-14. Reed, D. et al. (2017). Decentralized identifiers (dids). W3C, Credentials Community Group.
-15. Burnett, D. C. et al. (2017). Verifiable claims data model. Verifiable Claims Working Group, W3C Editor’s Draft
+14. Reed, D. et al. (2017). Decentralized identifiers (dids). W3C, Credentials Community Group., https://w3c-ccg.github.io/did-spec/
+15. Burnett, D. C. et al. (2017). Verifiable claims data model. Verifiable Claims Working Group, W3C Editor’s Draft, https://www.w3.org/TR/verifiable-claims-data-model/
 16. Maersk and IBM Introduce TradeLens Blockchain Shipping Solution, https://newsroom.ibm.com/2018-08-09-Maersk-and-IBM-Introduce-TradeLens-Blockchain-Shipping-Solution
 17. How feasible is it for a CA to be hacked? https://security.stackexchange.com/questions/2268/how-feasible-is-it-for-a-ca-to-be-hacked-which-default-trusted-root-certificate 
 18. Gasser, Morrie, and Ellen McDermott. "An architecture for practical delegation in a distributed system." Proceedings. 1990 IEEE Computer Society Symposium on Research in Security and Privacy. IEEE, 1990.
