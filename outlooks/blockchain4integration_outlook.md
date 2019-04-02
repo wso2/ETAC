@@ -271,6 +271,10 @@ As discussed by the blockchain outlook [19], blockchain-based systems face four 
 
 The following table explores the impact of the four challenges on the use cases described earlier. The columns represent the architecture pattern, challenges of public deployments, and challenges of private or consortium deployments.
 
+<table border="1">
+<tr><td>A</td><td>N</td></tr>
+<table>
+
 |Architecture Pattern Candidate| Challenges of public deployments |Challenges of Private or Consortium deployments |
 |---|---|---|
 |IAM Use cases|Limited scalability, latency and unsustainable consensus (e.g. global ID use case). Otherwise, feasible for most cases. </br>Limited privacy - OK (data stored outside)</br> Storage constraints - OK (data is small)| Feasible because these use cases usually needs limited scale and performance.                                         .|
