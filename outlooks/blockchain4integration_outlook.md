@@ -446,7 +446,7 @@ We make the following conclusions as a result of our analysis:
 Original authors are Srinath Perera (srinath@wso2.com), Paul Fremantle (paul@wso2.com), Frank Leymann (frank@wso2.com). 
 
 # Acknowledgments
-Many thanks to Nuwan Dias, Kasun Indrasiri, Parbath Siriwardana from WSO2 who have provided significant and useful feedback.
+Many thanks to Nuwan Dias, Kasun Indrasiri, Parbath Siriwardana, Miyuru Dayarathne, and Malith Jayasinghe from WSO2 who have provided significant and useful feedback.
 
 # Help us improve ETAC
 We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com.
