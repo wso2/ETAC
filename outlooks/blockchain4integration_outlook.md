@@ -12,9 +12,9 @@ Version 0.8<br/>
 
 # Abstract
 
-_This paper critically evaluates blockchain-based integration use cases, their feasibility, and their timelines. The paper identifies 30-plus blockchain-based use cases for integration and four architecture patterns. Notably, each use case we identified can be implemented using one of the architecture patterns. Then the peper discusses how challenges posed by blockchains, such as performance limitations and risks such as immutability, and unpredictability, would affect above architecture patterns._  
+_This paper critically evaluates blockchain-based integration use cases, their feasibility, and their timelines. The paper identifies 30-plus blockchain-based use cases for integration and four architecture patterns. Notably, each use case we identified can be implemented using one of the architecture patterns. Then the paper discusses how challenges posed by blockchains, such as performance limitations and risks such as immutability, and unpredictability, would affect above architecture patterns._  
  
-_Based on the analysis, the paper concludes that the use cases around "Auditable History or Workspace" and "IAM" patterns are feasible and use cases around the "Registry and Marketplace" pattern are feasible for moderate-size deployments. Further, the papers conclude that the "Smart Contracts and Managed Things" pattern will need several breakthroughs before becoming feasible._
+_Based on the analysis, the paper concludes that the use cases around "Auditable History or Workspace" and "Identity and Access Management(IAM)" patterns are feasible and use cases around the "Registry and Marketplace" pattern are feasible for moderate-size deployments. Further, the papers conclude that the "Smart Contracts and Managed Things" pattern will need several breakthroughs before becoming feasible._
 
 # Introduction 
 
@@ -49,13 +49,13 @@ We draw the following conclusions as a result of our analysis:
 * We believe that use cases around the Registry and Marketplace pattern are feasible for moderate-size deployments. 
 * We predict that the Smart Contracts and Managed Things pattern will need to see a number of breakthroughs before it is feasible for most use cases. 
 
-The remainder of this document is organized as follows. We have identified 30+ integration use cases that involves blockchain. After examining those integration use cases, the paper identifies four blockchain architecture pattern candidates. Most aforementioned use cases blockchain integration can be supported using one or combination of those pattern candidates. The paper then follows the narrative structure defined by the Emerging Technology Analysis Framework (ETAC) [27], which takes a broad view of emerging technology by probing impact, feasibility, risks and future timelines. 
+The remainder of this document is organized as follows. We have identified 30+ integration use cases that involves blockchain. After examining those integration use cases, the paper identifies four blockchain architecture pattern candidates. Most aforementioned blockchain-based integration use cases can be supported using one or combination of those pattern candidates. The paper then follows the narrative structure defined by the Emerging Technology Analysis Framework (ETAC) [27], which takes a broad view of emerging technology by probing impact, feasibility, risks and future timelines. 
 
-We first discuss the opportunity, including the initial trigger and the current status of blockchain adoption. Then under impact, we identify six motivations for organizations to deploy blockchain and examine the associated impacts at both a macro and micro level. Next we review the feasibility of the four architecture pattern candidates, as well as the ecosystem required to support them. Finally, in evaluating the future, we discuss the risks and timelines for each of the four architectures and associated use cases. 
+We first discuss the opportunity, including the initial trigger and the current status of blockchain adoption. Then under impact, we identify six motivations for organizations to deploy blockchain and examine the associated impacts at both macro and micro level. Next we review the feasibility of the four architecture pattern candidates, as well as the ecosystem required to support them. Finally, in evaluating the future, we discuss the risks and timelines for each of the four architectures and associated use cases. 
 
 # Opportunity 
 ## Trigger 
-Although Bitcoin kick-started blockchain, it has had a minimal impact on integration. For example, some organizations have accepted payment through blockchain, but adoption has been limited, and several have withdrawn support for Bitcoin due to legal uncertainties. Moreover, there are many proofs-of-concept, but there is no widely successful single application that acts as a trigger for integration use cases that involves blockchain. Generic blockchain integrations mostly motivate current activities in the integration area. 
+Although Bitcoin kick-started blockchain, it has had a minimal impact on integration. For example, some organizations have accepted payment through blockchain, but adoption has been limited, and several have withdrawn support for Bitcoin due to legal uncertainties. Moreover, there are many proofs-of-concepts, but there is no widely successful single application that acts as a trigger for integration use cases that involves blockchain. Generic blockchain use cases mostly motivate current activities in the integration area. 
 ## Players	
 Today, there is a significant blockchain ecosystem, which is active and includes developers, miners, and investors. There are ongoing investments in this ecosystem from IBM (HyperLedger), Google (e.g. [8]), Microsoft, financial institutions, banks, governments, and the United Nations, among many others. Gartner has listed 32 blockchain platforms in a report [9]. Blockchain has also received significant venture capital (VC) investments (e.g. [10, 11, 12]). The A16z crypto fund [14] is an example. 
 
@@ -80,7 +80,7 @@ In the case of integration, there are three key drivers of blockchain:
 The next section explores the impact of blockchain on integration.
 
 # Impact
-After brainstorming potential blockchain use cases, we identified 30-plus blockchain-based integration use cases, which are discussed in [Blockchain-based Intergation Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md). This section examines the common trends seen across those use cases, as well as specific use cases when relevant. In the examples used in this paper, when we refer to the use cases, we will use the notation (U<usecase-number>). For example, (U20) means use case 20. 
+After brainstorming potential blockchain use cases, we identified 30-plus blockchain-based integration use cases, which are discussed in [Blockchain-based Intergation Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md). This section examines the common trends seen across those use cases, as well as specific use cases when relevant.  
 
 ## Macro Impact
 At the macro level, it is important to understand the role of blockchain when used for integration, its network effects and interactions, and related disrupters. 
@@ -149,7 +149,7 @@ The main financial benefits are derived from the use of Blockchain to enhance th
 ## Supply Chain Efficiency 
 As discussed earlier, blockchain allows more effective collaboration with partners, suppliers, and other parties by supporting mechanisms, such as smart contracts and auditable workspaces.
 
-The six impacts described earlier become motivations for deploying blockchains. [Blockchain-based Intergation Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/block chain-usecases.md) describes the use cases under each motivation. 
+The six impacts described earlier become motivations for deploying blockchains. [Blockchain-based Intergation Use Cases](https://github.com/wso2/ETAC/blob/master/blockchain/block chain-usecases.md) describes the use cases under each motivation. 
 
 
 # Feasibility 
@@ -430,7 +430,7 @@ We make the following conclusions as a result of our analysis:
 24. G. Fletcher, T. Lodderstedt, Z. Zeltsan, Internet-Draft: OAuth Use Cases, 2013, https://tools.ietf.org/html/draft-ietf-oauth-use-cases-01 
 25. Why might some central banks issue their own digital currency? https://www.bankofengland.co.uk/-/media/boe/files/research/cbdc.pdf 
 26. Bitcoin P2P e-cash paper, https://www.mail-archive.com/cryptography@metzdowd.com/msg09997.html
-27. Perera, S. (2018). Emerging technology analysis canvas (ETAC). https://github.com/wso2/ETAC/blob/master/ETAC.md. [Online; accessed 01-2019].
+27. Perera, S. (2018). Emerging technology analysis canvas (ETAC). https://github.com/wso2/ETAC/blob/master/ETAC.md. 
 28. Challenge Response Protocol, https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication 
 29. Europen Union Technology readiness level. ”https://en.wikipedia.org/wiki/Technology readiness level”
 30. Decentralized Data: “Why Blockchain is meaningless and Trustless is everything”, https://hackernoon.com/decentralized-data-why-blockchain-is-meaningless-and-trustless-is-everything-318fd14d3827
