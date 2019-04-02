@@ -102,9 +102,9 @@ Moreover, the wide adoption of blockchain establishes a higher bar of accountabi
 ## Network effects and Interactions
 Let’s now examine the network effects and interactions associated with blockchain.
 
-Network effects are often a strong predictor of success. We say a system has a “network effect” when its value to users increases as the number of users of the system increases. A system with a network effect builds momentum as it grows, which is the reason for its strong correlation with success. However, it is worth noting that even systems with network effects fail if they fail to create a critical mass.
+Network effects are often a strong predictor of success. We say a system has a “network effect” when its value to users increases as the number of users of the system increases. Systems with a network effect builds momentum as they grows, which is the reason for their strong correlation with success. However, it is worth noting that even systems with network effects fail if they fail to create a critical mass.
 
-Following are some examples of use cases enabled by blockchain. Primary advantage they offer over existing implementations they are decentralized and one or few actors can’t control them.  In addition, these use cases have network effects. 
+Following are some examples of use cases enabled by blockchain that have network effects. Primary advantage they offer over existing implementations are two fold where they are decentralized and one or few actors can’t control them. 
 
 * With API marketplaces and dynamic API discovery and composition, as the number of users increases, more and more new APIs will come in, which will attract more users. 
 * More users with verifiable claims make it more likely you can do ad-hoc transactions with a user you run into, which increases the value of verifiable claims, causing more users to obtain verifiable claims.   
