@@ -1,4 +1,4 @@
-<h1 align="center">Blockchain-based Intergation Usecases
+<h1 align="center">Blockchain-based Intergation Use Cases
 </center></h1>
 
 
