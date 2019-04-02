@@ -360,7 +360,7 @@ The following table summarizes observations and assesses the future of each arch
 
 
 |Architecture Pattern|Public|Private or Consortium|Conclusion|
-|---|---|---|
+|---|---|---|---|
 |IAM|**Challenges:**<br/>**Risks:** Regulator response is possible due to privacy|Feasible<br/>**Risks:** Regulator response is possible due to privacy|Feasible for both public and private. Expected to take off within the next three years.<br/>EU-TRL 4-6|
 |Auditable History or Workspace|Feasible<br/>**Risks:** Regulator response (e.g. Regulation Information sharing across companies)|Feasible for most use cases.<br/>**Risks:** Regulator response (e.g. Regulation Information sharing across companies)|Feasible for both public and private. Expected to take off within the next three years.<br/> EU-TRL 5-7|
 |Registry or Markeplace|**Challenges:** Limited scalability and latency & Unsustainable consensus. <br/> **Risks* 
