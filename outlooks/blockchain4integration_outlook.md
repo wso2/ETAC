@@ -273,12 +273,12 @@ The following table explores the impact of the four challenges on the use cases 
 
 |Architecture Pattern Candidate| Challenges of public deployments |Challenges of Private or Consortium deployments |
 |---|---|---|
-|IAM Use cases|Limited scalability, latency and unsustainable consensus (e.g. global ID use case). Otherwise, feasible for most cases. </br>Limited privacy - OK (data stored outside)</br> Storage constraints - OK (data is small)| Feasible because these use cases usually needs limited scale and performance. |
+|IAM Use cases|Limited scalability, latency and unsustainable consensus (e.g. global ID use case). Otherwise, feasible for most cases. </br>Limited privacy - OK (data stored outside)</br> Storage constraints - OK (data is small)| Feasible because these use cases usually needs limited scale and performance.                                         .|
 |Auditable History or Workspace|Limited scalability, latency, and unsustainable consensus. Otherwise, feasible for most use cases.  </br>Limited privacy is not a concern. (data stored outside) .</br>Storage constraints is not a concern. (data can be archived and retired time to time)|Feasible because these use cases usually needs limited scale and performance.|
 |Registry, Market place|Limited scalability, latency, and unsustainable consensus. The global marketspace use case may be challenging. Limited privacy is not a concern. Private data can be stored outside and replaced with a hash of the data. Storage constraints is not a concern as data is small. |Feasible because these use cases usually needs limited scale and performance.|
 |Smart contracts & Managed Things|N/A|Feasible because these use cases usually needs limited scale and performance.|
 
-Table 2: Technical Challenges by the use case
+<p align="center">Table 2: Technical Challenges by the use case</p>
 
 As the table depicts, most private or consortium use cases are not affected by the challenges. 
 
@@ -343,10 +343,10 @@ The following table explores the effects of the risks on blockchain use cases. T
 |---|---|---|
 |Auditable History or Workspace|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies, Pre-Lawsuit Communications)|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies)|
 |Smart contracts & Managed Things|N/A|Irrevocability|Unpredictability |</br>Regulator response ( Use cases: Ecosystem-level non-competitive critical services, Global Reputation System)|
-|IAM Use cases|Regulator response(Use cases: due to privacy)|Regulator response (Use cases: due to privacy)|
+|IAM Use cases|Regulator response(due to privacy)|Regulator response (due to privacy)|
 |Registry, Market place|Regulator response (Use cases: support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|Regulator response (Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|
 
-Table 2: Future assesment of Patterns 
+<p align="center">Table 2: Future assesment of Architecture Patterns</p> 
 
 
 Use cases other than Smart Contracts and Managed Things have well-defined behaviors and are not affected significantly by irrevocability. Any mistake may be corrected by adding a new entry to the blockchain. For example, any incorrect verifiable contract can be canceled by adding a new entry to the blockchain. 
