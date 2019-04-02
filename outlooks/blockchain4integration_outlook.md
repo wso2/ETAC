@@ -280,8 +280,6 @@ The following table explores the impact of the four challenges on the use cases 
 
 Table 2: Technical Challenges by the use case
 
-Table 2: Technical Challenges by the use case
-
 As the table depicts, most private or consortium use cases are not affected by the challenges. 
 
 Also, most IAM use cases can work with the current performance limits of the blockchain. For example, IAM use cases update an entry only when a new account is added or when verifiable claims are updated, both of which are not frequent for an individual user. For the read access, the systems may keep a cache and update it by listening to blockchain updates. Write updates can be batched and entered into the blockchain as a single batch. Even required updates can be batched, since the creation of a new account typically takes a few hours to take effect even with current non-blockchain implementations. . 
@@ -340,7 +338,15 @@ Quantum cryptography refers to the impact of quantum computing—if widely avail
 
 The following table explores the effects of the risks on blockchain use cases. The first column lists the architecture pattern; the second lists risks related to public blockchain deployments, and the third notes risks associated with private blockchain deployments. 
 
-//TODO table 
+
+|Architecture pattern| Risks of Public deployments|Risks of Private or Consortium deployments| 
+|---|---|---|
+|Auditable History or Workspace|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies, Pre-Lawsuit Communications)|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies)|
+|Smart contracts & Managed Things|N/A|Irrevocability|Unpredictability |</br>Regulator response ( Use cases: Ecosystem-level non-competitive critical services, Global Reputation System)|
+|IAM Use cases|Regulator response(Use cases: due to privacy)|Regulator response (Use cases: due to privacy)|
+|Registry, Market place|Regulator response (Use cases: support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|Regulator response (Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|
+
+Table 2: Future assesment of Patterns 
 
 
 Use cases other than Smart Contracts and Managed Things have well-defined behaviors and are not affected significantly by irrevocability. Any mistake may be corrected by adding a new entry to the blockchain. For example, any incorrect verifiable contract can be canceled by adding a new entry to the blockchain. 
