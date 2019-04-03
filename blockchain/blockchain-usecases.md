@@ -8,7 +8,7 @@ If you know other blockchain based Integration use cases, please send a git pull
 
 Usecases are grpoup by the motation to adopt them. For more details, please refer to the paper [The Role of Blockchain in Future Integrations](https://github.com/wso2/ETAC/blob/master/outlooks/blockchain4integration_outlook.md#proof).
 
-# Motivation: To Avoid Mistrust 
+# Motivation: Foster Trust 
 
 ## Standards or Regulation Adherence 
 * **Use case:** Adhere to standards, safety checks, etc. exposed via a public or consortium blockchain (by choice or by government regulation). This has added the advantage of holding regulators responsible for their decisions.
@@ -33,7 +33,7 @@ Usecases are grpoup by the motation to adopt them. For more details, please refe
 
 
 
-# Motivation: To Avoid Coercion 
+# Motivation: Avoid Coercion 
 ## Avoid Coercion as a Certification Authority  
 * **Use cases:** A Certification Authority may put public certificate in a blockchain so that they can’t change it without others’ consent. This reduces the chance that they will be coerced into creating certificates for activities, such as intelligence. 
 * **Implementation:** See the Registry or Marketplace architecture pattern.
@@ -86,7 +86,7 @@ Usecases are grpoup by the motation to adopt them. For more details, please refe
 * **Implementation:** See the Smart Contracts and Managed Things architecture pattern.
 
 
-# Motivation: To fulfil Customer Requests
+# Motivation: Enhance Customer Experiences
 
 ## Supporting a Receipt 
 * **Idea:** Provide a receipt of a message using blockchain. 
@@ -119,7 +119,7 @@ Usecases are grpoup by the motation to adopt them. For more details, please refe
 
 
 
-# Motivation: Enabling Collaborations
+# Motivation: Collaborate More Effectively
 
 ## Decentralized API Marketplace
 * **Idea:** Global decentralized registry of APIs that includes reputations, reviews, etc. (needs service contract agreements for tasks)
