@@ -159,7 +159,7 @@ To understand the feasibility of blockchain for integration, we need to understa
 Following describes patterns according to template described by Aleksandra Tešanovic [[6](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1162&rep=rep1&type=pdf)]. 
 
 ### Architecture Pattern for IAM. 
-**Context:** IAM environments includes many users and service providers where users want to use services provided by service providers. This is done by giving each user an account and set of capabilities where users go to service providers, demonstrate their ownership of the accounts and then receive services based on their capabilities. 
+**Context:** IAM environments include many users and service providers. IAM systems give each user an account and set of capabilities enabling users to go to service providers, demonstrate their ownership of accounts, and then receive services based on their capabilities.
 
 **Forces:** Need to implement a decentralized IAM environment where a single rogue user or few users can’t significantly affect the system. 
 
@@ -171,7 +171,7 @@ Following describes patterns according to template described by Aleksandra Teša
 </p>
 
 
-Let’s assume Alice needs an identity (DID, which is a unique identifier). As shown by the figure for creating a new DID, Alice creates an entry in the blockchain, which includes a randomly generated identifier, a link to the repository with her profile data, and a hash of the profile data. The user profile contains a public key and a set of verifiable claims. The generated random identifier now becomes Alice’s DID. 
+Let’s assume Alice needs an identity (DID, which is a unique identifier). As shown by the figure for creating a new DID, Alice creates an entry in the blockchain, which includes a randomly generated identifier, a link to the repository with her profile data, and a hash of the profile data. The user profile contains a public key and a set of verifiable claims. The generated random identifier now becomes Alice’s DID because only she owns the private key corresponds to the public key. 
 
 Verifiable claims are delegation tokens [18] signed by a competent authority. The creator also records them in a blockchain together with the hash of the claim in a manner similar to the DID. 
 
@@ -206,7 +206,7 @@ If the activities are numerous, there may be a need to workaround blockchain per
 
 
 ### Architecture Pattern for Registry or Marketplace
-**Context:** A registry is a collection of data entries that can be searched and retrieved over the network. A market place is a registry that allows users to buy the services or products represented by data entries. The solution may also act as a marketplace that supports purchasing the item in some form. For example, a registry may contain available APIs. 
+**Context:** A registry is a collection of data entries that can be searched and retrieved over the network. A market place is a registry that allows users to buy the services or products represented by data entries. For example, a registry may be a catalog of available APIs. 
 
 **Forces:** Need to implement a decentralized environment where a single rogue user or few users can’t significantly affect the system. 
 
@@ -228,7 +228,7 @@ Blockchain works well as a "service marketplace," since the same service may be 
 To illustrate, the functionality of a blockchain-based registry, let’s look at when Alice wants to subscribe to "weather news service” in the blockchain marketplace. When she submits her request, the registry creates credentials for the service and shares it with Alice. The payment may happen in one of several ways: using Bitcoins, via a smart contract where payments are made on a time basis, or by some out-of-bound means. 
 
 
-###Architecture Pattern for Smart Contracts and Managed Things
+### Architecture Pattern for Smart Contracts and Managed Things
 
 Under this pattern we consider two cases. First consider smart contracts and the second consider a common special case of smart contracts: “Managed Things”. 
 
@@ -287,7 +287,7 @@ The following table explores the impact of the four challenges on the use cases 
 
 As the table depicts, most private or consortium use cases are not affected by the challenges. 
 
-Also, most IAM use cases can work with the current performance limits of the blockchain. For example, IAM use cases update an entry only when a new account is added or when verifiable claims are updated, both of which are not frequent for an individual user. For the read access, the systems may keep a cache and update it by listening to blockchain updates. Write updates can be batched and entered into the blockchain as a single batch. Even required updates can be batched, since the creation of a new account typically takes a few hours to take effect even with current non-blockchain implementations.
+Also, most IAM use cases can work with the current performance limits of the blockchain. For example, IAM use cases update an entry only when a new account is added or when verifiable claims are updated, both of which are not frequent for an individual user. For the read access, the systems may keep a cache and update it by listening to blockchain updates. Write updates can be batched and entered into the blockchain as a single batch. This is acceptable because even current non-blockchain implementations often require few hours for the creation of a new account to take effect.
 
 As the table indicates, auditable history and workspace can generate a significant amount of data for some use cases. We can handle this by batching data, and for each batch, we can store a single hash in the blockchain. Therefore, scalability is not a concern for most use cases. Workspace-based use cases will need smart contracts, but those use cases are most likely to take place in a private blockchain. Hence, each workspace would be independent, letting end users run many copies as needed. 
 
@@ -295,12 +295,12 @@ Among marketplace use cases, the ability to process subscriptions in a global ma
 
 Smart contracts are mostly private and do not need substantial deployments. "Managed things" use cases are also mostly private, and most of the workload reads from the blockchain (e.g., authenticate the user to a car), which can be supported via caches. 
 
-As discussed in the blockchain outlook, notwithstanding significant challenges, there is hope. The best minds are working on these problems, and progress is being made. For example, Zamani [20] presented a RapidChain algorithm that can perform 7,500 transactions/second. Furthermore, Kasireddy [21] discusses some of the approaches used to handle these problems, and the web page “Curated Blockchain Papers[22]” cites many relevant publications that examine how to address some of the issues.
+As discussed in [the blockchain outlook](https://doi.org/10.7287/peerj.preprints.27529v1), notwithstanding significant challenges, there is hope. The best minds are working on these problems, and progress is being made. For example, Zamani [[20](https://blog.acolyer.org/2018/12/07/rapidchain-scaling-blockchain-via-full-sharding/)] presented a RapidChain algorithm that can perform 7,500 transactions/second. Furthermore, Kasireddy [[21](https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb43946551a)] discusses some of the approaches used to handle these problems, and the web page “[Curated Blockchain Papers](https://github.com/decrypto-org/blockchain-papers)[22]” cites many relevant publications that examine how to address some of the issues.
 
 ## Tools, Ecosystem, & Skills 
 To date, developers with blockchain skills have been scarce. However, fueled by high demand, many developers are acquiring blockchain skills. We have observed students master key ideas within a few weeks, and many education materials are already available. Therefore, we believe skills will not be a significant obstacle. 
 
-However, tooling support for blockchain at this point remains limited. Most use cases assume that they will be handled by highly technical users (Kasireddy [24]). However, this can be fixed after the core technology has stabilized. 
+However, tooling support for blockchain at this point remains limited. Most use cases assume that they will be handled by highly technical users (Kasireddy [[24](https://tools.ietf.org/html/draft-ietf-oauth-use-cases-01)]). However, this can be fixed after the core technology has stabilized. 
 
 Often integration use cases depend on middleware, where organizations run pre-built systems and make the necessary changes and configurations to suit their use cases. These decisions are driven by an analysis of the total cost of ownership. 
 
@@ -323,7 +323,7 @@ The blockchain outlook identified the following cases of friction:
 * The complexity of many blockchain-based applications (e.g., smart contracts)
 * A shortage of tools within current blockchain ecosystems to help users debug their applications
 
-Most of the above risks stem from smart contracts ( see blockchain [27] for details). Among the four architecture patterns, the IAM and Auditable History or Workspace patterns does not use smart contracts. Therefore, none of the above risks apply. 
+Most of the above risks stem from smart contracts ( see [blockchain outlook](https://github.com/wso2/ETAC/blob/master/ETAC.md)[27] for details). Among the four architecture patterns, the IAM and Auditable History or Workspace patterns does not use smart contracts. Therefore, none of the above risks apply. 
 
 The subscription part of the Registry or Marketplace and Smart Contracts and Managed Things architecture patterns need custom smart contracts. Therefore, they are susceptible to all four frictions. 
 
@@ -331,7 +331,7 @@ The subscription part of the Registry or Marketplace and Smart Contracts and Man
 # Future
 ## Risks
 
-In previously published works [27], the authors have identified several risks associated with blockchain: irrevocability, regulator absence, regulator response, unpredictability, and quantum cryptography. 
+In previously published works [[27](https://github.com/wso2/ETAC/blob/master/ETAC.md)], the authors have identified several risks associated with blockchain: irrevocability, regulator absence, regulator response, unpredictability, and quantum cryptography. 
 
 Among them, irrevocability is the risk induced by the immutability of blockchain: if a mistake is made, the transaction can’t be recalled. Most real-life scenarios support some form of “appeal,” and this is a concern for some use cases. 
 
@@ -361,7 +361,7 @@ However, as described in the outlook section, smart contract-based use cases—s
 It is worth noting that only use cases affected by irrevocability and unpredictability are affected by the lack of a regulator. The table above lists the use cases that may require regulator involvement. In some cases, such as “Standards or Regulation Adherence,” implementing a blockchain would be beneficial to the organization.  
 
 # Timeline 
-The following table summarizes observations and assesses the future of each architecture pattern and associated use cases. The columns list the architecture pattern, the challenges and risks for both public and private blockchain deployments, and the conclusion on where the patterns are best suited. In some instances, the conclusion will reference “EU-TRL,” which indicates the European Union Technology Readiness Level [29].
+The following table summarizes observations and assesses the future of each architecture pattern and associated use cases. The columns list the architecture pattern, the challenges and risks for both public and private blockchain deployments, and the conclusion on where the patterns are best suited. In some instances, the conclusion will reference “EU-TRL,” which indicates the European Union Technology Readiness Level [[29](https://en.wikipedia.org/wiki/Technology_readiness_level)].
 
 
 |Architecture Pattern|Public|Private or Consortium|Conclusion|
@@ -433,7 +433,7 @@ We make the following conclusions as a result of our analysis:
 26. Bitcoin P2P e-cash paper, https://www.mail-archive.com/cryptography@metzdowd.com/msg09997.html
 27. Perera, S. (2018). Emerging technology analysis canvas (ETAC). https://github.com/wso2/ETAC/blob/master/ETAC.md. 
 28. Challenge Response Protocol, https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication 
-29. Europen Union Technology readiness level. ”https://en.wikipedia.org/wiki/Technology readiness level”
+29. Europen Union Technology readiness level. ”https://en.wikipedia.org/wiki/Technology_readiness_level”
 30. Decentralized Data: “Why Blockchain is meaningless and Trustless is everything”, https://hackernoon.com/decentralized-data-why-blockchain-is-meaningless-and-trustless-is-everything-318fd14d3827
 31. Blockchain-based Intergation Use Cases, https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md
 
