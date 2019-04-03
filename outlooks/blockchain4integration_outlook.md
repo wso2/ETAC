@@ -298,6 +298,7 @@ Smart contracts are mostly private and do not need substantial deployments. "Man
 As discussed in [the blockchain outlook](https://doi.org/10.7287/peerj.preprints.27529v1), notwithstanding significant challenges, there is hope. The best minds are working on these problems, and progress is being made. For example, Zamani [[20](https://blog.acolyer.org/2018/12/07/rapidchain-scaling-blockchain-via-full-sharding/)] presented a RapidChain algorithm that can perform 7,500 transactions/second. Furthermore, Kasireddy [[21](https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb43946551a)] discusses some of the approaches used to handle these problems, and the web page “[Curated Blockchain Papers](https://github.com/decrypto-org/blockchain-papers)[22]” cites many relevant publications that examine how to address some of the issues.
 
 ## Tools, Ecosystem, & Skills 
+
 To date, developers with blockchain skills have been scarce. However, fueled by high demand, many developers are acquiring blockchain skills. We have observed students master key ideas within a few weeks, and many education materials are already available. Therefore, we believe skills will not be a significant obstacle. 
 
 However, tooling support for blockchain at this point remains limited. Most use cases assume that they will be handled by highly technical users (Kasireddy [[24](https://tools.ietf.org/html/draft-ietf-oauth-use-cases-01)]). However, this can be fixed after the core technology has stabilized. 
