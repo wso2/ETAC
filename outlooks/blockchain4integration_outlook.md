@@ -69,7 +69,7 @@ Trust is the critical driver of the blockchain. Other drivers, such as decentral
 
 On one hand, individuals and organizations need to interact with others who are not known, and establishing trust with those parties is a crucial requirement. Currently, trust is built through rules, professionals (e.g., lawyers), and brokers. This process is both slow and expensive. Blockchain could potentially establish trust faster and cheaper. 
 
-On the other hand, centrally operated systems or services have gained deep mistrust. Examples of such systems include ecosystems, such as Facebook or a land registry operated by few. Blockchain enables us to decentralize those operations and limit the potential harm done by a few rouge individuals or organizations. 
+On the other hand, centrally operated systems or services have gained deep mistrust. Examples of such systems include ecosystems, such as Facebook or a land registry operated by few. Blockchain enables us to decentralize those operations and limit the potential harm done by a few rogue individuals or organizations. 
 
 Furthermore, in some cases, blockchain enables us to keep immutable records of everything that happens, which can be audited and verified as needed. The knowledge about immutability both reassures participants and deters potential attackers. 
 
@@ -149,19 +149,19 @@ The main financial benefits are derived from the use of Blockchain to enhance th
 ## Supply Chain Efficiency 
 As discussed earlier, blockchain allows more effective collaboration with partners, suppliers, and other parties by supporting mechanisms, such as smart contracts and auditable workspaces.
 
-The six impacts described earlier become motivations for deploying blockchains. [Blockchain-based Intergation Use Cases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md) describes the use cases under each motivation. 
+The six impacts described earlier become motivations for deploying blockchains. For more information, please refer to [Blockchain-based Intergation Use Cases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md), which describes the use cases under each motivation. 
 
 
 # Feasibility 
 To understand the feasibility of blockchain for integration, we need to understand “how to implement the use cases” and their Quality of Service (QoS) characteristics. After exploring the possible implementations of these use cases, we have identified four architecture patterns for blockchain-based systems. Most use cases can be implemented using one or combination of these architecture patterns. Let’s look at each of them in detail. 
 
 ## Four Architecture Patterns Candidates for Blockchain
-Following describes patterns according to template described by Aleksandra Tešanovic [6]. 
+Following describes patterns according to template described by Aleksandra Tešanovic [[6](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1162&rep=rep1&type=pdf)]. 
 
 ### Architecture Pattern for IAM. 
-**Context:** IAM environments includes many users and service providers where users want to use services provided by service providers. This is done by providing each user account and set of capabilities where users goes to service providers, demonstrate their ownership of the accounts and then receive services based on their capabilities. 
+**Context:** IAM environments includes many users and service providers where users want to use services provided by service providers. This is done by giving each user an account and set of capabilities where users go to service providers, demonstrate their ownership of the accounts and then receive services based on their capabilities. 
 
-**Forces:** Need implement a decentralized IAM environment where a single rouge user or few users can’t significantly affect the system. 
+**Forces:** Need to implement a decentralized IAM environment where a single rogue user or few users can’t significantly affect the system. 
 
 **Solution:** Proposed pattern candidate uses World Wide Web Consortium (W3C) DID specification[14] and W3C Verifiable Claims [15] specification in the following manner. 
 
@@ -185,9 +185,9 @@ We can layer most IAM use cases on top of this architecture pattern. For example
 
 ### Architecture Pattern for Auditable History or Workspace
 
-**Context:** A two or more parties performs transactions or works together and their activities need to be recorded in a indisputable manner. 
+**Context:** A two or more parties perform transactions or works together and their activities need to be recorded in an indisputable manner. 
 
-**Forces:** Need to implement a decentralized audit long or a workspace where a single rouge user or few users can’t significantly affect the system. 
+**Forces:** Need to implement a decentralized audit log or a workspace where a single rogue user or few users can’t significantly affect the system. 
 
 **Solution:** The proposed system records activities and creates entries in the blockchain for those records. The entry contains the hash of activity records, and therefore, the records can’t be disputed later. 
 
@@ -206,11 +206,11 @@ If the activities are numerous, there may be a need to workaround blockchain per
 
 
 ### Architecture Pattern for Registry or Marketplace
-**Context:** A registry is a collection of data entries that can be searched over the network. A market place is a registry that allows users to buy the services or products represented by data entries. The solution may also act as a marketplace that supports buying the item in some form. For example, a registry may contain available APIs. 
+**Context:** A registry is a collection of data entries that can be searched and retrieved over the network. A market place is a registry that allows users to buy the services or products represented by data entries. The solution may also act as a marketplace that supports purchasing the item in some form. For example, a registry may contain available APIs. 
 
-**Forces:** Need to implement a decentralized environment where a single rouge user or few users can’t significantly affect the system. 
+**Forces:** Need to implement a decentralized environment where a single rogue user or few users can’t significantly affect the system. 
 
-**Solution:** The proposed pattern works as follows. . 
+**Solution:** The proposed pattern works as follows. 
 
 <p align="center">
 <img src="https://github.com/wso2/ETAC/raw/master/images/blockchain4Integration/Registry-RefArch.png" alt="drawing" width="450" align="center"/></br>
@@ -236,15 +236,15 @@ Under this pattern we consider two cases. First consider smart contracts and the
 
 **Context:** Multiple users want to abide by a contract, described as an executable program. Contract undergoes state transitions as per conditions defined in the contract, and at a given time, everyone can agree on the current status of the contract.  
 
-**Forces:** need implement a environment where a single rouge user or few users can’t significantly affect the system. 
+**Forces:** need to implement an environment where a single rogue user or few users can’t significantly affect the system. 
 
-**Solution:** Smart contacts are part of blockchain technologies and supported by blockchain implementations, such as Ethereum. Contract is described using a smart contract language and distributed to all participants. As conditions defined in the contract changes, each participant executes the contract and records the current status in the blockchain using the consensus algorithm. 
+**Solution:** Smart contacts are part of blockchain technologies and supported by blockchain implementations, such as Ethereum. A contract is described using a smart contract language and distributed to all participants. As conditions defined in the contract changes, each participant executes the contract and records the current status in the blockchain using the consensus algorithm. 
 
 #### Managed Things Pattern 
 
 **Context:** We need to track the ownership of real world smart things. Here smart things are real world objects that are capable of running computing logic within them. Owner is allowed to control and perform actions on the real world things.  Also owner may transfer his ownership to someone else. 
 
-**Forces:** need implement an environment where a single rouge user or few users can’t significantly affect the system. 
+**Forces:** need implement an environment where a single rogue user or few users can’t significantly affect the system. 
 
 **Solution:** Following describes the implementation of the pattern using Car as the managed thing as an example. 
 
