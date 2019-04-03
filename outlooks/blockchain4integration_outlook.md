@@ -341,16 +341,16 @@ Some of the use cases might significantly affect users and therefore come under 
 
 Unpredictability refers to the lack of methods for verifying smart contracts and other complex blockchain-based interactions. 
 
-Quantum cryptography refers to the impact of quantum computing—if widely available—where most current cryptographic techniques will become useless. However, those risks are no different than the risks on other systems in operations. 
+Quantum cryptography refers to the impact of quantum computing—if widely available—where most current cryptographic techniques will become useless. However, those risks are no different than the risks on other systems already in operations. 
 
 The following table explores the effects of the risks on blockchain use cases. The first column lists the architecture pattern; the second lists risks related to public blockchain deployments, and the third notes risks associated with private blockchain deployments. 
 
 
 |Architecture pattern| Risks of Public deployments|Risks of Private or Consortium deployments| 
 |---|---|---|
-|Auditable History or Workspace|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies, Pre-Lawsuit Communications)|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies)|
+|Auditable History or Workspace|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies)|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies)|
 |Smart contracts & Managed Things|N/A|Irrevocability|Unpredictability |</br>Regulator response ( [Use cases: Ecosystem-level non-competitive critical services, Global Reputation System)|
-|IAM Use cases|Regulator response(due to privacy)](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md)[31|Regulator response (due to privacy)|
+|IAM Use cases|Regulator response(due to privacy))[31|Regulator response (due to privacy)|
 |Registry, Market place|Regulator response ([Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md))|Regulator response ([Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md))|
 
 <p align="center">Table 2: Risks by Architecture Patterns</p> 
