@@ -332,6 +332,7 @@ The subscription part of the "Registry or Marketplace" and "Smart Contracts and 
 # Future
 ## Risks
 
+
 In previously published [blockchain outllook](https://github.com/wso2/ETAC/blob/master/ETAC.md)[27], the authors have identified several risks associated with blockchain: irrevocability, regulator absence, regulator response, unpredictability, and quantum cryptography. 
 
 Among them, irrevocability is the risk induced by the immutability of blockchain: if a mistake is made, the transaction can’t be recalled. Most real-life scenarios support some form of “appeal,” and this is a concern for some use cases. 
