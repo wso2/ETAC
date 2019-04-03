@@ -350,7 +350,7 @@ The following table explores the effects of the risks on blockchain use cases. T
 |---|---|---|
 |Auditable History or Workspace|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies)|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies)|
 |Smart contracts & Managed Things|N/A|Irrevocability|Unpredictability |</br>Regulator response ( [Use cases: Ecosystem-level non-competitive critical services, Global Reputation System)|
-|IAM Use cases|Regulator response(due to privacy))[31|Regulator response (due to privacy)|
+|IAM Use cases|Regulator response(due to privacy))|Regulator response (due to privacy)|
 |Registry, Market place|Regulator response ([Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md))|Regulator response ([Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md))|
 
 <p align="center">Table 2: Risks by Architecture Patterns</p> 
