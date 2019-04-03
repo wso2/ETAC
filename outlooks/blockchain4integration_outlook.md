@@ -14,7 +14,7 @@ Version 0.8<br/>
 
 _This paper critically evaluates blockchain-based integration use cases, their feasibility, and their timelines. The paper identifies 30-plus blockchain-based use cases for integration and four architecture patterns. Notably, each use case we identified can be implemented using one of the architecture patterns. Then the paper discusses how challenges posed by blockchains, such as performance limitations and risks such as immutability, and unpredictability, would affect above architecture patterns._  
  
-_Based on the analysis, the paper concludes that the use cases around "Auditable History or Workspace" and "Identity and Access Management(IAM)" patterns are feasible and use cases around the "Registry and Marketplace" pattern are feasible for moderate-size deployments. Further, the papers conclude that the "Smart Contracts and Managed Things" pattern will need several breakthroughs before becoming feasible._
+_Based on the analysis, the paper concludes that the use cases around "Auditable History or Workspace" and "Identity and Access Management(IAM)" patterns are feasible and use cases around the "Registry and Marketplace" pattern are feasible for moderate-size deployments. Further, the paper conclude that the "Smart Contracts and Managed Things" pattern will need several breakthroughs before becoming feasible._
 
 # Introduction 
 
@@ -36,7 +36,7 @@ This paper discusses the applications of blockchain within the systems integrati
 
 Organizations share many functions, such as accounting, sales, and customer relationship management. Most of these organizations build their systems by combining specialized tools that can handle those functions. Initially, organizations depended on one vendor to support all those functions and make sure the tools worked together. This did not last. 
 
-On one hand, systems have grown complex over time, making it impossible for a vendor to support all of the functions and tools required by an organization. As a result, different vendors have chosen to specialize in specific areas of functionality. However functionally often overlaps, resulting in redundant data. On the other hand, enterprises in today’s connected economy have to communicate as a part of their operations. For example, flights may involve multiple airlines, and the airlines need to coordinate to effectively serve customers. For this reason, tools supporting the functions of an organization need to talk to each other, share data, and accept or delegate work. 
+On one hand, systems have grown complex over time, making it impossible for a vendor to support all of the functions and tools required by an organization. As a result, different vendors have chosen to specialize in specific areas of functionality. However, functionally often overlaps, resulting in redundant data. On the other hand, enterprises in today’s connected economy have to communicate as a part of their operations. For example, flights may involve multiple airlines, and the airlines need to coordinate to effectively serve customers. For this reason, tools supporting the functions of an organization need to talk to each other, share data, and accept or delegate work. 
 
 As the definition of integration explains, integration connects different systems within and outside the organization, and it builds an integrated system. Therefore, integration has evolved to become a necessary and crucial factor in organizations’ design and often a strong predictor of user productivity. 
 
@@ -45,7 +45,7 @@ Our main goal is to sort between the hype and the real potential of blockchain w
 We draw the following conclusions as a result of our analysis:
 * There are integration use cases in both public and private blockchain.
 * We identified four architecture pattern candidates that support those use cases: IAM, Auditable History or Workspace,  Registry or Marketplace, and Smart Contracts and Managed Things.
-* We find that the Auditable History or Workspace and IAM patterns are feasible.
+* We find that the IAM and Auditable History or Workspace patterns are feasible.
 * We believe that use cases around the Registry and Marketplace pattern are feasible for moderate-size deployments. 
 * We predict that the Smart Contracts and Managed Things pattern will need to see a number of breakthroughs before it is feasible for most use cases. 
 
@@ -81,7 +81,7 @@ In the case of integration, there are three key drivers of blockchain:
 The next section explores the impact of blockchain on integration.
 
 # Impact
-After brainstorming potential blockchain use cases, we identified 30-plus blockchain-based integration use cases, which are discussed in [Blockchain-based Intergation Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md). This section examines the common trends seen across those use cases, as well as specific use cases when relevant.  
+After brainstorming potential blockchain use cases, we identified 30-plus blockchain-based integration use cases, which are discussed in [Blockchain-based Intergation Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md)[31]. This section examines the common trends seen across those use cases, as well as specific use cases when relevant.  
 
 ## Macro Impact
 At the macro level, it is important to understand the role of blockchain when used for integration, its network effects and interactions, and related disrupters. 
@@ -110,14 +110,12 @@ Following are some examples of use cases enabled by blockchain that have network
 * More users with verifiable claims make it more likely you can do ad-hoc transactions with a user you run into, which increases the value of verifiable claims, causing more users to obtain verifiable claims.   
 * More people in a reputation system (e.g., consider a doctor ranking system) will increase the value of reputation, causing more users to ask for reputation as a part of background checks; in turn more people will join the reputation system. 
 
-In looking at interactions between other technologies, the API economy can be affected significantly by a blockchain-based API marketplace and support for dynamic API composition. For instance, let’s assume you travel frequently. If there is a standard interface for accessing a wifi network, based on your location, your device can obtain a connection by finding a wifi provider from an API marketplace, negotiating the term, and carrying out the payment. (See use cases "API marketplace" and "Support for dynamic API composition” for additional context.)
+In looking at interactions between other technologies, the API economy can be affected significantly by a blockchain-based API marketplace and support for dynamic API composition. For instance, let’s assume you travel frequently. If there is a standard interface for accessing a wifi network, based on your location, your device can obtain a connection by finding a wifi provider from an API marketplace, negotiating the term, and carrying out the payment. (See use cases "API marketplace" and "Support for dynamic API composition” described in [[31](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md)].)
 
 ## Disrupters 
 The broad adoption of blockchain will significantly change established systems, products, and solutions. For example, if blockchain-based DIDs are widely adopted, most identity can simply lookup DIDs from the blockchain or keep a cache of DIDs and update them periodically.  Furthermore, since the identity systems no longer need to store passwords, complications associated with password management would be significantly reduced. 
 
-In addition, verifiable claims can replace most authorization use cases, including the majority of security token use cases and access control lists. The implementations may periodically read the verifiable claims and keep a cache for performance reasons. Verifiable claims also can replace certification authorities and federation use cases. 
-
-* Importantly, blockchain reduces or removes several fraud scenarios, since with blockchain: 
+In addition, verifiable claims can replace most authorization use cases, including the majority of security token use cases and access control lists. The implementations may periodically read the verifiable claims and keep a cache for performance reasons. Verifiable claims also can replace certification authorities and federation use cases. Importantly, blockchain reduces or removes several fraud scenarios, since with blockchain: 
 * We have a robust alternative to traditional approaches for establishing trust, which are often weak points in security and used by attackers. 
 * All transactions and data are protected by strong cryptography, which is very hard to break
 * Changes happen following predefined protocol and all actions are auditable.
@@ -146,7 +144,7 @@ Competitive advantages provided by blockchain include the ability to collaborate
 **Enhance Customer Experiences:** In some cases, enterprises may choose to implement blockchain to bring new benefits to customers. For instance, we can use blockchain to digitally hande vehicle ownership and maintenance records, which may create a better secondary market for used automobiles. Another example is issuing verifiable claims based on a user’s interaction with the organization, which then can be used to establish trust. 
 
 ## Financial Benefits
-The main financial benefits are derived from the use of Blockchain to enhance the efficiency of operations, thereby removing either the middleman or mechanisms currently required to enforce quality and integrity. Among examples are identity, access management (IAM) and auditing use cases, tracking software lifecycles [Use case 25], managing copyrights via smart contracts [Use case 23], and control objects via smart contracts [Use case 29].  
+The main financial benefits are derived from the use of Blockchain to enhance the efficiency of operations, thereby removing either the middleman or mechanisms currently required to enforce quality and integrity. Among examples are identity, access management (IAM) and auditing use cases, [tracking software lifecycles, managing copyrights via smart contracts, and control objects via smart contracts](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md)[31].  
 
 ## Supply Chain Efficiency 
 As discussed earlier, blockchain allows more effective collaboration with partners, suppliers, and other parties by supporting mechanisms, such as smart contracts and auditable workspaces.
@@ -161,7 +159,7 @@ To understand the feasibility of blockchain for integration, we need to understa
 Following describes patterns according to template described by Aleksandra Tešanovic [6]. 
 
 ### Architecture Pattern for IAM. 
-**Context:** IAM environments includes many users and service providers where users want to user services provided by service providers. This is done by providing each user account and set of capabilities where users goes to service providers, demonstrate their ownership of the accounts and then receive services based on their capabilities. 
+**Context:** IAM environments includes many users and service providers where users want to use services provided by service providers. This is done by providing each user account and set of capabilities where users goes to service providers, demonstrate their ownership of the accounts and then receive services based on their capabilities. 
 
 **Forces:** Need implement a decentralized IAM environment where a single rouge user or few users can’t significantly affect the system. 
 
@@ -177,7 +175,7 @@ Let’s assume Alice needs an identity (DID, which is a unique identifier). As s
 
 Verifiable claims are delegation tokens [18] signed by a competent authority. The creator also records them in a blockchain together with the hash of the claim in a manner similar to the DID. 
 
-Alice obtains the verifiable claims in the first place by going to authorities. For example, the department of personal registration or equivalent is the proper authority for verifiable claims of name, address, and date of birth. Assuming authorities issue verifiable claims, Alice first   demonstrates her ownership of the DID using a challenge-response-protocolf. Then she submits requests for verifiable claims for her attributes, which may, for example, include her name, address, degree, and date of birth. To update her profile data, Alice will add a new entry to the blockchain with a new hash of the profile. 
+Alice obtains the verifiable claims in the first place by going to authorities. For example, the department of personal registration or equivalent is the proper authority for verifiable claims of name, address, and date of birth. Assuming authorities issue verifiable claims, Alice first   demonstrates her ownership of the DID using a challenge-response-protocol. Then she submits requests for verifiable claims for her attributes, which may, for example, include her name, address, degree, and date of birth. To update her profile data, Alice will add a new entry to the blockchain with a new hash of the profile. 
 
 In the challenge-response-protocol, the validator generates a random seed, encrypts it using Alice’s public key, and then challenges Alice to demonstrate that she has the private key by decrypting the encrypted seed. Since Alice has the private key, she must be the owner of the DID. 
 
@@ -202,7 +200,7 @@ We can layer most IAM use cases on top of this architecture pattern. For example
 
 
 
-For example, let’s assume Alice wants to pay a tax. Tax Servers accepts the payment application, creates a digital receipt, records its hash in the blockchain, and sends the receipt to Alice. Alice can verify the receipt by calculating the hash and checking against the value stored in the blockchain. After this, Bob can’t deny the receipt because the receipt hash and time are recorded in the blockchain. 
+For example, let’s assume Alice wants to pay a tax. Tax Server accepts the payment application, creates a digital receipt, records its hash in the blockchain, and sends the receipt to Alice. Alice can verify the receipt by calculating the hash and checking against the value stored in the blockchain. After this, Bob can’t deny the receipt because the receipt hash and time are recorded in the blockchain. 
 
 If the activities are numerous, there may be a need to workaround blockchain performance limitations. Therefore, some implementations may record a hash of several activity records as a block instead of a single activity record. 
 
@@ -223,29 +221,30 @@ If the activities are numerous, there may be a need to workaround blockchain per
 
 Let’s first consider a registry. With the proposed architecture, when a user issues a registry update (to add or modify an entry), the client records the change in the blockchain. If data in the update is large, the blockchain record may contain a link to the data and a hash value of the data. If data stored in the registry needs to be amended, the registry client adds a new record to the blockchain with amended information. 
 
-In the diagram above, each user has a registry client running in the local machine (e.g. laptop or phone). Each registry client reads the update records from the blockchain, verifies the update data against the hash included in the records, and reconstructs the most current view of records from updates. For example, by reading blockchain records about APIs, their additions, amendments, and removals, the registry client can create a view that shows current APIs included in the registry. To avoid having to read and verify all records every time the registry is used, clients might store data it in a database and index it. The client should periodically check the blockchain and update the registry. 
+In the diagram above, each user has a registry client running in the local machine (e.g. laptop or phone). Each registry client reads the update records from the blockchain, verifies the update data against the hash included in the records, and reconstructs the most current view of records from updates. For example, by reading blockchain records about APIs, their additions, amendments, and removals, the registry client can create a view that shows current APIs included in the registry. To avoid having to read and verify all records every time the registry is used, clients might store data in a database and index it. The client should periodically check the blockchain and update the registry. 
 
 Blockchain works well as a "service marketplace," since the same service may be sold many times. However, due to performance limitations, blockchain-based marketplaces are not suitable for items that can be sold only once. 
 
 To illustrate, the functionality of a blockchain-based registry, let’s look at when Alice wants to subscribe to "weather news service” in the blockchain marketplace. When she submits her request, the registry creates credentials for the service and shares it with Alice. The payment may happen in one of several ways: using Bitcoins, via a smart contract where payments are made on a time basis, or by some out-of-bound means. 
 
 
-Architecture Pattern for Smart Contracts and Managed Things
+###Architecture Pattern for Smart Contracts and Managed Things
+
 Under this pattern we consider two cases. First consider smart contracts and the second consider a common special case of smart contracts: “Managed Things”. 
 
 #### Smart Contracts Pattern 
 
-**Context:** Multiple users want to abide by a contract, described as an executable program. Contract undergoes state transactions as conditions defined in the contract changes and at a given time, everyone can agree on the current status of the contract.  
+**Context:** Multiple users want to abide by a contract, described as an executable program. Contract undergoes state transitions as per conditions defined in the contract, and at a given time, everyone can agree on the current status of the contract.  
 
 **Forces:** need implement a environment where a single rouge user or few users can’t significantly affect the system. 
 
-**Solution:** Smart contacts are part of blockchain technologies and supported by blockchain implementations, such as Ethereum. Contract is described using a smart contract language and distributed to all participants. As conditions defined in the contract changes, each participant executes the contract and record the current status in the blockchain using the consensus algorithm. 
+**Solution:** Smart contacts are part of blockchain technologies and supported by blockchain implementations, such as Ethereum. Contract is described using a smart contract language and distributed to all participants. As conditions defined in the contract changes, each participant executes the contract and records the current status in the blockchain using the consensus algorithm. 
 
 #### Managed Things Pattern 
 
 **Context:** We need to track the ownership of real world smart things. Here smart things are real world objects that are capable of running computing logic within them. Owner is allowed to control and perform actions on the real world things.  Also owner may transfer his ownership to someone else. 
 
-**Forces:** need implement a environment where a single rouge user or few users can’t significantly affect the system. 
+**Forces:** need implement an environment where a single rouge user or few users can’t significantly affect the system. 
 
 **Solution:** Following describes the implementation of the pattern using Car as the managed thing as an example. 
 
@@ -263,7 +262,7 @@ After determining the owner, the car logs in the current owner, Alice, by retrie
 
 Such a system reduces the risks associated with remotely controlled artifacts.  For example, in a non-blockchain implementation, someone with access can change the ownership of your car. However, with the blockchain-based model, to remotely control the car, a would-be attacker must change the ownership record in the blockchain, which is very hard to achieve without being the owner. 
 
-However, it is hard to stop someone who has access to the “thing” from physically changing the logic running inside (e.g., by replacing firmware of the car). One solution to this problem is to build some form of autodestruct that triggers when tampering into the artifact is detected.
+However, it is hard to stop someone who has access to the “thing” from physically changing the logic running inside (e.g., by replacing firmware of the car). One solution to this problem is to build some form of self-destruct that triggers when tampering into the artifact is detected.
 
 For example, Alice buys the car from Bob using a smart contract that pays Bob and updates the ownership of the vehicle. After the transaction, Alice walks to the car, which reads Alice’s DID from the phone, retrieves her public key, authenticates her using a challenge-response-protocol by communicating with the phone that has Alice’s private key, verifies her ownership, and unlocks the car.  
 
@@ -288,7 +287,7 @@ The following table explores the impact of the four challenges on the use cases 
 
 As the table depicts, most private or consortium use cases are not affected by the challenges. 
 
-Also, most IAM use cases can work with the current performance limits of the blockchain. For example, IAM use cases update an entry only when a new account is added or when verifiable claims are updated, both of which are not frequent for an individual user. For the read access, the systems may keep a cache and update it by listening to blockchain updates. Write updates can be batched and entered into the blockchain as a single batch. Even required updates can be batched, since the creation of a new account typically takes a few hours to take effect even with current non-blockchain implementations. . 
+Also, most IAM use cases can work with the current performance limits of the blockchain. For example, IAM use cases update an entry only when a new account is added or when verifiable claims are updated, both of which are not frequent for an individual user. For the read access, the systems may keep a cache and update it by listening to blockchain updates. Write updates can be batched and entered into the blockchain as a single batch. Even required updates can be batched, since the creation of a new account typically takes a few hours to take effect even with current non-blockchain implementations.
 
 As the table indicates, auditable history and workspace can generate a significant amount of data for some use cases. We can handle this by batching data, and for each batch, we can store a single hash in the blockchain. Therefore, scalability is not a concern for most use cases. Workspace-based use cases will need smart contracts, but those use cases are most likely to take place in a private blockchain. Hence, each workspace would be independent, letting end users run many copies as needed. 
 
@@ -348,9 +347,9 @@ The following table explores the effects of the risks on blockchain use cases. T
 |Architecture pattern| Risks of Public deployments|Risks of Private or Consortium deployments| 
 |---|---|---|
 |Auditable History or Workspace|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies, Pre-Lawsuit Communications)|Regulator response (Use cases: Standards or Regulation Adherence, Information sharing across a group of companies)|
-|Smart contracts & Managed Things|N/A|Irrevocability|Unpredictability |</br>Regulator response ( Use cases: Ecosystem-level non-competitive critical services, Global Reputation System)|
-|IAM Use cases|Regulator response(due to privacy)|Regulator response (due to privacy)|
-|Registry, Market place|Regulator response (Use cases: support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|Regulator response (Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|
+|Smart contracts & Managed Things|N/A|Irrevocability|Unpredictability |</br>Regulator response ( [Use cases: Ecosystem-level non-competitive critical services, Global Reputation System)|
+|IAM Use cases|Regulator response(due to privacy)](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md)[31|Regulator response (due to privacy)|
+|Registry, Market place|Regulator response ([Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md))|Regulator response (Use cases: Support health data kept in with a patient, Operating a Consortium as a DAO, Multi-party Projects or Processes)|
 
 <p align="center">Table 2: Risks by Architecture Patterns</p> 
 
@@ -400,7 +399,7 @@ Further, while exploring the feasibility of blockchain for integration, we ident
 We make the following conclusions as a result of our analysis:
 * There are integration use cases in both public and private blockchain.
 * We identified four architecture pattern candidates that support those use cases: IAM, Auditable History or Workspace,  Registry or Marketplace, and Smart Contracts and Managed Things.
-* We find that the Auditable History or Workspace and IAM patterns are feasible.
+* We find that the IAM and Auditable History or Workspace patterns are feasible.
 * We believe that use cases around the Registry and Marketplace pattern are feasible for moderate-size deployments. 
 * We predict that the Smart Contracts and Managed Things pattern will need to see a number of breakthroughs before it is feasible for most use cases. 
 
@@ -436,6 +435,8 @@ We make the following conclusions as a result of our analysis:
 28. Challenge Response Protocol, https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication 
 29. Europen Union Technology readiness level. ”https://en.wikipedia.org/wiki/Technology readiness level”
 30. Decentralized Data: “Why Blockchain is meaningless and Trustless is everything”, https://hackernoon.com/decentralized-data-why-blockchain-is-meaningless-and-trustless-is-everything-318fd14d3827
+31. Blockchain-based Intergation Use Cases, https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md
+
 
 
 
