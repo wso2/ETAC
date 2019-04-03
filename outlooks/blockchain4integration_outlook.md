@@ -410,9 +410,9 @@ We make the following conclusions as a result of our analysis:
 1. Robert Hobbes' Zakon, Hobbes' Blockchain Timeline 0.1, https://www.zakon.org/robert/blockchain/timeline/
 2. Melanie Swan, Blockchain: Blueprint for a New Economy, https://www.amazon.com/Blockchain-Blueprint-Economy-Melanie-Swan/dp/1491920491   
 3. Anant Kadiyala, Nuances Between Permissionless and Permissioned Blockchains, https://medium.com/@akadiyala/nuances-between-permissionless-and-permissioned-blockchains-f5b566f5d483  
-4. The case for permissioned blockchains, https://blocksplain.com/2018/02/07/permissioned-blockchains 
-5. Taylor Hatmaker, Senate cryptocurrency hearing strikes a cautiously optimistic tone, https://techcrunch.com/2018/02/06/virtual-currencies-oversight-hearing-sec-cftc-Bitcoin/
-6. A Tešanovic, What is a pattern? http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1162&rep=rep1&type=pdf, 2004 
+4. The Case for Permissioned Blockchains, https://blocksplain.com/2018/02/07/permissioned-blockchains 
+5. Taylor Hatmaker, Senate Cryptocurrency Hearing strikes a cautiously Optimistic Tone, https://techcrunch.com/2018/02/06/virtual-currencies-oversight-hearing-sec-cftc-Bitcoin/
+6. A Tešanovic, What is a Pattern?, http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.123.1162&rep=rep1&type=pdf, 2004 
 7. Blockchain State Legislation, http://www.ncsl.org/research/financial-services-and-commerce/the-fundamentals-of-risk-management-and-insurance-viewed-through-the-lens-of-emerging-technology-webinar.aspx  
 8. Olga Kharif and Mark Bergen, Google Is Working on Its Own Blockchain-Related Technology, https://www.bloomberg.com/news/articles/2018-03-21/google-is-said-to-work-on-its-own-blockchain-related-technology
 9. Reviews for Blockchain Platforms, https://www.gartner.com/reviews/market/blockchain-platforms 
@@ -420,22 +420,22 @@ We make the following conclusions as a result of our analysis:
 11. Nathan Reiff, Top Blockchain Startups to Watch in 2018, https://www.investopedia.com/news/top-blockchain-startups-watch-2018/
 12. Harold Stark, Keep An Eye On These Blockchain Startups Throughout 2018, https://www.forbes.com/sites/haroldstark/2017/12/12/keep-an-eye-on-these-blockchain-startups-throughout-2018/#6e3efd0413e6
 13. Blockchain Papers, https://github.com/decrypto-org/blockchain-papers
-14. Reed, D. et al. (2017). Decentralized identifiers (dids). W3C, Credentials Community Group., https://w3c-ccg.github.io/did-spec/
-15. Burnett, D. C. et al. (2017). Verifiable claims data model. Verifiable Claims Working Group, W3C Editor’s Draft, https://www.w3.org/TR/verifiable-claims-data-model/
+14. Reed, D. et al. (2017). Decentralized Identifiers (dids). W3C, Credentials Community Group., https://w3c-ccg.github.io/did-spec/
+15. Burnett, D. C. et al. (2017). Verifiable Claims Data Model. Verifiable Claims Working Group, W3C Editor’s Draft, https://www.w3.org/TR/verifiable-claims-data-model/
 16. Maersk and IBM Introduce TradeLens Blockchain Shipping Solution, https://newsroom.ibm.com/2018-08-09-Maersk-and-IBM-Introduce-TradeLens-Blockchain-Shipping-Solution
 17. How feasible is it for a CA to be hacked? https://security.stackexchange.com/questions/2268/how-feasible-is-it-for-a-ca-to-be-hacked-which-default-trusted-root-certificate 
-18. Gasser, Morrie, and Ellen McDermott. "An architecture for practical delegation in a distributed system." Proceedings. 1990 IEEE Computer Society Symposium on Research in Security and Privacy. IEEE, 1990.
-19. S. Perera, F. Leymann, P. Fremantle. 2019. A use case centric survey of Blockchain: status quo and future directions. PeerJ Preprints, https://doi.org/10.7287/peerj.preprints.27529v1 
+18. Gasser, Morrie, and Ellen McDermott. "An Architecture for Practical Delegation in a Distributed System." Proceedings. 1990 IEEE Computer Society Symposium on Research in Security and Privacy. IEEE, 1990.
+19. S. Perera, F. Leymann, P. Fremantle. 2019. A Use Case centric Survey of Blockchain: Status quo and Future directions. PeerJ Preprints, https://doi.org/10.7287/peerj.preprints.27529v1 
 20. Zamani et al, RapidChain: scaling blockchain via full sharding, https://blog.acolyer.org/2018/12/07/rapidchain-scaling-blockchain-via-full-sharding/
 21. Kasireddy, Blockchains don’t scale. Not today, at least. But there’s hope, https://hackernoon.com/blockchains-dont-scale-not-today-at-least-but-there-s-hope-2cb43946551a
 22. Blockchain Papers, https://github.com/decrypto-org/blockchain-papers
 23. Jesse Yli-Huumo and others, Where Is Current Research on Blockchain Technology?—A Systematic Review,https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5047482/
 24. G. Fletcher, T. Lodderstedt, Z. Zeltsan, Internet-Draft: OAuth Use Cases, 2013, https://tools.ietf.org/html/draft-ietf-oauth-use-cases-01 
-25. Why might some central banks issue their own digital currency? https://www.bankofengland.co.uk/-/media/boe/files/research/cbdc.pdf 
+25. Why might some Central Banks issue their own Digital Currency? https://www.bankofengland.co.uk/-/media/boe/files/research/cbdc.pdf 
 26. Bitcoin P2P e-cash paper, https://www.mail-archive.com/cryptography@metzdowd.com/msg09997.html
-27. Perera, S. (2018). Emerging technology analysis canvas (ETAC). https://github.com/wso2/ETAC/blob/master/ETAC.md. 
+27. Srinath Perera, Emerging technology analysis canvas (ETAC). https://github.com/wso2/ETAC/blob/master/ETAC.md, 2018. 
 28. Challenge Response Protocol, https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication 
-29. Europen Union Technology readiness level. ”https://en.wikipedia.org/wiki/Technology_readiness_level”
+29. Europen Union Technology Readiness Level. ”https://en.wikipedia.org/wiki/Technology_readiness_level”
 30. Decentralized Data: “Why Blockchain is meaningless and Trustless is everything”, https://hackernoon.com/decentralized-data-why-blockchain-is-meaningless-and-trustless-is-everything-318fd14d3827
 31. Blockchain-based Intergation Use Cases, https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md
 
