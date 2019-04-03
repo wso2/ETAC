@@ -318,21 +318,21 @@ Some other use cases only need an agreement between participating organizations.
 The absence of standards will continue to be a source of friction, particularly as organizations compete to create de-facto standards and build industry adoption around them. 
 
 ## Friction
-The blockchain outlook identified the following cases of friction: 
+In previously published [blockchain outllook](https://github.com/wso2/ETAC/blob/master/ETAC.md)][27], the authors have identified the following cases of friction: 
 * An absence of methods for verifying and limiting risks
 * A lack of governance around the blockchain code base (e.g., when and how it can be forked) 
 * The complexity of many blockchain-based applications (e.g., smart contracts)
 * A shortage of tools within current blockchain ecosystems to help users debug their applications
 
-Most of the above risks stem from smart contracts ( see [blockchain outlook](https://github.com/wso2/ETAC/blob/master/ETAC.md)[27] for details). Among the four architecture patterns, the IAM and Auditable History or Workspace patterns does not use smart contracts. Therefore, none of the above risks apply. 
+Most of the above risks stem from smart contracts ( see [blockchain outlook](https://github.com/wso2/ETAC/blob/master/ETAC.md) [27] for details). Among the four architecture patterns, the IAM and Auditable History or Workspace patterns does not use smart contracts. Therefore, none of the above risks apply. 
 
-The subscription part of the Registry or Marketplace and Smart Contracts and Managed Things architecture patterns need custom smart contracts. Therefore, they are susceptible to all four frictions. 
+The subscription part of the "Registry or Marketplace" and "Smart Contracts and Managed Things" architecture patterns need custom smart contracts. Therefore, they are susceptible to all four frictions. 
 
 
 # Future
 ## Risks
 
-In previously published works [[27](https://github.com/wso2/ETAC/blob/master/ETAC.md)], the authors have identified several risks associated with blockchain: irrevocability, regulator absence, regulator response, unpredictability, and quantum cryptography. 
+In previously published [blockchain outllook](https://github.com/wso2/ETAC/blob/master/ETAC.md)][27], the authors have identified several risks associated with blockchain: irrevocability, regulator absence, regulator response, unpredictability, and quantum cryptography. 
 
 Among them, irrevocability is the risk induced by the immutability of blockchain: if a mistake is made, the transaction can’t be recalled. Most real-life scenarios support some form of “appeal,” and this is a concern for some use cases. 
 
