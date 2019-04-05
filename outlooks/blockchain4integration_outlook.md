@@ -81,7 +81,7 @@ In the case of integration, there are three key drivers of blockchain:
 The next section explores the impact of blockchain on integration.
 
 # Impact
-After brainstorming potential blockchain use cases, we identified 30-plus blockchain-based integration use cases, which are discussed in [Blockchain-based Intergation Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md)[31]. This section examines the common trends seen across those use cases, as well as specific use cases when relevant.  
+After brainstorming potential blockchain use cases, we identified 30-plus blockchain-based integration use cases, which are discussed in [Blockchain-based Integration Usecases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md)[31]. This section examines the common trends seen across those use cases, as well as specific use cases when relevant.  
 
 ## Macro Impact
 At the macro level, it is important to understand the role of blockchain when used for integration, its network effects and interactions, and related disrupters. 
@@ -149,7 +149,7 @@ The main financial benefits are derived from the use of Blockchain to enhance th
 ## Supply Chain Efficiency 
 As discussed earlier, blockchain allows more effective collaboration with partners, suppliers, and other parties by supporting mechanisms, such as smart contracts and auditable workspaces.
 
-The six impacts described earlier become motivations for deploying blockchains. For more information, please refer to [Blockchain-based Intergation Use Cases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md), which describes the use cases under each motivation. 
+The six impacts described earlier become motivations for deploying blockchains. For more information, please refer to [Blockchain-based Integration Use Cases](https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md), which describes the use cases under each motivation. 
 
 
 # Feasibility 
@@ -437,7 +437,7 @@ We make the following conclusions as a result of our analysis:
 28. Challenge Response Protocol, https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication 
 29. Europen Union Technology Readiness Level. ”https://en.wikipedia.org/wiki/Technology_readiness_level”
 30. Decentralized Data: “Why Blockchain is meaningless and Trustless is everything”, https://hackernoon.com/decentralized-data-why-blockchain-is-meaningless-and-trustless-is-everything-318fd14d3827
-31. Blockchain-based Intergation Use Cases, https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md
+31. Blockchain-based Integration Use Cases, https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md
 
 
 
