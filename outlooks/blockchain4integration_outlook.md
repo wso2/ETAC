@@ -318,7 +318,7 @@ Some other use cases only need an agreement between participating organizations.
 The absence of standards will continue to be a source of friction, particularly as organizations compete to create de-facto standards and build industry adoption around them. 
 
 ## Friction
-In previously published [blockchain outllook](https://github.com/wso2/ETAC/blob/master/ETAC.md)][27], the authors have identified the following cases of friction: 
+In previously published [blockchain outllook](https://github.com/wso2/ETAC/blob/master/ETAC.md)[27], the authors have identified the following cases of friction: 
 * An absence of methods for verifying and limiting risks
 * A lack of governance around the blockchain code base (e.g., when and how it can be forked) 
 * The complexity of many blockchain-based applications (e.g., smart contracts)
