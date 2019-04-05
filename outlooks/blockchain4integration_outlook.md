@@ -244,7 +244,7 @@ Under this pattern we consider two cases. First consider smart contracts and the
 
 **Context:** We need to track the ownership of real world smart things. Here smart things are real world objects that are capable of running computing logic within them. Owner is allowed to control and perform actions on the real world things.  Also owner may transfer his ownership to someone else. 
 
-**Forces:** need implement an environment where a single rogue user or few users can’t significantly affect the system. 
+**Forces:** need to implement an environment where a single rogue user or few users can’t significantly affect the system. 
 
 **Solution:** Following describes the implementation of the pattern using Car as the managed thing as an example. 
 
