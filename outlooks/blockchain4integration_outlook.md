@@ -14,7 +14,7 @@ Version 0.8<br/>
 
 _This paper critically evaluates blockchain-based integration use cases, their feasibility, and their timelines. The paper identifies 30-plus blockchain-based use cases for integration and four architecture patterns. Notably, each use case we identified can be implemented using one of the architecture patterns. Then the paper discusses how challenges posed by blockchains, such as performance limitations and risks such as immutability, and unpredictability, would affect above architecture patterns._  
  
-_Based on the analysis, the paper concludes that the use cases around "Auditable History or Workspace" and "Identity and Access Management(IAM)" patterns are feasible and use cases around the "Registry and Marketplace" pattern are feasible for moderate-size deployments. Further, the paper conclude that the "Smart Contracts and Managed Things" pattern will need several breakthroughs before becoming feasible._
+_Based on the analysis, the paper concludes that the use cases around "Auditable History or Workspace" and "Identity and Access Management(IAM)" patterns are feasible and use cases around the "Registry and Marketplace" pattern are feasible for moderate-size deployments. Further, the paper concludes that the "Smart Contracts and Managed Things" pattern will need several breakthroughs before becoming feasible._
 
 # Introduction 
 
