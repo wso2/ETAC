@@ -242,6 +242,11 @@ Many thanks to Selvaratnam Uthaiyashankar from WSO2 who have provided significan
 # Help us improve ETAC
 We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com.
 
-Blockchain Outlook, an ETAC methodology based analysis of Serverless technology will be released soon. To receive updates to ETAC and ETAC based emerging technology analysis, please subscribe to our [Global Technology Outlook Updates Newsletter](https://wso2.com/subscribe/global-technology-outlook-update).  
+To receive updates to ETAC and ETAC-based emerging technology analysis, please subscribe to our [Global Technology Outlook Updates Newsletter](https://wso2.com/subscribe/global-technology-outlook-update).
+
+# About WSO2 and Our Research
+
+In 14 years in business, and as the #1 Open Source integration and API management vendor, WSO2 continually invests in areas beyond products. Our Research for Integration team regularly produces our Global Technology Outlook (GTO) — an effort to identify emerging technology trends, classify them based on their potential, and assess a relevant subset of technologies in detail. We do so using our Emerging Technology Analysis Canvas (ETAC). Our research is public in an effort to maintain our commitment to openness, quality, innovation, and integration leadership. 
+
 
 
