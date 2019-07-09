@@ -198,7 +198,7 @@ In summary, serverless computing has many technical advantages. Although there a
 
 Our serverless outlook has identified the following two concerns: the lack of standards and vendor lock-in, which pose a significant risk to serverless architecture adoption. The real concern is not serverless functions, but the platform services required by those functions. It is hard to abstract those services effectively. These two concerns continue to be a negative consideration for integration use cases in serverless environments, although not a show stopper.
 
-##Timeline
+## Timeline
 We found that serverless platforms within integration use cases have a significant impact and have significant use cases that are feasible. Assuming that serverless platforms will support an integration language, we expect to see many new applications adopting serverless architectures in the next three years. Since these applications use APIs and interact with external systems, as applications move to the cloud, integration use cases will also be forced to move to the cloud.
 
 However, adoption of a serverless architecture would require significant parts of existing systems to be replaced. Hence, we believe initial adoption will be limited to new “greenfield” projects, and traditional deployments will continue to persist for a long time in the same way COBOL and mainframes are still around. The usual cycle is that eventually existing systems come up for replacement, and that can take years.
@@ -207,7 +207,7 @@ Integration is the glue that connects legacy and new systems. Consequently, inte
 
 Due to latency limitations, integrations will be often are likely to be deployed close to the applications and systems they connect. Consequently, integrations will move to the cloud only after most APIs, services, and applications have migrated there. Despite this lag, we believe integration technologies will find significant use cases connecting new applications and services. Among exception would be hybrid cloud ( e.g. via VPC)  and apps that runs across multiple clouds.
 
-#Conclusion
+# Conclusion
 
 As a result of our analysis, we have reached the following conclusions:
 
