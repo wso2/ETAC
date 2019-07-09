@@ -180,13 +180,13 @@ This can be solved using several means:
 This is an important consideration when moving integration use cases to the cloud.
 
 
-##Tools, Ecosystem and Skills
+## Tools, Ecosystem and Skills
 
 Our serverless outlook [16] argues that serverless platforms need tools and integrated development environments (IDEs) to simplify the experience for complex serverless applications. For example, an IDE should enable users to create functions, compose them, test the fully composed application in the IDE itself, debug the app, and then push a button to deploy the app to a serverless platform.
 
 In the case of low-code integration, user experiences already exist for integration in iPaaS tools, such as Worketo and Dell Boomi [423]. These iPaaS solutions may act as an alternative to a language for programming interactions in a serverless environment. The visual programming supported by iPaaS tools works well for smaller use cases, but it faces challenges with complex programs [24]. Most complex integrations are done with textual languages, and similar tools do not yet exist for general integrations within serverless platforms.
 
-##Friction
+## Friction
 Our serverless outlook observes that an event-driven architecture (EDA), which is central to the serverless model, is not intuitive to traditional developers and is generally harder to debug. However, integration use cases naturally follow an EDA model, and hence, EDA is not a significant concern to integration developers.
 
 Furthermore, the serverless outlook notes that serverless computing, by design, is an opinionated solution. It is agile as long as the developer is willing to conform to its model, but it becomes clumsy if the programmer resists the model. This continues to be a disadvantage.
