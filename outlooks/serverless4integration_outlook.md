@@ -36,8 +36,7 @@ Our main goal is to sort between the hype and the real potential of serverless c
 
 We have drawn the following conclusions as a result of our analysis:
 
-* Latency considerations, a lack of developers, and the rising complexity of systems coupled with standard cloud advantages are driving more and more apps to the cloud
-Since most applications use external APIs and services, building applications is becoming increasingly similar to integration use cases.
+* Latency considerations, a lack of developers, and the rising complexity of systems coupled with standard cloud advantages are driving more and more apps to the cloud. Since most applications use external APIs and services, building applications is becoming increasingly similar to integration use cases.
 * Low-code integrations are already feasible, though iPaaS. The primary challenge faced by serverless computing within integration use cases is the lack of a language within the serverless environment that supports integration natively. However, several languages already have wide adoption among current integration use cases, and one or more of those languages can be adopted within serverless environments as well.
 * There are significant serverless computing-based integration use cases despite the challenges. Therefore, serverless architectures can find significant adoption, even without standardization. The move to the cloud will drive these use cases.
 * A competition between Kubernetes running on the cloud (bringing portability) and serverless (providing usability) will decide the scale of serverless computing adoption.
@@ -129,7 +128,7 @@ These advantages will continue to be active for integration use cases using serv
 Before discussing the feasibility of integration use cases in serverless computing, it is useful to understand typical integration use cases and how they map into the serverless environment.
 
 Most apps built in the serverless environment are composed of four parts:
-1. the external APIs used
+1. The external APIs used
 2. Microservices written as serverless functions
 3. Integration logic connecting those services and APIs
 4. Connections to data sources and sink functions.
@@ -211,8 +210,7 @@ Due to latency limitations, integrations will be often are likely to be deployed
 
 As a result of our analysis, we have reached the following conclusions:
 
-1. Latency considerations, a lack of developers, and the rising complexity of systems coupled with standard cloud advantages are driving more and more apps to the cloud
-Since most applications use external APIs and services, building applications is becoming increasingly similar to integration use cases.
+1. Latency considerations, a lack of developers, and the rising complexity of systems coupled with standard cloud advantages are driving more and more apps to the cloud. Since most applications use external APIs and services, building applications is becoming increasingly similar to integration use cases.
 2. Low-code integrations are already feasible, though iPaaS. The primary challenge faced by serverless computing within integration use cases is the lack of a language within the serverless environment that supports integration natively. However, several languages already have wide adoption among current integration use cases, and one or more of those languages can be adopted within serverless environments as well.
 3. There are significant serverless computing-based integration use cases despite the challenges. Therefore, serverless architectures can find significant adoption, even without standardization. The move to the cloud will drive these use cases.
 4. A competition between Kubernetes running on the cloud (bringing portability) and serverless (providing usability) will decide the scale of serverless computing adoption.
