@@ -24,9 +24,9 @@ This paper further extends the serverless outlook and discusses the applications
 
 To ground this discussion, let us first define serverless computing and integration.
 
-We define serverless computing as including  function as a service (FaaS) resources (compute and storage), as well as a complete execution environment, including platform services that provide resource pooling, rapid elasticity, and measured service—as defined in the National Institute of Standards and Technology (NIST) cloud computing definition—in an opaque manner to the user.
+We define serverless computing as _including  function as a service (FaaS) resources (compute and storage), as well as a complete execution environment, including platform services that provide resource pooling, rapid elasticity, and measured service—as defined in the National Institute of Standards and Technology (NIST) cloud computing definition—in an opaque manner to the user_.
 
-We define integration as the use of technologies that enable typically diverse systems within or between organizations to work together to achieve common business goals.
+We define integration as _the use of technologies that enable typically diverse systems within or between organizations to work together to achieve common business goals._
 
 We implement integration by intercepting communications between mismatching apps, APIs, and services and shaping that information as messages, events, and files. Historically, integration is implemented using an enterprise service bus (ESB) that sits between information sources and sinks and coordinates activities as a single unit. With the advent of microservice architecture, newer systems tend to use integration logic running independently (e.g., as a microservice) instead of a centralized service bus.
 
