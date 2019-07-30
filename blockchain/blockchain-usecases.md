@@ -19,7 +19,7 @@ Usecases are grpoup by the motation to adopt them. For more details, please refe
 * **Implementation:** See Auditable History or Workspace architecture pattern.
 
 
-## Providing Supply Chain Cisibility 
+## Providing Supply Chain Visibility 
 * **Use cases:** Get suppliers to record transactions in a blockchain to provide visibility into the claims made by the company about how resources are sourced. 
 * **Implementation:** See Auditable History or Workspace architecture pattern.
 
