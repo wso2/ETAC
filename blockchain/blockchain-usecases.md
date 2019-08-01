@@ -81,7 +81,7 @@ Usecases are grpoup by the motation to adopt them. For more details, please refe
 * **Use case:** The idea is to support ownership control via a blockchain. Among the examples are an Airbnb special lock that you can control during your stay and bicycle ride sharing. The use of built-in e-vaults enables car owners to automatically pay for parking, electricity top-ups, highway tolls, etc. 
 * **Implementation:** See the Smart Contracts and Managed Things architecture pattern.
 
-##Manage IoT Devices using Blockchain
+## Manage IoT Devices using Blockchain
 * **Use case:** Establish a decentralized network of IoT devices using a blockchain. This will remove the requirement of having a central location to handle communications. Devices can communicate directly, conduct device management, etc. without involving a central authority.
 * **Implementation:** See the Smart Contracts and Managed Things architecture pattern.
 
