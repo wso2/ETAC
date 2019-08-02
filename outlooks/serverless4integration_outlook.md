@@ -68,10 +68,10 @@ The success of the cloud and its acceptance as an essential architectural choice
 
 
 ### Software Trends
-We have identified Ten Governing Forces Shaping Technology [[26](https://hackernoon.com/catalysts-inhibitors-and-transformers-ten-governing-forces-shaping-technology-57a793bfbf0)]. Among them there are three major forces in the area of software development that are acting as positive drivers for serverless computing.
+We have identified Ten Governing Forces Shaping Technology [[26](https://hackernoon.com/catalysts-inhibitors-and-transformers-ten-governing-forces-shaping-technology-57a793bfbf0)]. Among them there are two major forces in the area of software development that are acting as positive drivers for serverless computing.
 
 
-First, even as software is becoming a greater part of our lives [[9](https://a16z.com/2011/08/20/why-software-is-eating-the-world/)], we face a severe shortage of skilled developers, which will continue to get worse. Since by raising abstractions, serverless architectures lower the minimum bar required and broaden the developer pool, the shortage of developers also acts as a driver for adopting serverless computing. 
+First, even as software is becoming a greater part of our lives [[9](https://a16z.com/2011/08/20/why-software-is-eating-the-world/)], we face a severe shortage of skilled developers, which will continue to get worse. Since by raising abstractions, serverless architectures lower the minimum bar required and broaden the developer pool, the shortage of developers  acts as a driver for adopting serverless computing. 
 
 Second, a key goal of software architectures has been reducing complexity. Serverless computing is a significant step toward reducing complexity as it abstracts layers below the code, such as deployment, hardware, and configuration, lowering the knowledge  required from the developers and increasing their effectiveness. 
 
@@ -113,7 +113,7 @@ Kubernetes is trying to match the usability of serverless computing by building 
 
 Third, the difference between building apps and building integrations is fast disappearing. This has been true for decades within enterprise, which is new becoming a global trend. The rise of the cloud, APIs, and serverless architectures are making app development much more like integration, effectively making integrations ubiquitous. Applications are composed of APIs, and the logic required to write those applications is similar to writing integrations. Consequently, the need for integration-like technology will be much more commonplace in future systems. This development will significantly widen the available market for integrations while driving existing program languages and platforms to provide first-class support for writing integrations.
 
-We can program simple integrations using programming languages, such as Java, Go, and Python. However, complex integrations in serverless architectures also inherit most of the problems that occur in enterprise integration settings. For example, those integrations need to build systems by composing APIs from different vendors, which leads to timing, data format, context mismatches. Writing such code using a programming language, such as Java, needs a lot of plumbing code. Furthermore, with the wide adoption for microservices and APIs, the number of services involved in an integration will likely rise, increasing the complexity of integrations and services, alike. ESB vendors, such as WSO2, Mulesoft, and IBM, have provided integration languages to handle such scenarios. It is likely that similar tools are required for integrations in the cloud as well. 
+We can program simple integrations using programming languages, such as Java, Go, and Python. However, complex integrations in serverless architectures also inherit most of the problems that occur in enterprise integration settings. For example, those integrations need to build systems by composing APIs from different vendors, which leads to timing, data format, and context mismatches. Writing such code using a programming language, such as Java, needs a lot of plumbing code. Furthermore, with the wide adoption for microservices and APIs, the number of services involved in an integration will likely rise, increasing the complexity of integrations and services, alike. ESB vendors, such as WSO2, Mulesoft, and IBM, have provided integration languages to handle such scenarios. It is likely that similar tools are required for integrations in the cloud as well. 
 
 Serverless computing provides many middleware services as a part of the platform, thus nullifying the need for middleware in many use cases. In response, we are likely to see the rise of a new class of middleware that runs on top of a serverless platform. Most middleware is a collection of services, and most of those services can run directly on top of a serverless platform. Therefore, some middleware might be released as a serverless function. It is not clear whether cloud vendors would embrace serverless-based middleware or fight it. One could argue that, just like with the Apple App Store, having an ecosystem of middleware from which users can pick and choose would be a significant strength for a cloud provider. For example, in the case of the smart phones, the App Store ecosystem becomes a moat against the competition. 
 
@@ -134,11 +134,11 @@ These advantages will continue to be active for integration use cases using serv
 ## Use cases
 Before discussing the feasibility of integration use cases in serverless computing, it is useful to understand typical integration use cases and how they map into the serverless environment. 
 
-1. Most apps built in the serverless environment are composed of four parts: 
-2. the external APIs used
-3. Microservices written as serverless functions
-4. Integration logic connecting those services and APIs
-5. Connections to data sources and sink functions. 
+Most apps built in the serverless environment are composed of four parts: 
+1. the external APIs used
+2. Microservices written as serverless functions
+3. Integration logic connecting those services and APIs
+4. Connections to data sources and sink functions. 
 
 Apart from integration logic, all the other constructs are already available or connected to the serverless environment.  
 
