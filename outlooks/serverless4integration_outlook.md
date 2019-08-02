@@ -15,206 +15,217 @@ _This paper examines the impact of serverless computing on enterprise integratio
 
 # Introduction
 
-Cloud computing has become a fundamental deployment choice for application systems. Despite concerns about privacy and vendor lock-in, even high-stakes services, such as those in governments, banks, and health, have adopted the cloud. In this backdrop, the introduction of Amazon Lambda in 2014 incepted the idea of serverless computing.  A programmer can write business logic based on a serverless platform and directly run it in the cloud without worrying about hardware, operating systems, or servers. Consequently, developers can focus on the business logic in their applications, which are running entirely in the cloud, with minimal understanding of the underlying infrastructure.
+Cloud computing has become a fundamental deployment choice for application systems. Despite concerns about privacy and vendor lock-in, even high-stakes services, such as those in governments, banks, and health, have adopted the cloud. In this backdrop, the introduction of Amazon Lambda in 2014, incepted the idea of serverless computing.  A programmer can write business logic based on a serverless platform and directly run it in the cloud without worrying about hardware, operating systems, or servers. Consequently, developers can focus on the business logic in their applications, which are running entirely in the cloud, with minimal understanding of the underlying infrastructure. 
 
 
-In the last two years, serverless computing has received much attention. Therefore, in our earlier analysis, we explored serverless technology using the Emerging Technology Analysis Canvas (ETAC)[1] framework. The analysis can be found in [16]. In the rest of the document, we will refer to this analysis as the “serverless outlook.”
+In the last two years, serverless computing has received much attention. Therefore, in our earlier analysis, we explored serverless technology using the Emerging Technology Analysis Canvas (ETAC)[1] framework. The analysis can be found in [16]. In the rest of the document, we will refer to this analysis as the “serverless outlook.” 
 
-This paper further extends the serverless outlook and discusses the applications of serverless computing within the systems integration domain and their impact.
+This paper further extends the serverless outlook and discusses the applications of serverless computing within the systems integration domain and their impact. 
 
 To ground this discussion, let us first define serverless computing and integration.
 
-We define serverless computing as _including  function as a service (FaaS) resources (compute and storage), as well as a complete execution environment, including platform services that provide resource pooling, rapid elasticity, and measured service—as defined in the National Institute of Standards and Technology (NIST) cloud computing definition—in an opaque manner to the user_.
+
+We define serverless computing as _including  function as a service (FaaS) resources (compute and storage), as well as a complete execution environment, including platform services that provide resource pooling, rapid elasticity, and measured service—as defined in the National Institute of Standards and Technology (NIST) cloud computing definition—in an opaque manner to the user_. 
 
 We define integration as _the use of technologies that enable typically diverse systems within or between organizations to work together to achieve common business goals._
 
 We implement integration by intercepting communications between mismatching apps, APIs, and services and shaping that information as messages, events, and files. Historically, integration is implemented using an enterprise service bus (ESB) that sits between information sources and sinks and coordinates activities as a single unit. With the advent of microservice architecture, newer systems tend to use integration logic running independently (e.g., as a microservice) instead of a centralized service bus.
 
-Integration can be categorized as low-code integration and general integration. Wikipedia defines low-code development as _“software that provides an environment programmers use to create application software through graphical user interfaces and configuration instead of traditional computer programming.”_ [2]. Hence low-code integration focuses on visual tooling based integration while general integration involves general programming and scripts. Given the shortage of programmers, the share of low code integration is expected to rise over time. Our discussion will consider both types of integration technologies.
+Integration can be categorized as low-code integration and general integration. Wikipedia defines low-code development as _“software that provides an environment programmers use to create application software through graphical user interfaces and configuration instead of traditional computer programming.” [2]_. Hence low-code integration focuses on visual tooling based integration while general integration involves general programming and scripts. Given the shortage of programmers, the share of low code integration is expected to rise over time. Our discussion will consider both types of integration technologies. 
 
 Our main goal is to sort between the hype and the real potential of serverless computing within the integration domain. With that in mind, we wanted to take a systematic approach to evaluate it. To do so, we have used the Emerging Technology Analysis Canvas (ETAC) [1] framework, which takes a broad view of emerging technology by probing impact, feasibility, risks, and future timelines.
 
 We have drawn the following conclusions as a result of our analysis:
 
-* Latency considerations, a lack of developers, and the rising complexity of systems coupled with standard cloud advantages are driving more and more apps to the cloud. Since most applications use external APIs and services, building applications is becoming increasingly similar to integration use cases.
-* Low-code integrations are already feasible, though iPaaS. The primary challenge faced by serverless computing within integration use cases is the lack of a language within the serverless environment that supports integration natively. However, several languages already have wide adoption among current integration use cases, and one or more of those languages can be adopted within serverless environments as well.
-* There are significant serverless computing-based integration use cases despite the challenges. Therefore, serverless architectures can find significant adoption, even without standardization. The move to the cloud will drive these use cases.
-* A competition between Kubernetes running on the cloud (bringing portability) and serverless (providing usability) will decide the scale of serverless computing adoption.
-* Since integration is the glue that connects legacy and new systems, integrations will continue to have use cases on-premise and in the cloud addressing integrations within and between these deployments.
+1. Latency considerations, a lack of developers, and the rising complexity of systems coupled with standard cloud advantages are driving more and more apps to the cloud 
+2. Since most applications use external APIs and services, building applications is becoming increasingly similar to integration use cases. 
+3. Low-code integrations are already feasible, though iPaaS. The primary challenge faced by serverless computing within integration use cases is the lack of a language within the serverless environment that supports integration natively. However, several languages already have wide adoption among current integration use cases, and one or more of those languages can be adopted within serverless environments as well. 
+4. There are significant serverless computing-based integration use cases despite the challenges. Therefore, serverless architectures can find significant adoption, even without standardization. The move to the cloud will drive these use cases.
+5. A competition between Kubernetes running on the cloud (bringing portability) and serverless (providing usability) will decide the scale of serverless computing adoption.  
+6. Since integration is the glue that connects legacy and new systems, integrations will continue to have use cases on-premise and in the cloud addressing integrations within and between these deployments. 
 
-The remainder of this document is organized as follows.
+
+The remainder of this document is organized as follows. 
 
 We first discuss the opportunity, including the initial trigger and the current status of serverless computing adoption in the integration domain. Then under the impact, we identify motivations for organizations to deploy a serverless architecture and examine the associated impacts at both macro and micro level. Next, we review the feasibility of the serverless integration, as well as the supporting ecosystem required. Finally, in evaluating future adoption, we discuss the risks and timelines for the associated use cases.
 
 
-
 # Opportunity
 ## Trigger
-There are no clear integration use cases that act as the trigger for serverless computing adoption. Our current interest is motivated by general serverless computing use cases.
+There are no clear integration use cases that act as the trigger for serverless computing adoption. Our current interest is motivated by general serverless computing use cases. 
 
 ## Players
 Amazon, Google, and Microsoft clouds have extended their cloud platforms with FaaS, thus creating serverless platforms. Amazon Step Functions [3] is an integration solution for applications in the cloud, although it is much simpler compared to on-premises integration solutions [4]. Integration platform as a service (iPaaS) solutions provide mature options for low-code integrations.
 
-Other serverless offerings are listed in the serverless resources page [7] and Cloud Native Computing Foundation (CNCF) list of serverless offerings [8].
+Other serverless offerings are listed in the serverless resources page [7] and Cloud Native Computing Foundation (CNCF) list of serverless offerings [8]. 
 
-Additionally, there are several privately-deployable serverless (PDS) platforms, such as OpenWhisk [5] and Knative [6] that organizations can run on-premise.
+Additionally, there are several privately-deployable serverless (PDS) platforms, such as OpenWhisk [5] and Knative [6] that organizations can run on-premise. 
+
 
 ## Drivers
 
-The success of the cloud and its acceptance as an essential architectural choice has paved way to Serverless, which further raise cloud abstraction. There are several positive drivers, which fall under one of two categories: software trends and cloud trends.
+The success of the cloud and its acceptance as an essential architectural choice has paved way to Serverless, which further raise cloud abstraction. There are several positive drivers, which fall under one of two categories: software trends and cloud trends. 
 
 
 ### Software Trends
 We have identified Ten Governing Forces Shaping Technology [23]. Among them there are three major forces in the area of software development that are acting as positive drivers for serverless computing.
 
-First, loose coupling has been a fundamental governing force in enterprise architectures because architectures with less coupling are easier to manage and change. A serverless architecture promotes loose coupling by proposing a structure composed of small functions and events. Furthermore, a serverless architecture aligns well with microservices and provides a natural place for deploying microservice architecture (MSA) based systems, the state-of-the-art development in building loosely coupled systems. Hence the desire for loose coupling is a driver of serverless computing.
 
-Second, even as software is becoming a greater part of our lives [9], we face a severe shortage of skilled developers, which will continue to get worse. Since by raising abstractions, serverless architectures lower the minimum bar required and broaden the developer pool, the shortage of developers also acts as a driver for adopting serverless computing.
+First, even as software is becoming a greater part of our lives [9], we face a severe shortage of skilled developers, which will continue to get worse. Since by raising abstractions, serverless architectures lower the minimum bar required and broaden the developer pool, the shortage of developers also acts as a driver for adopting serverless computing. 
 
-Third, a key goal of software architectures has been reducing complexity. Serverless computing is a significant step toward reducing complexity as it abstracts layers below the code, such as deployment, hardware, and configuration, lowering the knowledge  required from the developers and increasing their effectiveness.
+Second, a key goal of software architectures has been reducing complexity. Serverless computing is a significant step toward reducing complexity as it abstracts layers below the code, such as deployment, hardware, and configuration, lowering the knowledge  required from the developers and increasing their effectiveness. 
 
 
 ### Cloud Trends
 
-At the same time, there have been three developments, in particular, that are accelerating the adoption of the cloud, which acts as a major positive driver for serverless.
+At the same time, there have been three developments, in particular, that are accelerating the adoption of the cloud, which acts as a major positive driver for serverless. 
 
-First, the wide adoption of APIs and associated latencies is driving applications to the cloud. For example, according to the "State of the Internet 2019" report by Akamai, APIs already account for 83% of HTML and JSON internet hits [11]. If this trend continues, most apps will use at least one API. The latency imposed by wide area networks (WAN) is up to 300 times higher than latencies within data centers [13]. Such high latencies have a significantly greater effect on applications [14] that uses APIs. Consequently, if applications are composed of APIs, applications will be better placed in the cloud with APIs, which have low latency. This development will create incentives for both apps and APIs to move to the cloud.
+First, the wide adoption of APIs and associated latencies is driving applications to the cloud. For example, according to the "State of the Internet 2019" report by Akamai, APIs already account for 83% of HTML and JSON internet hits [11]. If this trend continues, most apps will use at least one API. The latency imposed by wide area networks (WAN) is up to 300 times higher than latencies within data centers [13]. Such high latencies have a significantly greater effect on applications [14] that uses APIs. Consequently, if applications are composed of APIs, applications will be better placed in the cloud with APIs, which have low latency. This development will create incentives for both apps and APIs to move to the cloud. 
 
-Second, for an application looking to implement MSA in the  cloud, using serverless environment is a natural candidate. Furthermore, MSA-based architectures can be easily moved to serverless platforms, since the functional decomposition already has been done. Furthermore, the cloud reduces the high cost of observability and DevOps associated with microservices due to its distributed nature.
+Second, for an application looking to implement MSA in the  cloud, using serverless environment is a natural candidate. Furthermore, MSA-based architectures can be easily moved to serverless platforms, since the functional decomposition already has been done. Furthermore, the cloud reduces the high cost of observability and DevOps associated with microservices due to its distributed nature. 
 
-The third development, the complexity of systems, is rising with the adoption of Kubernetes, need for observability, and complex DevOps. Almost all cloud vendors have adopted Kubernetes, effectively converting it to a portability layer for cloud applications. Although it brings flexibility and efficiencies, Kubernetes deployment and management is complex [15]. The same applies to other additions, such as service mesh, as well. Moreover, as the number of components in the systems increases, they become harder to deploy and manage. Therefore, these deployments  require observability and DevOps for managing the complexity. These developments push more and more systems to the cloud to offload management complexity there.
+The third development, the complexity of systems, is rising with the adoption of Kubernetes, need for observability, and complex DevOps. Almost all cloud vendors have adopted Kubernetes, effectively converting it to a portability layer for cloud applications. Although it brings flexibility and efficiencies, Kubernetes deployment and management is complex [15]. The same applies to other additions, such as service mesh, as well. Moreover, as the number of components in the systems increases, they become harder to deploy and manage. Therefore, these deployments  require observability and DevOps for managing the complexity. These developments push more and more systems to the cloud to offload management complexity there. 
 
-The three developments above, coupled with standard cloud advantages, such as cost savings, agility, faster time to market, move most applications into the cloud.
+The three developments above, coupled with standard cloud advantages, such as cost savings, agility, faster time to market, move most applications into the cloud. 
 
-On the other hand, whether looking at software or the cloud, monopoly and vendor-lock-in  concerns act as negative drivers, which we will discuss later under “Risks.” Government policy and laws also act as a gating factors in serverless computing due to uncertainty over potential regulations.
+On the other hand, whether looking at software or the cloud, monopoly and vendor-lock-in  concerns act as negative drivers, which we will discuss later under “Risks.” Government policy and laws also act as a gating factors in serverless computing due to uncertainty over potential regulations. 
 
-In the next section, we explore how serverless computing, together with the drivers examined in this section, will affect integration.
+In the next section, we explore how serverless computing, together with the drivers examined in this section, will affect integration. 
 
 
 # Impact
 
 ## Macro
 
-There are several impacts at the macro level.
+There are several impacts at the macro level. 
 
-First, due to the wide adoption of Kubernetes and its ability to become a portability layer for cloud applications, privately-deployable serverless (PDS) platforms will have few use cases. The only argument for PDS would be if several legacy services were to continue running in on-premises data centers. However, these challenges can be met either through a virtual private cloud (VPC) or by moving legacy applications to the cloud. Given the widespread migration to the cloud, it is likely that many organizations will choose alternatives to PDS. Please refer to the serveless outlook for more details.
+Privately-deployable serverless (PDS) platforms are motivated by data and services that continue to run in on-premises data centers due to privacy and confidentiality concerns. For example, although there are cloud deployments within each country, concerns are much more involved. For example, in theory, a citizen of country A working in country B ‘s cloud provider can be forced by the country A government to get hold of data. 
 
-Second, in this backdrop, developers who want to write an app or an integration in the cloud have two choices. They can choose to run integration logic on top of Kubernetes using integration middleware, or they can choose to run integrations as serverless functions. In a nutshell, serverless computing provides usability versus Kubernetes provides portability.
+Such use cases can be handled using serverless platforms such as KNative, which have added advantage of easy migrations to the cloud if needed. Another option is cloud provider platforms running locally (e.g. Amazon Outposts) or running a hybrid cloud using VPN based solutions (e.g. virtual private cloud (VPC)). Furthermore, if those systems consumes public APIs, they will face further pressure to move to the cloud to reduce latency. 
 
-It is not clear which one will attract the most apps. Historically, usability has won.
-Kubernetes is trying to match the usability of serverless computing by building layers, such as KNative. One possible future is both matching a “serverless platform-like API”. However, Kubernetes has a lot of catching up to do in terms of a wide range of platform services, such as databases, message brokers, and identity services. Another possibility is that future integration tools can enable users to write integrations and directly produce serverless functions that can run on a serverless platform or Kubernetes.
+However, any of these scenarios leave little room for a separate market for  PDS platforms as free and open source KNative handles most of the use cases with minimal work to the end user. 
+
+
+Second, in this backdrop, developers who want to write an app or an integration in the cloud have two choices. They can choose to run integration logic on top of Kubernetes using integration middleware, or they can choose to run integrations as serverless functions. In a nutshell, serverless computing provides usability versus Kubernetes provides portability. 
+
+It is not clear which one will attract the most apps. Historically, usability has won. 
+Kubernetes is trying to match the usability of serverless computing by building layers, such as KNative. One possible future is both matching a “serverless platform-like API”. However, Kubernetes has a lot of catching up to do in terms of a wide range of platform services, such as databases, message brokers, and identity services. Another possibility is that future integration tools can enable users to write integrations and directly produce serverless functions that can run on a serverless platform or Kubernetes. 
 
 Third, the difference between building apps and building integrations is fast disappearing. This has been true for decades within enterprise, which is new becoming a global trend. The rise of the cloud, APIs, and serverless architectures are making app development much more like integration, effectively making integrations ubiquitous. Applications are composed of APIs, and the logic required to write those applications is similar to writing integrations. Consequently, the need for integration-like technology will be much more commonplace in future systems. This development will significantly widen the available market for integrations while driving existing program languages and platforms to provide first-class support for writing integrations.
 
-We can program simple integrations using programming languages, such as Java, Go, and Python. However, complex integrations in serverless architectures also inherit most of the problems that occur in enterprise integration settings. For example, those integrations need to build systems by composing APIs from different vendors, which leads to timing, data format, context mismatches. Writing such code using a programming language, such as Java, needs a lot of plumbing code. Furthermore, with the wide adoption for microservices and APIs, the number of services involved in an integration will likely rise, increasing the complexity of integrations and services, alike. ESB vendors, such as WSO2, Mulesoft, and IBM, have provided integration languages to handle such scenarios. It is likely that similar tools are required for integrations in the cloud as well.
+We can program simple integrations using programming languages, such as Java, Go, and Python. However, complex integrations in serverless architectures also inherit most of the problems that occur in enterprise integration settings. For example, those integrations need to build systems by composing APIs from different vendors, which leads to timing, data format, context mismatches. Writing such code using a programming language, such as Java, needs a lot of plumbing code. Furthermore, with the wide adoption for microservices and APIs, the number of services involved in an integration will likely rise, increasing the complexity of integrations and services, alike. ESB vendors, such as WSO2, Mulesoft, and IBM, have provided integration languages to handle such scenarios. It is likely that similar tools are required for integrations in the cloud as well. 
 
-Serverless computing provides many middleware services as a part of the platform, thus nullifying the need for middleware in many use cases. In response, we are likely to see the rise of a new class of middleware that runs on top of a serverless platform. Most middleware is a collection of services, and most of those services can run directly on top of a serverless platform. Therefore, some middleware might be released as a serverless function. It is not clear whether cloud vendors would embrace serverless-based middleware or fight it. One could argue that, just like with the Apple App Store, having an ecosystem of middleware from which users can pick and choose would be a significant strength for a cloud provider. For example, in the case of the smart phones, the App Store ecosystem becomes a moat against the competition.
+Serverless computing provides many middleware services as a part of the platform, thus nullifying the need for middleware in many use cases. In response, we are likely to see the rise of a new class of middleware that runs on top of a serverless platform. Most middleware is a collection of services, and most of those services can run directly on top of a serverless platform. Therefore, some middleware might be released as a serverless function. It is not clear whether cloud vendors would embrace serverless-based middleware or fight it. One could argue that, just like with the Apple App Store, having an ecosystem of middleware from which users can pick and choose would be a significant strength for a cloud provider. For example, in the case of the smart phones, the App Store ecosystem becomes a moat against the competition. 
 
 
 ## Micro
-This section discusses the impact of serverless computing as experienced by individual organizations. In our earlier research, the serverless outlook [16], we have identified several advantages.
+This section discusses the impact of serverless computing as experienced by individual organizations. In our earlier research, the serverless outlook [16], we have identified several advantages. 
 
-* Increases agility: As discussed by Adzic [17] and Sbarski [19], serverless computing provides faster time to delivery.
-* Lowers platform costs: It provides a true, pay-as-you-go model by eliminating idle time costs.
-* Lowers development costs: As discussed by Zimine [18] and Adzic [17], serverless computing lowers development costs by taking over DevOps and monitoring costs.
+* Increases agility: As discussed by Adzic [17] and Sbarski [19], serverless computing provides faster time to delivery. 
+* Lowers platform costs: It provides a true, pay-as-you-go model by eliminating idle time costs. 
+* Lowers development costs: As discussed by Zimine [18] and Adzic [17], serverless computing lowers development costs by taking over DevOps and monitoring costs. 
 * Cost insights: as noted by Roberts [20], serverless platforms are metered with very fine granularity, which provides greater insights into managing costs.
 
 
-These advantages will continue to be active for integration use cases using serverless architectures.
+These advantages will continue to be active for integration use cases using serverless architectures. 
 
 
 # Feasibility
 ## Use cases
-Before discussing the feasibility of integration use cases in serverless computing, it is useful to understand typical integration use cases and how they map into the serverless environment.
+Before discussing the feasibility of integration use cases in serverless computing, it is useful to understand typical integration use cases and how they map into the serverless environment. 
 
-Most apps built in the serverless environment are composed of four parts:
-1. The external APIs used
-2. Microservices written as serverless functions
-3. Integration logic connecting those services and APIs
-4. Connections to data sources and sink functions.
+1. Most apps built in the serverless environment are composed of four parts: 
+2. the external APIs used
+3. Microservices written as serverless functions
+4. Integration logic connecting those services and APIs
+5. Connections to data sources and sink functions. 
 
-Apart from integration logic, all the other constructs are already available or connected to the serverless environment.
+Apart from integration logic, all the other constructs are already available or connected to the serverless environment.  
 
 The book, “Enterprise Integration Patterns(EIP)” [21], identifies and classifies common integration patterns. Let’s have a look at how serverless can implement the scenarios identified in the book and the data integration use cases.
 
+
 Collectively these include:
 
-1. Matching data formats between participants: These patterns are categorized under “message transformations” in the EIP book.
-2. Resolving timing, aggregation, and disaggregation mismatches between participants or orchestrating the flow between participants: In the EIP book, corresponding patterns are categorized under “Message Routing,” “Message Channels,” and “Message Endpoints.” Among them, “Message Channels,” and “Message Endpoints” are mostly supported as platform services in the serverless environment (e.g., message broker).
-3. Data Integration use cases either combine multiple data sources or keep multiple data sources in sync with each other. They are usually implemented as a combination of event-driven programming (e.g. Kafka, RxJava, Akka), stream processing (e.g. Flink, Siddhi), and batch analytics processing ( e.g. Hadoop, Spark), with the latter two delivered as platform services.
+1. Matching data formats between participants: These patterns are categorized under “message transformations” in the EIP book.  
+2. Resolving timing, aggregation, and disaggregation mismatches between participants or orchestrating the flow between participants: In the EIP book, corresponding patterns are categorized under “Message Routing,” “Message Channels,” and “Message Endpoints.” Among them, “Message Channels,” and “Message Endpoints” are mostly supported as platform services in the serverless environment (e.g., message broker). 
+3. Data Integration use cases either combine multiple data sources or keep multiple data sources in sync with each other. They are usually implemented as a combination of event-driven programming (e.g. Kafka, RxJava, Akka), stream processing (e.g. Flink, Siddhi), and batch analytics processing ( e.g. Hadoop, Spark), with the latter two delivered as platform services.  
 
-To support integration scenarios, a serverless environment needs to support the means to program these integration scenarios.
+To support integration scenarios, a serverless environment needs to support the means to program these integration scenarios. 
 
-In the next subsection, we discuss the technical feasibility and advantages of a serverless environment for implementing integration scenarios.
+In the next subsection, we discuss the technical feasibility and advantages of a serverless environment for implementing integration scenarios. 
+
 
 ## Technical merit
-Considering positives with integration use cases, serverless computing continues to have the following advantages discussed in the serverless outlook.
-* Applications get high availability and auto-scalability without additional effort from the developer. This can significantly reduce development time and consequently costs.
-* Serverless platforms make citizen programming [28] possible by removing the need for server management, scaling, high availability (HA), configurations, builds, and other details. Hence, serverless platforms significantly reduce the barrier to entry.
-* Serverless platforms enable polyglot architectures where multiple programming languages and heterogeneous data stores are used together.
-* Serverless environments enable users to move their integration logic closer to data sources using a content delivery network (CDN) technology (e.g., Amazon Edge [12]), which can provide significant performance improvements and save bandwidth.
+Under this section, we will discuss both positives and negatives of serverless applied to integration use cases. 
 
-Considering these positives, some of the identified limitations of serverless computing are less prevalent with integration use cases. For example, integrations are predominantly stateless by design. To store a state, integrations use platform services, such as databases, shared file systems, or messaging systems. This reduces the state management challenges faced by serverless platforms.
+Considering positives, serverless computing continues to have the following advantages discussed in the serverless outlook. 
+Applications get high availability and auto-scalability without additional effort from the developer. This can significantly reduce development time and consequently costs.
+Serverless platforms make citizen programming [28] possible by removing the need for server management, scaling, high availability (HA), configurations, builds, and other details. Hence, serverless platforms significantly reduce the barrier to entry.
+Serverless platforms enable polyglot architectures where multiple programming languages and heterogeneous data stores are used together.
+Serverless environments enable users to move their integration logic closer to data sources using a content delivery network (CDN) technology (e.g., Amazon Edge [12]), which can provide significant performance improvements and save bandwidth. 
 
-Among the negatives, as identified by the serverless outlook, are cold start and tail latencies, which continue to be a concern with integration use cases as well. However, with the wide adoption of Kubernetes, cold starts have also become part of on-premise systems. Furthermore, microservices architectures also lead to higher tail latencies. Consequently, neither is a negative differentiator for serverless environments compared to on-premise deployments.
+Considering these positives, some of the identified limitations of serverless computing are less prevalent with integration use cases. For example, integrations are predominantly stateless by design. To store a state, integrations use platform services, such as databases, shared file systems, or messaging systems. This reduces the state management challenges faced by serverless platforms. 
+
+Among the negatives, as identified by the serverless outlook, are cold start and tail latencies, which continue to be a concern with integration use cases as well. However, with the wide adoption of Kubernetes, cold starts have also become part of on-premise systems. Furthermore, microservices architectures also lead to higher tail latencies. Consequently, neither is a negative differentiator for serverless environments compared to on-premise deployments. 
 
 At the same time, integration use cases on serverless platforms face challenges due to the absence of integration-friendly language in the cloud. As discussed in the macro subsection, to support integration scenarios, a serverless environment needs to support the ability to program these integration scenarios. But, current choices for programming integration logic are limited:
 
 1. iPaaS-based visual programming works for simple use cases (see [25] for details).
-2. Using one of the programming languages supported by the serverless platform (e.g., Java, Python)
+2. Using one of the programming languages supported by the serverless platform (e.g., Java, Python) 
 3. Amazon step functions are a potential alternative for integrations, yet they still have limited capabilities and are not a full language. For example, Amazon step functions can only model a set of states and transitions among them while most integration languages can be used to program any logic. Therefore, step functions are not suitable for complex logic.
+   
+If we look at the history of integration, the first integrations were written using classic programming languages, such as COBOL, C, Java and C#. However, most integration use cases involve communicating between services, APIs, data sinks, and data sources and then matching their inputs, outputs, timing, and control flow. Classic programming languages do not have first-class constructs for service invocations or dealing with data formats such as XML or JSON. Hence, developers need to re-implement the logic from first principles, which leads to code that is verbose, complicated to write, and hard to maintain. To address this challenge, on-premises integration vendors [22] have supported domain-specific languages for programming integrations.  
 
+Currently, serverless platform users rely on languages, such as Java, to implement their integration use cases as well. However, as more complex use cases move to serverless architectures, we are likely to rediscover the limitations we faced with those languages years back. Therefore, the lack of higher languages supporting integrations continues to be a challenge faced by serverless computing. 
 
-
-If we look at the history of integration, the first integrations were written using classic programming languages, such as COBOL, C, Java and C#. However, most integration use cases involve communicating between services, APIs, data sinks, and data sources and then matching their inputs, outputs, timing, and control flow. Classic programming languages do not have first-class constructs for service invocations or dealing with data formats such as XML or JSON. Hence, developers need to re-implement the logic from first principles, which leads to code that is verbose, complicated to write, and hard to maintain. To address this challenge, on-premises integration vendors [22] have supported domain-specific languages for programming integrations.
-
-Currently, serverless platform users rely on languages, such as Java, to implement their integration use cases as well. However, as more complex use cases move to serverless architectures, we are likely to rediscover the limitations we faced with those languages years back. Therefore, the lack of higher languages supporting integrations continues to be a challenge faced by serverless computing.
-
-This can be solved using several means:
-1. Users can run integratIfion middleware within an infrastructure as a service (IaaS) solution and use it to integrate serverless applications.
-2. Cloud providers can support integration middleware as one of their platform as a service (PaaS) services.
-3. Cloud providers can support integration languages—e.g., Ballerina or domain-specific languages (DSLs)—as languages supported by FaaS.
+This can be solved using several means: 
+1. Users can run integration middleware within an infrastructure as a service (IaaS) solution and use it to integrate serverless applications. 
+2. Cloud providers can support integration middleware as one of their platform as a service (PaaS) services. 
+3. Cloud providers can support integration languages—e.g., Ballerina or domain-specific languages (DSLs)—as languages supported by FaaS. 
 4. Solution providers can expand visual programming support for general integration.
 
-This is an important consideration when moving integration use cases to the cloud.
-
+This is an important consideration when moving integration use cases to the cloud. 
 
 ## Tools, Ecosystem and Skills
 
 Our serverless outlook [16] argues that serverless platforms need tools and integrated development environments (IDEs) to simplify the experience for complex serverless applications. For example, an IDE should enable users to create functions, compose them, test the fully composed application in the IDE itself, debug the app, and then push a button to deploy the app to a serverless platform.
+ 
+In the case of low-code integration, user experiences already exist for integration in iPaaS tools, such as Worketo and Dell Boomi [4]. These iPaaS solutions may act as an alternative to a language for programming interactions in a serverless environment. The visual programming supported by iPaaS tools works well for smaller use cases, but it faces challenges with complex programs [24]. Most complex integrations are done with textual languages, and similar tools do not yet exist for general integrations within serverless platforms. 
 
-In the case of low-code integration, user experiences already exist for integration in iPaaS tools, such as Worketo and Dell Boomi [423]. These iPaaS solutions may act as an alternative to a language for programming interactions in a serverless environment. The visual programming supported by iPaaS tools works well for smaller use cases, but it faces challenges with complex programs [24]. Most complex integrations are done with textual languages, and similar tools do not yet exist for general integrations within serverless platforms.
 
 ## Friction
-Our serverless outlook observes that an event-driven architecture (EDA), which is central to the serverless model, is not intuitive to traditional developers and is generally harder to debug. However, integration use cases naturally follow an EDA model, and hence, EDA is not a significant concern to integration developers.
+Our serverless outlook observes that an event-driven architecture (EDA), which is central to the serverless model, is not intuitive to traditional developers and is generally harder to debug. However, integration use cases naturally follow an EDA model, and hence, EDA is not a significant concern to integration developers. 
 
-Furthermore, the serverless outlook notes that serverless computing, by design, is an opinionated solution. It is agile as long as the developer is willing to conform to its model, but it becomes clumsy if the programmer resists the model. This continues to be a disadvantage.
+Furthermore, the serverless outlook notes that serverless computing, by design, is an opinionated solution. It is agile as long as the developer is willing to conform to its model, but it becomes clumsy if the programmer resists the model. This continues to be a disadvantage. 
 
 In summary, serverless computing has many technical advantages. Although there are challenges, there are significant use cases unhindered by those challenges. The main hurdle faced is the lack of a native integration language in the serverless environment, which we believe can be fixed. Hence we believe serverless computing is feasible within integration use cases.
 
+
 # Future
 ## Risks
-
-Our serverless outlook has identified the following two concerns: the lack of standards and vendor lock-in, which pose a significant risk to serverless architecture adoption. The real concern is not serverless functions, but the platform services required by those functions. It is hard to abstract those services effectively. These two concerns continue to be a negative consideration for integration use cases in serverless environments, although not a show stopper.
+Our serverless outlook has identified the following two concerns: the lack of standards and vendor lock-in, which pose a significant risk to serverless architecture adoption. The real concern is not serverless functions, but the platform services required by those functions. It is hard to abstract those services effectively. These two concerns continue to be a negative consideration for integration use cases in serverless environments, although not a show stopper. 
 
 ## Timeline
-We found that serverless platforms within integration use cases have a significant impact and have significant use cases that are feasible. Assuming that serverless platforms will support an integration language, we expect to see many new applications adopting serverless architectures in the next three years. Since these applications use APIs and interact with external systems, as applications move to the cloud, integration use cases will also be forced to move to the cloud.
+We found that serverless platforms within integration use cases have a significant impact and have significant use cases that are feasible. Assuming that serverless platforms will support an integration language, we expect to see many new applications adopting serverless architectures in the next three years. Since these applications use APIs and interact with external systems, as applications move to the cloud, integration use cases will also be forced to move to the cloud. 
 
 However, adoption of a serverless architecture would require significant parts of existing systems to be replaced. Hence, we believe initial adoption will be limited to new “greenfield” projects, and traditional deployments will continue to persist for a long time in the same way COBOL and mainframes are still around. The usual cycle is that eventually existing systems come up for replacement, and that can take years.
 
-Integration is the glue that connects legacy and new systems. Consequently, integrations will continue to have on-premises deployments support legacy systems for years to come. Furthermore, there is likely to be demand for hybrid interactions between on-premise legacy deployments and new cloud infrastructures.
+Integration is the glue that connects legacy and new systems. Consequently, integrations will continue to have on-premises deployments support legacy systems for years to come. Furthermore, there is likely to be demand for hybrid interactions between on-premise legacy deployments and new cloud infrastructures. 
 
-Due to latency limitations, integrations will be often are likely to be deployed close to the applications and systems they connect. Consequently, integrations will move to the cloud only after most APIs, services, and applications have migrated there. Despite this lag, we believe integration technologies will find significant use cases connecting new applications and services. Among exception would be hybrid cloud ( e.g. via VPC)  and apps that runs across multiple clouds.
+Due to latency limitations, integrations will be often deployed close to the applications and systems they connect. Consequently, integrations will move to the cloud only after most APIs, services, and applications have migrated there. Despite this lag, we believe integration technologies will find significant use cases connecting new applications and services. Among exception would be hybrid cloud ( e.g. via VPC)  and apps that runs across multiple clouds. 
 
 # Conclusion
 
-As a result of our analysis, we have reached the following conclusions:
+As a result of our analysis, we have reached the following conclusions: 
 
-1. Latency considerations, a lack of developers, and the rising complexity of systems coupled with standard cloud advantages are driving more and more apps to the cloud. Since most applications use external APIs and services, building applications is becoming increasingly similar to integration use cases.
-2. Low-code integrations are already feasible, though iPaaS. The primary challenge faced by serverless computing within integration use cases is the lack of a language within the serverless environment that supports integration natively. However, several languages already have wide adoption among current integration use cases, and one or more of those languages can be adopted within serverless environments as well.
+1. Latency considerations, a lack of developers, and the rising complexity of systems coupled with standard cloud advantages are driving more and more apps to the cloud 
+Since most applications use external APIs and services, building applications is becoming increasingly similar to integration use cases. 
+2. Low-code integrations are already feasible, though iPaaS. The primary challenge faced by serverless computing within integration use cases is the lack of a language within the serverless environment that supports integration natively. However, several languages already have wide adoption among current integration use cases, and one or more of those languages can be adopted within serverless environments as well. 
 3. There are significant serverless computing-based integration use cases despite the challenges. Therefore, serverless architectures can find significant adoption, even without standardization. The move to the cloud will drive these use cases.
-4. A competition between Kubernetes running on the cloud (bringing portability) and serverless (providing usability) will decide the scale of serverless computing adoption.
-5. Since integration is the glue that connects legacy and new systems, integrations will continue to have use cases on-premise and in the cloud addressing integrations within and between these deployments.
+4. A competition between Kubernetes running on the cloud (bringing portability) and serverless (providing usability) will decide the scale of serverless computing adoption.  
+5. Since integration is the glue that connects legacy and new systems, integrations will continue to have use cases on-premise and in the cloud addressing integrations within and between these deployments. 
+
 
 # References
 
