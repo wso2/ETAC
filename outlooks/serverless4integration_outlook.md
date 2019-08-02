@@ -68,10 +68,10 @@ The success of the cloud and its acceptance as an essential architectural choice
 
 
 ### Software Trends
-We have identified Ten Governing Forces Shaping Technology [23]. Among them there are three major forces in the area of software development that are acting as positive drivers for serverless computing.
+We have identified Ten Governing Forces Shaping Technology [[26](https://hackernoon.com/catalysts-inhibitors-and-transformers-ten-governing-forces-shaping-technology-57a793bfbf0)]. Among them there are three major forces in the area of software development that are acting as positive drivers for serverless computing.
 
 
-First, even as software is becoming a greater part of our lives [9], we face a severe shortage of skilled developers, which will continue to get worse. Since by raising abstractions, serverless architectures lower the minimum bar required and broaden the developer pool, the shortage of developers also acts as a driver for adopting serverless computing. 
+First, even as software is becoming a greater part of our lives [[9](https://a16z.com/2011/08/20/why-software-is-eating-the-world/)], we face a severe shortage of skilled developers, which will continue to get worse. Since by raising abstractions, serverless architectures lower the minimum bar required and broaden the developer pool, the shortage of developers also acts as a driver for adopting serverless computing. 
 
 Second, a key goal of software architectures has been reducing complexity. Serverless computing is a significant step toward reducing complexity as it abstracts layers below the code, such as deployment, hardware, and configuration, lowering the knowledge  required from the developers and increasing their effectiveness. 
 
@@ -80,11 +80,11 @@ Second, a key goal of software architectures has been reducing complexity. Serve
 
 At the same time, there have been three developments, in particular, that are accelerating the adoption of the cloud, which acts as a major positive driver for serverless. 
 
-First, the wide adoption of APIs and associated latencies is driving applications to the cloud. For example, according to the "State of the Internet 2019" report by Akamai, APIs already account for 83% of HTML and JSON internet hits [11]. If this trend continues, most apps will use at least one API. The latency imposed by wide area networks (WAN) is up to 300 times higher than latencies within data centers [13]. Such high latencies have a significantly greater effect on applications [14] that uses APIs. Consequently, if applications are composed of APIs, applications will be better placed in the cloud with APIs, which have low latency. This development will create incentives for both apps and APIs to move to the cloud. 
+First, the wide adoption of APIs and associated latencies is driving applications to the cloud. For example, according to the "State of the Internet 2019" report by Akamai, APIs already account for 83% of HTML and JSON internet hits [[11](https://www.akamai.com/us/en/multimedia/documents/state-of-the-internet/state-of-the-internet-security-retail-attacks-and-api-traffic-report-2019.pdf)]. If this trend continues, most apps will use at least one API. The latency imposed by wide area networks (WAN) is up to 300 times higher than latencies within data centers [[13](https://gist.github.com/jboner/2841832)]. Such high latencies have a significantly greater effect on applications [[14](https://www.gigaspaces.com/blog/amazon-found-every-100ms-of-latency-cost-them-1-in-sales/)] that uses APIs. Consequently, if applications are composed of APIs, applications will be better placed in the cloud with APIs, which have low latency. This development will create incentives for both apps and APIs to move to the cloud. 
 
 Second, for an application looking to implement MSA in the  cloud, using serverless environment is a natural candidate. Furthermore, MSA-based architectures can be easily moved to serverless platforms, since the functional decomposition already has been done. Furthermore, the cloud reduces the high cost of observability and DevOps associated with microservices due to its distributed nature. 
 
-The third development, the complexity of systems, is rising with the adoption of Kubernetes, need for observability, and complex DevOps. Almost all cloud vendors have adopted Kubernetes, effectively converting it to a portability layer for cloud applications. Although it brings flexibility and efficiencies, Kubernetes deployment and management is complex [15]. The same applies to other additions, such as service mesh, as well. Moreover, as the number of components in the systems increases, they become harder to deploy and manage. Therefore, these deployments  require observability and DevOps for managing the complexity. These developments push more and more systems to the cloud to offload management complexity there. 
+The third development, the complexity of systems, is rising with the adoption of Kubernetes, need for observability, and complex DevOps. Almost all cloud vendors have adopted Kubernetes, effectively converting it to a portability layer for cloud applications. Although it brings flexibility and efficiencies, Kubernetes deployment and management is complex [[15](https://medium.com/@betz.mark/is-kubernetes-too-complicated-1ffd8a3a6fb4)]. The same applies to other additions, such as service mesh, as well. Moreover, as the number of components in the systems increases, they become harder to deploy and manage. Therefore, these deployments  require observability and DevOps for managing the complexity. These developments push more and more systems to the cloud to offload management complexity there. 
 
 The three developments above, coupled with standard cloud advantages, such as cost savings, agility, faster time to market, move most applications into the cloud. 
 
@@ -119,12 +119,12 @@ Serverless computing provides many middleware services as a part of the platform
 
 
 ## Micro
-This section discusses the impact of serverless computing as experienced by individual organizations. In our earlier research, the serverless outlook [16], we have identified several advantages. 
+This section discusses the impact of serverless computing as experienced by individual organizations. In our earlier research, the serverless outlook [[16](https://github.com/wso2/ETAC/blob/master/outlooks/serverless_outlook.md)], we have identified several advantages. 
 
-* Increases agility: As discussed by Adzic [17] and Sbarski [19], serverless computing provides faster time to delivery. 
+* Increases agility: As discussed by Adzic [[17](https://blog.acolyer.org/2017/10/19/serverless-computing-economic-and-architectural-impact/)] and Sbarski [[19](https://www.youtube.com/watch?v=LAWjdZYrUgI)], serverless computing provides faster time to delivery. 
 * Lowers platform costs: It provides a true, pay-as-you-go model by eliminating idle time costs. 
-* Lowers development costs: As discussed by Zimine [18] and Adzic [17], serverless computing lowers development costs by taking over DevOps and monitoring costs. 
-* Cost insights: as noted by Roberts [20], serverless platforms are metered with very fine granularity, which provides greater insights into managing costs.
+* Lowers development costs: As discussed by Zimine [[18](https://medium.freecodecamp.org/serverless-is-cheaper-not-simpler-a10c4fc30e49)] and Adzic [[17](https://blog.acolyer.org/2017/10/19/serverless-computing-economic-and-architectural-impact/)], serverless computing lowers development costs by taking over DevOps and monitoring costs. 
+* Cost insights: as noted by Roberts [[20](https://martinfowler.com/articles/serverless.html)], serverless platforms are metered with very fine granularity, which provides greater insights into managing costs.
 
 
 These advantages will continue to be active for integration use cases using serverless architectures. 
@@ -142,7 +142,7 @@ Before discussing the feasibility of integration use cases in serverless computi
 
 Apart from integration logic, all the other constructs are already available or connected to the serverless environment.  
 
-The book, “Enterprise Integration Patterns(EIP)” [21], identifies and classifies common integration patterns. Let’s have a look at how serverless can implement the scenarios identified in the book and the data integration use cases.
+The book, “Enterprise Integration Patterns(EIP)” [[21](https://www.enterpriseintegrationpatterns.com/patterns/messaging/)], identifies and classifies common integration patterns. Let’s have a look at how serverless can implement the scenarios identified in the book and the data integration use cases.
 
 
 Collectively these include:
