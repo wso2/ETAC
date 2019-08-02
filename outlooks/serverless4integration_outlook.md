@@ -163,7 +163,7 @@ Considering positives, serverless computing continues to have the following adva
 Applications get high availability and auto-scalability without additional effort from the developer. This can significantly reduce development time and consequently costs.
 Serverless platforms make citizen programming [[23](https://readwrite.com/2013/07/15/the-rise-of-the-citizen-developer/)] possible by removing the need for server management, scaling, high availability (HA), configurations, builds, and other details. Hence, serverless platforms significantly reduce the barrier to entry.
 Serverless platforms enable polyglot architectures where multiple programming languages and heterogeneous data stores are used together.
-Serverless environments enable users to move their integration logic closer to data sources using a content delivery network (CDN) technology (e.g., Amazon Edge [[12](https://aws.amazon.com/lambda/edge/)], which can provide significant performance improvements and save bandwidth. 
+Serverless environments enable users to move their integration logic closer to data sources using a content delivery network (CDN) technology (e.g., Amazon Edge [[12](https://aws.amazon.com/lambda/edge/)]), which can provide significant performance improvements and save bandwidth. 
 
 Considering these positives, some of the identified limitations of serverless computing are less prevalent with integration use cases. For example, integrations are predominantly stateless by design. To store a state, integrations use platform services, such as databases, shared file systems, or messaging systems. This reduces the state management challenges faced by serverless platforms. 
 
