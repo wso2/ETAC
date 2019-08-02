@@ -161,9 +161,9 @@ Under this section, we will discuss both positives and negatives of serverless a
 
 Considering positives, serverless computing continues to have the following advantages discussed in the serverless outlook. 
 Applications get high availability and auto-scalability without additional effort from the developer. This can significantly reduce development time and consequently costs.
-Serverless platforms make citizen programming [28] possible by removing the need for server management, scaling, high availability (HA), configurations, builds, and other details. Hence, serverless platforms significantly reduce the barrier to entry.
+Serverless platforms make citizen programming [[23](https://readwrite.com/2013/07/15/the-rise-of-the-citizen-developer/)] possible by removing the need for server management, scaling, high availability (HA), configurations, builds, and other details. Hence, serverless platforms significantly reduce the barrier to entry.
 Serverless platforms enable polyglot architectures where multiple programming languages and heterogeneous data stores are used together.
-Serverless environments enable users to move their integration logic closer to data sources using a content delivery network (CDN) technology (e.g., Amazon Edge [12]), which can provide significant performance improvements and save bandwidth. 
+Serverless environments enable users to move their integration logic closer to data sources using a content delivery network (CDN) technology (e.g., Amazon Edge [[12](https://aws.amazon.com/lambda/edge/)], which can provide significant performance improvements and save bandwidth. 
 
 Considering these positives, some of the identified limitations of serverless computing are less prevalent with integration use cases. For example, integrations are predominantly stateless by design. To store a state, integrations use platform services, such as databases, shared file systems, or messaging systems. This reduces the state management challenges faced by serverless platforms. 
 
@@ -171,11 +171,11 @@ Among the negatives, as identified by the serverless outlook, are cold start and
 
 At the same time, integration use cases on serverless platforms face challenges due to the absence of integration-friendly language in the cloud. As discussed in the macro subsection, to support integration scenarios, a serverless environment needs to support the ability to program these integration scenarios. But, current choices for programming integration logic are limited:
 
-1. iPaaS-based visual programming works for simple use cases (see [25] for details).
+1. iPaaS-based visual programming works for simple use cases (see [[25](http://mikehadlow.blogspot.com/2018/10/visual-programming-why-its-bad-idea.html)] for details).
 2. Using one of the programming languages supported by the serverless platform (e.g., Java, Python) 
 3. Amazon step functions are a potential alternative for integrations, yet they still have limited capabilities and are not a full language. For example, Amazon step functions can only model a set of states and transitions among them while most integration languages can be used to program any logic. Therefore, step functions are not suitable for complex logic.
    
-If we look at the history of integration, the first integrations were written using classic programming languages, such as COBOL, C, Java and C#. However, most integration use cases involve communicating between services, APIs, data sinks, and data sources and then matching their inputs, outputs, timing, and control flow. Classic programming languages do not have first-class constructs for service invocations or dealing with data formats such as XML or JSON. Hence, developers need to re-implement the logic from first principles, which leads to code that is verbose, complicated to write, and hard to maintain. To address this challenge, on-premises integration vendors [22] have supported domain-specific languages for programming integrations.  
+If we look at the history of integration, the first integrations were written using classic programming languages, such as COBOL, C, Java and C#. However, most integration use cases involve communicating between services, APIs, data sinks, and data sources and then matching their inputs, outputs, timing, and control flow. Classic programming languages do not have first-class constructs for service invocations or dealing with data formats such as XML or JSON. Hence, developers need to re-implement the logic from first principles, which leads to code that is verbose, complicated to write, and hard to maintain. To address this challenge, on-premises integration vendors [[22](https://www.gartner.com/en/documents/3880132)] have supported domain-specific languages for programming integrations.  
 
 Currently, serverless platform users rely on languages, such as Java, to implement their integration use cases as well. However, as more complex use cases move to serverless architectures, we are likely to rediscover the limitations we faced with those languages years back. Therefore, the lack of higher languages supporting integrations continues to be a challenge faced by serverless computing. 
 
@@ -189,9 +189,9 @@ This is an important consideration when moving integration use cases to the clou
 
 ## Tools, Ecosystem and Skills
 
-Our serverless outlook [16] argues that serverless platforms need tools and integrated development environments (IDEs) to simplify the experience for complex serverless applications. For example, an IDE should enable users to create functions, compose them, test the fully composed application in the IDE itself, debug the app, and then push a button to deploy the app to a serverless platform.
+Our serverless outlook [[16](https://github.com/wso2/ETAC/blob/master/outlooks/serverless_outlook.md)] argues that serverless platforms need tools and integrated development environments (IDEs) to simplify the experience for complex serverless applications. For example, an IDE should enable users to create functions, compose them, test the fully composed application in the IDE itself, debug the app, and then push a button to deploy the app to a serverless platform.
  
-In the case of low-code integration, user experiences already exist for integration in iPaaS tools, such as Worketo and Dell Boomi [4]. These iPaaS solutions may act as an alternative to a language for programming interactions in a serverless environment. The visual programming supported by iPaaS tools works well for smaller use cases, but it faces challenges with complex programs [24]. Most complex integrations are done with textual languages, and similar tools do not yet exist for general integrations within serverless platforms. 
+In the case of low-code integration, user experiences already exist for integration in iPaaS tools, such as Worketo and Dell Boomi [[4](https://www.forrester.com/report/The+Forrester+Wave+Strategic+iPaaS+And+Hybrid+Integration+Platforms+Q1+2019/-/E-RES141621)]. These iPaaS solutions may act as an alternative to a language for programming interactions in a serverless environment. The visual programming supported by iPaaS tools works well for smaller use cases, but it faces challenges with complex programs [[24](https://www.outsystems.com/blog/visual-programming-is-unbelievable.html)]. Most complex integrations are done with textual languages, and similar tools do not yet exist for general integrations within serverless platforms. 
 
 
 ## Friction
