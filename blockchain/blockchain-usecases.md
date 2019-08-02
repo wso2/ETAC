@@ -19,11 +19,11 @@ Usecases are grpoup by the motation to adopt them. For more details, please refe
 * **Implementation:** See Auditable History or Workspace architecture pattern.
 
 
-## Providing Supply Chain Cisibility 
+## Providing Supply Chain Visibility 
 * **Use cases:** Get suppliers to record transactions in a blockchain to provide visibility into the claims made by the company about how resources are sourced. 
 * **Implementation:** See Auditable History or Workspace architecture pattern.
 
-## A Global Geputation System
+## A Global Reputation System
 * **Use case:** Reputation can take many forms. One example would be professional reputations (e.g. doctors and lawyers). Ratings are signed by actual users together with their verifiable claims, and therefore, they are hard to fake. Authorities that issue verifiable claims should keep records and mention user’s other DIDs within there verifiable claims to stop user from creating new DIDs and switching. Another example is digital identity with social credibility. The more an individual is trustworthy (e.g., paying on time or being a good tenant), their social credit rises. People with high social credibility can get priority when it comes to loan applications, reduced rental fees, etc. 
 * **Implementation:** See the Registry or Marketplace architecture pattern.
 
@@ -81,7 +81,7 @@ Usecases are grpoup by the motation to adopt them. For more details, please refe
 * **Use case:** The idea is to support ownership control via a blockchain. Among the examples are an Airbnb special lock that you can control during your stay and bicycle ride sharing. The use of built-in e-vaults enables car owners to automatically pay for parking, electricity top-ups, highway tolls, etc. 
 * **Implementation:** See the Smart Contracts and Managed Things architecture pattern.
 
-##Manage IoT Devices using Blockchain
+## Manage IoT Devices using Blockchain
 * **Use case:** Establish a decentralized network of IoT devices using a blockchain. This will remove the requirement of having a central location to handle communications. Devices can communicate directly, conduct device management, etc. without involving a central authority.
 * **Implementation:** See the Smart Contracts and Managed Things architecture pattern.
 
