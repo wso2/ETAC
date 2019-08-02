@@ -31,9 +31,9 @@ We define integration as _the use of technologies that enable typically diverse 
 
 We implement integration by intercepting communications between mismatching apps, APIs, and services and shaping that information as messages, events, and files. Historically, integration is implemented using an enterprise service bus (ESB) that sits between information sources and sinks and coordinates activities as a single unit. With the advent of microservice architecture, newer systems tend to use integration logic running independently (e.g., as a microservice) instead of a centralized service bus.
 
-Integration can be categorized as low-code integration and general integration. Wikipedia defines low-code development as _“software that provides an environment programmers use to create application software through graphical user interfaces and configuration instead of traditional computer programming.” [2]_. Hence low-code integration focuses on visual tooling based integration while general integration involves general programming and scripts. Given the shortage of programmers, the share of low code integration is expected to rise over time. Our discussion will consider both types of integration technologies. 
+Integration can be categorized as low-code integration and general integration. Wikipedia defines low-code development as _“software that provides an environment programmers use to create application software through graphical user interfaces and configuration instead of traditional computer programming.” [[2](https://en.wikipedia.org/wiki/Low-code_development_platform)]_. Hence low-code integration focuses on visual tooling based integration while general integration involves general programming and scripts. Given the shortage of programmers, the share of low code integration is expected to rise over time. Our discussion will consider both types of integration technologies. 
 
-Our main goal is to sort between the hype and the real potential of serverless computing within the integration domain. With that in mind, we wanted to take a systematic approach to evaluate it. To do so, we have used the Emerging Technology Analysis Canvas (ETAC) [1] framework, which takes a broad view of emerging technology by probing impact, feasibility, risks, and future timelines.
+Our main goal is to sort between the hype and the real potential of serverless computing within the integration domain. With that in mind, we wanted to take a systematic approach to evaluate it. To do so, we have used the Emerging Technology Analysis Canvas (ETAC) [[1](https://github.com/wso2/ETAC/blob/master/ETAC.md)] framework, which takes a broad view of emerging technology by probing impact, feasibility, risks, and future timelines.
 
 We have drawn the following conclusions as a result of our analysis:
 
@@ -55,11 +55,11 @@ We first discuss the opportunity, including the initial trigger and the current 
 There are no clear integration use cases that act as the trigger for serverless computing adoption. Our current interest is motivated by general serverless computing use cases. 
 
 ## Players
-Amazon, Google, and Microsoft clouds have extended their cloud platforms with FaaS, thus creating serverless platforms. Amazon Step Functions [3] is an integration solution for applications in the cloud, although it is much simpler compared to on-premises integration solutions [4]. Integration platform as a service (iPaaS) solutions provide mature options for low-code integrations.
+Amazon, Google, and Microsoft clouds have extended their cloud platforms with FaaS, thus creating serverless platforms. Amazon Step Functions [[3](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)] is an integration solution for applications in the cloud, although it is much simpler compared to on-premises integration solutions [[4](https://www.forrester.com/report/The+Forrester+Wave+Strategic+iPaaS+And+Hybrid+Integration+Platforms+Q1+2019/-/E-RES141621)]. Integration platform as a service (iPaaS) solutions provide mature options for low-code integrations.
 
-Other serverless offerings are listed in the serverless resources page [7] and Cloud Native Computing Foundation (CNCF) list of serverless offerings [8]. 
+Other serverless offerings are listed in the serverless resources page [[7](https://github.com/anaibol/awesome-serverless)] and Cloud Native Computing Foundation (CNCF) list of serverless offerings [[8](https://docs.google.com/spreadsheets/d/10rSQ8rMhYDgf\_ib3n6kfzwEuoE88qr0amUPRxKbwVCk/edit#gid=0)]. 
 
-Additionally, there are several privately-deployable serverless (PDS) platforms, such as OpenWhisk [5] and Knative [6] that organizations can run on-premise. 
+Additionally, there are several privately-deployable serverless (PDS) platforms, such as OpenWhisk [[5](https://openwhisk.apache.org/)] and Knative [[6](https://github.com/knative/)] that organizations can run on-premise. 
 
 
 ## Drivers
