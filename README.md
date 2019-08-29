@@ -20,11 +20,16 @@ You can find more details from [ETAC specification](https://github.com/wso2/ETAC
 
 Following are some meterial about ETAC. 
 * Short introduction article: [How to judge New Techs like Blockchain, AI, and Serverless? a Methodology](https://hackernoon.com/etac-a-visual-canvas-for-assessing-technologies-e73b7f5c3990)
-* WSO2con talk: A Visual Canvas for Judging New Technologies[Slides](https://www.slideshare.net/hemapani/a-visual-canvas-for-judging-new-technologies),[Video](https://www.youtube.com/watch?v=4RtbHgBqUJc)
+* WSO2con talk: A Visual Canvas for Judging New Technologies, [Slides](https://www.slideshare.net/hemapani/a-visual-canvas-for-judging-new-technologies),[Video](https://www.youtube.com/watch?v=4RtbHgBqUJc)
 
-Future outlooks based on ETAC. 
+Published outlooks based on ETAC. 
 * [Blockchain Future Outlook](https://peerj.com/preprints/27529/)
 * [Serverless Future Outlook](https://github.com/wso2/ETAC/blob/master/outlooks/serverless_outlook.md)
+* How Serverless can shape Enterprise Integration? [Paper](https://github.com/wso2/ETAC/blob/master/outlooks/serverless4integration_outlook.md), [Slides](https://www.slideshare.net/hemapani/future-of-serverless-144521841), [Video](https://wso2.com/library/webinars/2019/05/the-future-of-serverless/)
+* The Role of Blockchain in Future Integrations, [Paper](https://github.com/wso2/ETAC/blob/master/outlooks/blockchain4integration_outlook.md), [Slides](https://www.slideshare.net/hemapani/the-role-of-blockchain-in-future), [Video](https://wso2.com/library/webinars/2019/08/the-role-of-blockchain-in-future-integrations/)
+* How Will AI shape Integration? [Slides](https://www.slideshare.net/hemapani/how-would-ai-shape-future-integrations), [Video](https://wso2.com/library/webinars/2019/08/how-would-ai-shape-future-integrations/)
+
+
 
 
 We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to srinath@wso2.com. 
