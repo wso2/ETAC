@@ -52,6 +52,7 @@ We first discuss the opportunity, including the initial triggers and the current
 
 
 #Use cases
+
 To understand how artificial intelligence impacts the integration domain, we need to understand the applicable use cases. After a survey, we have identified the following eleven classes of AI use cases in the integration domain. 
 
 1. Integrations required to enable AI—collecting data required for AI and carrying out actions suggested by AI creates many use cases 
