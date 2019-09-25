@@ -25,7 +25,7 @@ Today, AI is comprised of a broad range of technologies: rule-based (e.g., Prolo
 
 This paper explores how AI will affect the integration domain over the next ten years. To ground this discussion, let us first review how we define AI and integration for our analysis.
 
-We have chosen the Wikipedia definition of artificial intelligence as _“machines that mimic "cognitive" functions that humans associate with other human minds, such as ‘learning’ and ‘problem-solving’."_
+We have chosen the Wikipedia definition of artificial intelligence as _“machines that mimic 'cognitive' functions that humans associate with other human minds, such as ‘learning’ and ‘problem-solving’."_
 
 We define integration as _“the use of technologies that enable typically diverse systems within or between organizations to work together to achieve common business goals.” [23]._
 
