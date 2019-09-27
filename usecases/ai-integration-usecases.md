@@ -60,7 +60,7 @@ AI can be a powerful tool in automating DevOps by removing or reducing the need 
 Applying AI to a custom dataset requires a significant investment from organizations. However, enterprises that manage users’ data (e.g. databases, customer relationship management (CRM) systems, and enterprise resource planning (ERP) software) can build AI capabilities into their products providing AI scenarios out of the box. For example, AI companies are integrating data from CRM and ERP systems to support use cases, such as lead scoring, churn prediction, and customer ticket prioritization. 
 
 # Algorithm Economy
-In the algorithm economy, algorithms are exposed via APIs that can be integrated to build systems. This removes the need for organizations to build their own AI systems, thus making it useful for medium and small organizations to apply AI. Furthermore, this removes the challenges related to a lack of data. And, it creates an opportunity for organizations that already have data to monetize it; [algorithmia.com] is an example of this model. 
+In the algorithm economy, algorithms are exposed via APIs that can be integrated to build systems. This removes the need for organizations to build their own AI systems, thus making it useful for medium and small organizations to apply AI. Furthermore, this removes the challenges related to a lack of data. And, it creates an opportunity for organizations that already have data to monetize it; [algorithmia.com](algorithmia.com) is an example of this model. 
 
 # Enhanced Usability
 AI can be used to increase the usability of systems by providing better error messages to users,  inferring/fixing errors in messages, or providing suggestions, such as: Did you mean this? You might also like that.
