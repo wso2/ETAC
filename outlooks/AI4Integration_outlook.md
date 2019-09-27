@@ -51,7 +51,7 @@ The remainder of this document is organized as follows.
 We first discuss the opportunity, including the initial triggers and the current status of AI adoption in the integration domain. Then under the impact section, we identify the motivations for organizations to deploy AI, and we examine the ramifications at both the macro and micro levels. Next, we review the feasibility of AI for integration, as well as the supporting ecosystem. Finally, in evaluating future adoption, we discuss the risks and timelines for the associated use cases.
 
 
-#Use cases
+# Use cases
 
 To understand how artificial intelligence impacts the integration domain, we need to understand the applicable use cases. After a survey, we have identified the following eleven classes of AI use cases in the integration domain. 
 
@@ -67,7 +67,7 @@ To understand how artificial intelligence impacts the integration domain, we nee
 8. Business Automation—use of AI to automate business operations 
 9. API MarketPlace—use of AI to provide recommendations and ratings in API marketplaces
  
-A detailed discussion about each use case is included in the appendix. 
+A detailed discussion about each use case is included in the [Use Cases of AI Within the Integration Domain](https://github.com/wso2/ETAC/blob/master/usecases/ai-integration-usecases.md). 
 
 While there also are specific use cases of AI in other domains, like marketing and sales, as well as for creating new products and revenue streams, these are out of the scope of this discussion.
 
