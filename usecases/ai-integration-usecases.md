@@ -44,7 +44,7 @@ AI can enable non-programmers to build integrations. When users have provided hi
 
 Another alternative approach is program using instructions provided through Natural language, e.g. from a chat bot. For example, Worketo enables its users to create integrations provided from the chat. 
 
-Replacing Humans in Processes
+# Replacing Humans in Processes
 Humans’ decisions are expensive and take longer. Furthermore, the presence of humans converts the process to a long-running process, giving rise to new failure cases. AI lets us replace some of the tasks usually completed by humans in processes or workflows. For example, we can use AI to verify a user who signs up for a new account and only escalate complex cases. 
 
 # Self-Driving Operations 
