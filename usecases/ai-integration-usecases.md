@@ -48,13 +48,15 @@ Another alternative approach is program using instructions provided through Natu
 Humans’ decisions are expensive and take longer. Furthermore, the presence of humans converts the process to a long-running process, giving rise to new failure cases. AI lets us replace some of the tasks usually completed by humans in processes or workflows. For example, we can use AI to verify a user who signs up for a new account and only escalate complex cases. 
 
 # Self-Driving Operations 
-AI can be a powerful tool in automating DevOps by removing or reducing the need for human intervention while running systems. This applies for systems including those handling integration. Following are some use cases. 
-Auto tuning. AI can be used to inspect the environment and auto tune a system, enabling it to run without tedious configurations by the user. AI can also continuously tune a system, responding to changing environments and workloads, for example tuning a thread pool and database connection pools. 
-Predictive maintenance . AI can help detect and predict potential failures by monitoring current activities and triggering alerts to proactively take corrective actions to avoid potential failures. 
-System management. By detecting anomalies, raising alerts, and finding potential root causes, AI can help the DevOps team in managing the system. Furthermore, AI-based monitoring systems can automatically change tracing levels when anomalies are detected, making detailed sensor data available at critical points. 
-Chat-based querying and control of the system. For example, a chat-based system may allow control of the system based on preconfigured templates. 
-Automatic compliance. AI can be used to provide automatic compliance and quality of service (QOS) checks, as well as issue warnings 
-AI Co-located with Data 
+AI can be a powerful tool in automating DevOps by removing or reducing the need for human intervention while running systems. This applies for systems including those handling integration. Following are some use cases.
+ 
+* **Auto tuning**: AI can be used to inspect the environment and auto tune a system, enabling it to run without tedious configurations by the user. AI can also continuously tune a system, responding to changing environments and workloads, for example tuning a thread pool and database connection pools. 
+* **Predictive maintenance**: AI can help detect and predict potential failures by monitoring current activities and triggering alerts to proactively take corrective actions to avoid potential failures. 
+* **System management**: By detecting anomalies, raising alerts, and finding potential root causes, AI can help the DevOps team in managing the system. Furthermore, AI-based monitoring systems can automatically change tracing levels when anomalies are detected, making detailed sensor data available at critical points. 
+* **Chat-based querying and control of the systems**: For example, a chat-based system may allow control of the system based on preconfigured templates. 
+* **Automatic compliance**: AI can be used to provide automatic compliance and quality of service (QOS) checks, as well as issue warnings 
+
+# AI Co-located with Data 
 Applying AI to a custom dataset requires a significant investment from organizations. However, enterprises that manage users’ data (e.g. databases, customer relationship management (CRM) systems, and enterprise resource planning (ERP) software) can build AI capabilities into their products providing AI scenarios out of the box. For example, AI companies are integrating data from CRM and ERP systems to support use cases, such as lead scoring, churn prediction, and customer ticket prioritization. 
 
 # Algorithm Economy
