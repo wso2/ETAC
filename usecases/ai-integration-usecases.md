@@ -27,16 +27,17 @@ As systems become more connected and distributed, security challenges are increa
 
 # AI-Enabled IDE 
 An AI-enabled IDE can increase the productivity of integration developers by providing better suggestions, code templates, auto generate code, and error detection. Following are some examples. 
-The IDE can suggest available APIs for the user based on the current context. 
-The IDE can warn the user when a new data type is too close to some other data type thus removing unnecessary data types (e.g. Informatica).
-When the developers have initialized the client for a new API, the IDE can offer to automatically do the required data transformations. For example, Dell Boomi proposes data transformation together with confidence ranking on each suggestion. 
-An editor can guide the user through the process of building some constructs. For example, Snaplogic uses AI to guide the user through the process of building data pipelines. 
-AI can be a powerful tool in data exploration and visualization. An AI tool can suggest visualizations and automatically adjust presentations of visualizations. For example, the AI tool can automatically pick color shades, resolve overlapping items in visualizations, or adjust scales. Furthermore, the tool can automatically generate visualizations based on requests issued through chat. 
-AI can help tracing and debugging programs. For example, adaptive monitoring can collect more data in a suspicious area, point out errors, and provide suggestions for fixes. 
-AI can help users build personalized and adaptable UIs and menus without the need to write additional code by incorporating such decisions into UI frameworks. For example, menus can change based on the current context users are viewing. 
-AI-based performance simulations can help developers in tuning the performance of applications, detecting anti-patterns, and keeping the developed program within a given performance target. For example, microservices and API-based programs are highly sensitive to network calls, and AI-based simulation can help keep the programs within given latency limits. 
-AI can generate test cases, inject failures, and predict scenarios that might break the system. 
-AI can help in generating documentation from code. 
+
+* The IDE can suggest available APIs for the user based on the current context. 
+* The IDE can warn the user when a new data type is too close to some other data type thus removing unnecessary data types (e.g. Informatica).
+* When the developers have initialized the client for a new API, the IDE can offer to automatically do the required data transformations. For example, Dell Boomi proposes data transformation together with confidence ranking on each suggestion. 
+* An editor can guide the user through the process of building some constructs. For example, Snaplogic uses AI to guide the user through the process of building data pipelines. 
+* AI can be a powerful tool in data exploration and visualization. An AI tool can suggest visualizations and automatically adjust presentations of visualizations. For example, the AI tool can automatically pick color shades, resolve overlapping items in visualizations, or adjust scales. Furthermore, the tool can automatically generate visualizations based on requests issued through chat. 
+* AI can help tracing and debugging programs. For example, adaptive monitoring can collect more data in a suspicious area, point out errors, and provide suggestions for fixes. 
+* AI can help users build personalized and adaptable UIs and menus without the need to write additional code by incorporating such decisions into UI frameworks. For example, menus can change based on the current context users are viewing. 
+* AI-based performance simulations can help developers in tuning the performance of applications, detecting anti-patterns, and keeping the developed program within a given performance target. For example, microservices and API-based programs are highly sensitive to network calls, and AI-based simulation can help keep the programs within given latency limits. 
+* AI can generate test cases, inject failures, and predict scenarios that might break the system. 
+* AI can help in generating documentation from code. 
 
 # Self-Service Integrations for Non-Programmers
 AI can enable non-programmers to build integrations. When users have provided higher-level steps, AI-based tools can figure out the details and complete the code or propose different alternatives. This is visual programing, which seldom worked. Why? After the user drags and drops elements and connects them in the canvas, he has to go through a dreaded set of forms to give details. By automatically generating mappings and gluing code with minimal user input,  AI can change this.
