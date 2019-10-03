@@ -63,7 +63,7 @@ To understand how artificial intelligence impacts the integration domain, we nee
 5. Algorithm Economy—combining algorithms from an algorithm marketplace to build systems  
 6. Self Driving Operations (DevOps and Regulatory Compliance)—use of AI to reduce or eliminate the need for human intervention while managing systems 
 7. Automatic and Self-Service Integration—use of AI to simplify the process of creating integrations 
-7. Security—use of AI to enhance security detect potential attacks and fraud
+7. Security—use of AI to detect potential attacks and fraud
 8. Business Automation—use of AI to automate business operations 
 9. API MarketPlace—use of AI to provide recommendations and ratings in API marketplaces
  
