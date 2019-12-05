@@ -27,7 +27,7 @@ Published outlooks based on ETAC.
 * [Serverless Future Outlook](https://github.com/wso2/ETAC/blob/master/outlooks/serverless_outlook.md)
 * How Serverless can shape Enterprise Integration? [Paper](https://github.com/wso2/ETAC/blob/master/outlooks/serverless4integration_outlook.md), [Slides](https://www.slideshare.net/hemapani/future-of-serverless-144521841), [Video](https://wso2.com/library/webinars/2019/05/the-future-of-serverless/)
 * The Role of Blockchain in Future Integrations, [Paper](https://github.com/wso2/ETAC/blob/master/outlooks/blockchain4integration_outlook.md), [Slides](https://www.slideshare.net/hemapani/the-role-of-blockchain-in-future), [Video](https://wso2.com/library/webinars/2019/08/the-role-of-blockchain-in-future-integrations/)
-* How Will AI shape Integration? [Slides](https://www.slideshare.net/hemapani/how-would-ai-shape-future-integrations), [Video](https://wso2.com/library/webinars/2019/08/how-would-ai-shape-future-integrations/)
+* How Will AI shape Integration? [Paper](https://github.com/wso2/ETAC/blob/master/outlooks/AI4Integration_outlook.md), [Slides](https://www.slideshare.net/hemapani/how-would-ai-shape-future-integrations), [Video](https://wso2.com/library/webinars/2019/08/how-would-ai-shape-future-integrations/)
 
 
 
